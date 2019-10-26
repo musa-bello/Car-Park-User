@@ -8,3 +8,25 @@
     background-size:cover;
     
 }
+.circle{
+    border:1px solid blue;
+    border-radius:100%;
+    padding:50px 20px;
+    width:40%;
+    margin:auto;
+
+}
+.number{
+    margin-right:10px;
+}
+.allno{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10%;
+}
+body{
+    background-color:grey;
+}
+.work{
+    margin-top:20px;
+}
