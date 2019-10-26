@@ -15,10 +15,13 @@
     />
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".nav" data-offset="15">
     <!--NAVBAR STARTS-->
-    <div class="container my-4">
-      <nav class="navbar navbar-expand-lg navbar-light">
+   
+      <nav
+        class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
+      >
+      <div class="container my-4">
         <a class="navbar-brand" href="#">
           <img
             src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571942740/Car%20Park/Group_9640_w7taay.svg"
@@ -44,7 +47,7 @@
             class="btn btn-outline-success my-2 mr-4 my-sm-0 nav-btn nav-btn1"
             type="submit"
           >
-            List my space
+            Book Space
           </button>
           <button
             class="btn btn-success my-2 my-sm-0 nav-btn nav-btn2"
@@ -53,8 +56,9 @@
             Download App
           </button>
         </div>
+      </div>
       </nav>
-    </div>
+
     <!--NAVBAR ENDS-->
 
     <!--HERO SECTION-->
@@ -116,11 +120,11 @@
             suspended in a sunbeam descended from astronomers.
           </p>
           <button
-          class="btn btn-success my-2 my-sm-0 nav-btn nav-btn2 book-btn"
-          type="submit"
-        >
-          Book space
-        </button>
+            class="btn btn-success my-2 my-sm-0 nav-btn nav-btn2 book-btn"
+            type="submit"
+          >
+            Book space
+          </button>
         </div>
       </div>
     </div>
@@ -186,7 +190,9 @@
     <!--SECTION 4-->
     <div class="container section4 mt-4">
       <h5 class="h-five">A LIST OF PARKING SPACES</h5>
-      <p id="view-all" style="float: right;">VIEW ALL SPACES<i class="fas fa-long-arrow-alt-right"></i></p>
+      <p id="view-all" style="float: right;">
+        VIEW ALL SPACES<i class="fas fa-long-arrow-alt-right"></i>
+      </p>
       <br />
       <br />
       <div class="card-deck">
@@ -385,12 +391,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1200
-      });
-    </script>
+    <script src="app.js"></script>
   </body>
 </html>
