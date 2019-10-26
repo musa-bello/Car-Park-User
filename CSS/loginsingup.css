@@ -310,7 +310,9 @@ input[type="email"]{
   button{
     margin-bottom: 0;
   }
-  
+  h1{
+    font-size: 35px;
+  }
   .form-container {
   height: 70%;
   }
