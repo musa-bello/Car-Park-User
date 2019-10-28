@@ -9,6 +9,7 @@ html, body{
   width: 100%;
 }
 body {
+  background-color: #fafafa;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -121,12 +122,19 @@ input {
 }
 
 .container {
+  box-shadow: 10px 10px 10px 12px 15px #000;
+  border-radius: 20px;
   background-color: #fff;
   position: relative;
+<<<<<<< HEAD
   width: 100%;
  
+=======
+  width: 70%;
+  margin: auto;
+>>>>>>> 1dfb107e584f614fb865e80c7c504695b60d76ea
   overflow: hidden;
-  height: 100vh;
+  height: 70vh;
   
 }
 
@@ -180,6 +188,7 @@ div.form-container.sign-up-container, div.form-container.sign-in-container {
 }
 /*THE INTERACTION CAN BETWEAKED FROM HERE*/
 .overlay-container {
+  
   position: absolute;
   top: 0;
   left: 50%;
@@ -310,7 +319,9 @@ input[type="email"]{
   button{
     margin-bottom: 0;
   }
-  
+  h1{
+    font-size: 35px;
+  }
   .form-container {
   height: 70%;
   }
