@@ -18,13 +18,14 @@ body {
   width: 163px;
   height: 44px;
   border-radius: 50px;
+  font-size: 0.9rem;
 }
 .nav-btn1 {
   border-color: #f8d373;
   color: #f8d373;
 }
 .nav-btn2 {
-  background: #4a85e4;
+  background: #3684eb;
   border: none;
   color: #e6effb;
 }
@@ -33,7 +34,7 @@ body {
 }
 .top-nav-collapse {
   background-color: #fff;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 .container .navbar {
   margin-top: 1em;
@@ -67,8 +68,8 @@ body {
 }
 .hero-btn {
   background: #3684eb;
-  border-radius: 48px;
   border: none;
+  color: #e6effb;
 }
 .eclipse {
   width: 400px;
@@ -214,7 +215,8 @@ i {
 }
 .foot-btn {
   background: white;
-  color: #1a73e8;
+  color: #3684eb;
+  border: none;
 }
 .foot-one {
   font-style: normal;
