@@ -386,7 +386,7 @@ div.redirect-btns div:nth-of-type(3) button{
   }
 }
 
-@media screen and (max-height:470px), (max-width: 670px) {
+@media screen and (max-height:550px), (max-width: 670px) {
 
   button{
     margin-bottom: 0;
