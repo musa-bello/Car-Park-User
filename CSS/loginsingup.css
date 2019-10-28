@@ -183,7 +183,7 @@ div.form-container.sign-up-container, div.form-container.sign-in-container {
 }
 /*THE INTERACTION CAN BETWEAKED FROM HERE*/
 .overlay-container {
-  border-radius: 20px;
+  
   position: absolute;
   top: 0;
   left: 50%;
