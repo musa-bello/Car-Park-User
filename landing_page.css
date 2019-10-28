@@ -33,7 +33,7 @@ body {
 }
 .top-nav-collapse {
   background-color: #fff;
-  z-index: 1000;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 .container .navbar {
   margin-top: 1em;
