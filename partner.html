@@ -7,6 +7,7 @@
     <title>Car Park</title>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -81,7 +82,7 @@ body{
   width:70%;
   margin-top:40px;
   background-color:#3684eb;
-  opacity:70%;
+  opacity:0.8!important;
   padding:10%;
   color:#fff;
 }
@@ -91,6 +92,38 @@ body{
   background-repeat:no-repeat;
   height:500px;
   width:80%;
+}
+* {
+  box-sizing: border-box;
+}
+
+.item {
+  /* width: 200px;
+  height: 200px; */
+  /* margin: 50px auto;
+  padding-top: 75px; */
+  /* background: #ccc; */
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
+.hi{
+  -webkit-animation: float 2s infinite alternate;
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
 }
     </style>
   </head>
@@ -189,7 +222,7 @@ body{
     <!-- CAR TO WORK -->
     <div class="container mt-5">
       <div class="row work">
-        <div class="col-lg-5 col-sm-12">
+        <div data-aos="fade-down" class="col-lg-5 col-sm-12 item">
           <img src="https://res.cloudinary.com/inaaga/image/upload/v1572134189/overlap.png" alt="alternate img" class="img-fluid">
         </div>
         <div class="col-lg-7 col-sm-12">
@@ -209,7 +242,7 @@ body{
               </div>
         </div>
         <div class="col">
-            <div class="main-overlap">
+            <div class="main-overlap animated pulse infinite slower">
                 <h6>
                     Kees Overbeeke studied psychology at the Leuven 
                     <br>Catholic University (Belgium). He specialized in p<br>
