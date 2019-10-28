@@ -15,8 +15,8 @@ body {
   padding: 0;
 }
 .nav-link {
-  color: #f8d373 !important;
-  font-size: 14px;
+  color: #11092c !important;
+  font-size: 16px;
 }
 .nav-item {
   margin: 0 1.2em;
@@ -26,7 +26,7 @@ ul {
 }
 .nav-link:hover {
   transition: 0.5s;
-  color: #af9247 !important;
+  color: #020105 !important;
 }
 .nav-btn {
   width: 163px;
