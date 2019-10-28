@@ -231,6 +231,8 @@ i {
   background: white;
   color: #3684eb;
   border: none;
+  display: inline-flex;
+  align-items: center;
 }
 .foot-one {
   font-style: normal;
