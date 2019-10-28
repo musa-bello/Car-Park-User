@@ -2,6 +2,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background: #fafafa;
 }
 .mt-5 {
   margin-top: 8em !important;
@@ -11,8 +12,7 @@ body {
 }
 /* NAVBAR */
 .navbar {
-  padding: 0.5rem 1rem 0.5rem 0;
-  /* position: fixed; */
+  padding: 0;
 }
 .nav-btn {
   width: 163px;
@@ -33,7 +33,6 @@ body {
 }
 .top-nav-collapse {
   background-color: #fff;
-  position: fixed;
   z-index: 1000;
 }
 .container .navbar {
@@ -107,7 +106,7 @@ body {
 /* SECTION 2 */
 .section2,
 .section5 {
-  background: rgba(245, 244, 250, 0.25);
+  background: white;
 }
 .sect2 {
   padding: 0 5em 0 0;
@@ -276,6 +275,12 @@ a:hover {
   }
 }
 @media (max-width: 640px) {
+  .navbar-toggler {
+    margin-right: 3em;
+  }
+  .navbar-brand {
+    margin-left: 1em;
+  }
   .eclipse,
   .eclipse2 {
     margin: auto;
