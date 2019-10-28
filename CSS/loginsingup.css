@@ -368,11 +368,11 @@ div.redirect-btns div:nth-of-type(3) button{
 /*========================================*/
 @media screen and (max-width: 800px) {
   .container{
-    width: 90%;
+    width: 100%;
   }
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 630px) {
   .container{
     height: 100%;
   } 
