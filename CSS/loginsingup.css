@@ -9,7 +9,7 @@ html, body{
   width: 100%;
 }
 body {
-  background-color: fafafa;
+  background-color: #fafafa;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -182,6 +182,7 @@ div.form-container.sign-up-container, div.form-container.sign-in-container {
 }
 /*THE INTERACTION CAN BETWEAKED FROM HERE*/
 .overlay-container {
+  border-radius: 20px;
   position: absolute;
   top: 0;
   left: 50%;
