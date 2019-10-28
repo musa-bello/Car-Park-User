@@ -9,7 +9,7 @@ html, body{
   width: 100%;
 }
 body {
-  background-color: #fafafa;
+  background-color:  #E5E5E5;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@ body {
 
 h1 {
   font-weight: bolder;
-  font-size: 45px;
+  font-size: 40px;
   margin: 0;
   letter-spacing: 0.064em;
 }
@@ -126,15 +126,10 @@ input {
   border-radius: 20px;
   background-color: #fff;
   position: relative;
-<<<<<<< HEAD
-  width: 100%;
- 
-=======
   width: 70%;
   margin: auto;
->>>>>>> 1dfb107e584f614fb865e80c7c504695b60d76ea
   overflow: hidden;
-  height: 70vh;
+  height: 80vh;
   
 }
 
@@ -149,6 +144,7 @@ div.form-container.sign-up-container, div.form-container.sign-in-container {
   left: 0;
   width: 50%;
   z-index: 2;
+  justify-content: center;
 }
 
 .container.right-panel-active .sign-in-container {
@@ -160,6 +156,7 @@ div.form-container.sign-up-container, div.form-container.sign-in-container {
   width: 50%;
   opacity: 0;
   z-index: 1;
+  justify-content: center;
 
 }
 [create-account-form]{
@@ -322,9 +319,7 @@ input[type="email"]{
   h1{
     font-size: 35px;
   }
-  .form-container {
-  height: 70%;
-  }
+  
 [sign-up-link], [sign-in-link]{
   display: block;
 }
