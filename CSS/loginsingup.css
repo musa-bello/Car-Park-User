@@ -96,7 +96,6 @@ button.ghost {
 }
 
 form {
-  height: inherit;
   background-color: #ffffff;
   display: flex;
   align-items: center;
