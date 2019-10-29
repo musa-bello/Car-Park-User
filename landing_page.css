@@ -321,21 +321,17 @@ a:hover {
   background: #ffc408 !important;
 }
 /* RESPONSIVENESS */
-/* @media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    justify-content: flex-end;
-  }
-} */
 @media (max-width: 640px) {
   .navbar-toggler {
     margin-right: 1em;
   }
   .navbar-brand {
     margin-left: 1em;
+  }
+  .show {
+    background: rgb(250, 250, 250);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    z-index: 100000;
   }
   .eclipse,
   .eclipse2 {
