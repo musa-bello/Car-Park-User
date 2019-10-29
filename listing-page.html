@@ -10,9 +10,13 @@
          integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
          crossorigin = "anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
       <title>Car-Park</title>
       
       <style>
+         body{
+            font-family: 'Roboto', sans-serif;
+         }
       .has-search .form-control {
          padding-left: 2.375rem;
       }
@@ -40,15 +44,13 @@
          height: 40px !important;
       }
       .card{
+         width: 16.8rem;
+         min-width: 15rem;
          box-shadow: 0 5px 2px -2px #3684EB;
       }
       .map{
         width: 100%;
         height: 100%;;
-     }
-     .card{
-        width: 15rem;
-        max-width: 18rem;
      }
      .card-img-top{
         height: 12.06rem;
@@ -81,6 +83,11 @@
             height: 350px;
             margin-bottom: 1rem;
             padding: 0.5rem;
+         }
+         .desc{
+            padding-left: 2rem !important;
+            padding-right: 0.5rem !important;
+            float: right !important;
          }
       }
       @media (max-width: 768px){
@@ -129,50 +136,50 @@
       </div>
      </div>
      <hr class="h-line">
-     <div class="container">
-      <h3 class="text-center mt-3 font-weight-bold">CarPark Listings</h3>
-      <h5 class="text-center">8 results</h5>
-     </div>
-     <div class="container clearfix">
-        <div class="float-right">
-            <p class="font-weight-bold d-inline-block">Sort by:</p>
-            <div class="dropdown d-inline-block">
-                  <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
-                    Distance
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Link 1</a>
-                    <a class="dropdown-item" href="#">Link 2</a>
-                    <a class="dropdown-item" href="#">Link 3</a>
-                  </div>
-                </div>          
-        </div>
-     </div>
-     <div class="container-fluid mt-3">
+     <div class="container-fluid m-0">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 pl-0">
                   <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.45932584812!2d3.143870842679279!3d6.548376811897792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1572273126205!5m2!1sen!2sng" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
-            <div class="col-sm-6">
-               <div class="row">
-                     <div class="card mb-2 mr-3">
+            <div class="col-sm-6 pr-0 mb-3">
+                  <div class="container">
+                        <h3 class="text-left mt-3 font-weight-bold">CarPark Listings</h3>
+                        <h5 class="text-left" style="font-size: 14px;">8 results</h5>
+                       </div>
+                       <div class="container clearfix mb-3">
+                          <div class="float-right">
+                              <p class="font-weight-bold d-inline-block">Sort by:</p>
+                              <div class="dropdown d-inline-block">
+                                    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                      Distance
+                                    </button>
+                                    <div class="dropdown-menu">
+                                      <a class="dropdown-item" href="#">Link 1</a>
+                                      <a class="dropdown-item" href="#">Link 2</a>
+                                      <a class="dropdown-item" href="#">Link 3</a>
+                                    </div>
+                                  </div>          
+                          </div>
+                       </div>
+               <div class="row mr-0 p-2">
+                     <div class="card col-md-6 pl-0 pr-0">
                            <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282259/muhd-asyraaf-hh3b5rAG8Jk-unsplash_1.png" class="card-img-top" alt="...">
                            <h2 class="card-badge">1.6kms away</h2>
                               <div class="d-inline-block">
                                  <h5 class="d-inline-block p-2 mb-0">₦300/hr</h5>
-                                 <p class="d-inline-block mb-0">Security | Valet | 80 slots</p>
+                                 <p class="d-inline-block mb-0 float-sm-right p-1 desc">Security | Valet | 80 slots</p>
                               </div>
                               <div>
                                     <p class="pl-2 font-weight-bold mb-0" style="font-size: 13px;">Awolowo Park</p>
                                     <p class="pl-2 mt-0" style="font-size: 12px;"><span style="color: #3684EB; font-size: 16px"> &bull;</span>open</p>
                                  </div>
                         </div>
-                        <div class="card mb-2">
+                        <div class="card col-md-6 pl-0 pr-0">
                               <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282260/aerial-aerial-shot-aerial-view-753876_1.png" class="card-img-top" alt="...">
                               <h2 class="card-badge">2.2kms away</h2>
                               <div class="d-inline-block mb-0">
                                     <h5 class="d-inline-block p-2 mb-0">₦200/hr</h5>
-                                    <p class="d-inline-block mb-0">Security | Valet | 80 slots</p>
+                                    <p class="d-inline-block mb-0 float-sm-right p-1 desc">Security | Valet | 80 slots</p>
                               </div>
                               <div>
                                     <p class="pl-2 font-weight-bold mb-0" style="font-size: 13px;">Muritala Mohammed Airport</p>
@@ -180,25 +187,25 @@
                                  </div>
                         </div>
                </div>
-               <div class="row">
-                     <div class="card mb-2 mr-3">
+               <div class="row mr-0 p-2">
+                     <div class="card col-md-6 pl-0 pr-0">
                            <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282260/marcus-wallis-YghnwsgQX_o-unsplash_1.png" class="card-img-top" alt="...">
                            <h2 class="card-badge">2.7kms away</h2>
                            <div class="d-inline-block">
                               <h5 class="d-inline-block p-2 mb-0">₦350/hr</h5>
-                              <p class="d-inline-block mb-0">45 slots</p>
+                              <p class="d-inline-block mb-0 float-sm-right p-1 desc">45 slots</p>
                            </div>
                            <div>
                                  <p class="pl-2 font-weight-bold mb-0" style="font-size: 13px;">Cassidy</p>
                                  <p class="pl-2 mt-0" style="font-size: 12px;"><span style="color: #3684EB; font-size: 16px"> &bull;</span>open</p>
                            </div>
                      </div>
-                        <div class="card mb-2">
+                        <div class="card col-md-6 pl-0 pr-0">
                               <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282259/robert-ruggiero-KYo5NoCDnN4-unsplash_1.png" class="card-img-top" alt="...">
                               <h2 class="card-badge">3.3kms away</h2>
                               <div class="d-inline-block mb-0">
-                                    <h5 class="d-inline-block p-2 mb-0">₦3250/hr</h5>
-                                    <p class="d-inline-block mb-0">Security | Valet | 250 slots</p>
+                                    <h5 class="d-inline-block p-2 mb-0">₦250/hr</h5>
+                                    <p class="d-inline-block mb-0 float-sm-right p-1 desc">Security | Valet | 250 slots</p>
                               </div>
                               <div>
                                  <p class="pl-2 font-weight-bold mb-0" style="font-size: 13px;">Ikeja City Mall</p>
@@ -206,25 +213,25 @@
                               </div>
                         </div>
                </div>
-               <div class="row">
-                     <div class="card mb-2 mr-3">
+               <div class="row mr-0 p-2">
+                     <div class="card col-md-6 pl-0 pr-0">
                            <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282259/carl-newton-1JcEl81di6Y-unsplash_1.png" class="card-img-top" alt="...">
                            <h2 class="card-badge">3.9kms away</h2>
                            <div class="d-inline-block">
                               <h5 class="d-inline-block p-2 mb-0">₦300/hr</h5>
-                              <p class="d-inline-block mb-0">Security | Valet | 80 slots</p>
+                              <p class="d-inline-block mb-0 float-sm-right p-1 desc">Security | Valet | 80 slots</p>
                            </div>
                            <div>
                                  <p class="pl-2 font-weight-bold mb-0" style="font-size: 13px;">Awolowo Park</p>
                                  <p class="pl-2 mt-0" style="font-size: 12px;"><span style="color: #3684EB; font-size: 16px"> &bull;</span>open</p>
                            </div>
                      </div>
-                        <div class="card mb-2">
+                        <div class="card col-md-6 pl-0 pr-0">
                               <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282258/raban-haaijk-wftNpcjCHT4-unsplash_1.png" class="card-img-top" alt="...">
                               <h2 class="card-badge">4.5kms away</h2>
                               <div class="d-inline-block mb-0">
                                     <h5 class="d-inline-block p-2 mb-0">₦300/hr</h5>
-                                    <p class="d-inline-block mb-0">Security | Valet | 80 slots</p>
+                                    <p class="d-inline-block mb-0 float-sm-right p-1 desc">Security | Valet | 80 slots</p>
                               </div>
                               <div>
                                  <p class="pl-2 font-weight-bold mb-0" style="font-size: 13px;">Awolowo Park</p>
