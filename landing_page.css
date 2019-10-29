@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,400,500|Raleway:500i&display=swap");
 
+html,
 body {
   font-family: "Poppins", sans-serif;
   background: #fafafa;
   overflow-x: hidden;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
 }
 .mt-5 {
   margin-top: 8em !important;
@@ -317,7 +321,7 @@ a:hover {
   background: #ffc408 !important;
 }
 /* RESPONSIVENESS */
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     display: -ms-flexbox !important;
     display: flex !important;
@@ -325,10 +329,10 @@ a:hover {
     flex-basis: auto;
     justify-content: flex-end;
   }
-}
+} */
 @media (max-width: 640px) {
   .navbar-toggler {
-    margin-right: 3em;
+    margin-right: 1em;
   }
   .navbar-brand {
     margin-left: 1em;
