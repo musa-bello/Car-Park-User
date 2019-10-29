@@ -276,7 +276,7 @@ div.form-container.sign-up-container, div.form-container.sign-in-container {
 }
 [sign-up-link], [sign-in-link]{
   display: none;
-  margin-top: 20px;
+  margin-top: 15px;
   padding-bottom: 10px;
 }
 
@@ -383,7 +383,7 @@ div.redirect-btns div:nth-of-type(3) button{
 }
 
 [sign-in-form]{
-  margin-top:30px;
+  margin-top:20px;
 }
 
 @media screen and (max-height: 500px) {
