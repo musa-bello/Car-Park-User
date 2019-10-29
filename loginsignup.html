@@ -17,7 +17,7 @@
           <div class="logo-container3">
               <img class="logo" src="https://res.cloudinary.com/charlene04/image/upload/v1572024832/logo_fd3kfo.png" alt="logo">
           </div>
-        <form action="#" onclick="return checkForm(this);" create-account-form>
+        <form action="#" onsubmit="return checkForm(this);" create-account-form>
           <h1 class="blue">Create Account</h1>
           <div class="social-container">
             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -28,9 +28,8 @@
           <input type="text" placeholder="Name" name="username" required/>
           <input type="email" placeholder="Email" name="reg-email" required/>
           <input type="password" placeholder="Password" name="reg-pword" minlength="6" maxlength="8" required/>
-          <button class="sign-up-btn">Sign Up</button>
+          <button type="submit" class="sign-up-btn">Sign Up</button>
           <span sign-in-link>Already have an account? <a id="sign-in-link" href="#">Sign In</a></span>
-        </form>
           <div class="btns">  
               <div class="redirect-btns2">
                 <div>
@@ -42,6 +41,8 @@
               </div>
             </div>
           </div>
+        </form>
+          
       </div>
       <div class="form-container sign-in-container" id="sign-in-container1">
           <div class="logo-container2">

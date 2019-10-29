@@ -283,6 +283,7 @@ div.form-container.sign-up-container, div.form-container.sign-in-container {
 div.btns{
   display: none;
   padding: 0 40px;
+  width: 100%;
 }
 
 .logo-container3{
