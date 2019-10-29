@@ -13,6 +13,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="landing_page.css" />
   </head>
   <body data-spy="scroll" data-target=".nav" data-offset="15">
@@ -30,7 +31,7 @@
             alt=""
           />
         </a>
-        <button
+        <button onclick="heroClassToggle()"
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -70,7 +71,7 @@
     <!--NAVBAR ENDS-->
 
     <!--HERO SECTION-->
-    <div class="container hero" data-aos="fade-left">
+    <div id="hero-section" class="container hero" data-aos="fade-left">
       <div class="row">
         <div class="align-self-center col-sm-12 col-md-6 col-lg-6 hero1">
           <h5 class="h-five">PARK AND REST</h5>
