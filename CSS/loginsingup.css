@@ -59,11 +59,11 @@ a {
   margin: 15px 0;
 }
 .logo-container2 {
-  padding: 30px 0 20px 30px;
+  padding: 25px 0 20px 25px;
 }
 .logo-container3{
   display: none;
-  padding: 30px 0 0 30px;
+  padding: 25px 0 0 25px;
 }
 img.logo{
   width: 20%;
@@ -112,10 +112,10 @@ form {
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  justify-content: normal;
+  justify-content: center;
   flex-direction: column;
   padding: 0 70px;
-  height: 100%;
+ 
   text-align: center;
 }
 
@@ -151,6 +151,7 @@ div.form-container.sign-up-container, div.form-container.sign-in-container {
   left: 0;
   width: 50%;
   z-index: 2;
+  height: 100%;
   justify-content: center;
 }
 
@@ -163,6 +164,7 @@ div.form-container.sign-up-container, div.form-container.sign-in-container {
   width: 50%;
   opacity: 0;
   z-index: 1;
+  height: 100%;
   justify-content: center;
 
 }
@@ -278,6 +280,11 @@ div.form-container.sign-up-container, div.form-container.sign-in-container {
   padding-bottom: 10px;
 }
 
+div.btns{
+  display: none;
+  padding: 0 40px;
+}
+
 .logo-container3{
   display: none;
 }
@@ -307,13 +314,13 @@ input[type="email"]{
 }
 
 
-div.redirect-btns {
+div.redirect-btns, div.redirect-btns2{
   margin: 20px auto 20px auto;
   display: flex;
   box-sizing: border-box;
   width: 100%;
 }
-div.redirect-btns:after {
+div.redirect-btns:after, div.btns div.redirect-btns2:after{
   content: "";
   display: table;
   clear: both;
@@ -323,11 +330,11 @@ div.space{
   width: 10%;
 }
 
-div.redirect-btns div:nth-of-type(1){
+div.redirect-btns div:nth-of-type(1), div.btns div.redirect-btns2 div:nth-of-type(1){
   text-align: left;
   width: 45%;
 }
-div.redirect-btns div:nth-of-type(3){
+div.redirect-btns div:nth-of-type(3), div.btns div.redirect-btns2 div:nth-of-type(3){
   text-align: right;
   width: 45%;
 }
@@ -336,10 +343,27 @@ div.redirect-btns div:nth-of-type(1) button{
   padding: 10px 20px;
   background: transparent;
   color: #fff;
-
   font-size: 10px;
-
 }
+
+div.btns div.redirect-btns2 div:nth-of-type(1) button{
+  padding: 10px 20px;
+  background: transparent;
+  color: #1A73E8;
+  font-size: 10px;
+  border: 2px solid #1A73E8 ;
+}
+div.btns div.redirect-btns2 div:nth-of-type(3) button{
+  padding: 10px 30px;
+  background-color: #1A73E8;
+  color: #fff;
+  font-size: 10px;
+  background-repeat: no-repeat;
+  background-size: 12%;
+  background-position: 10px center;
+  background-image: url("https://res.cloudinary.com/charlene04/image/upload/v1572311685/play-store-icon-png-7_wbt0ic.png");
+}
+
 div.redirect-btns div:nth-of-type(3) button{
   padding: 10px 30px;
   background: white;
@@ -347,10 +371,12 @@ div.redirect-btns div:nth-of-type(3) button{
   font-size: 10px;
   align-items: flex-end;
   background-repeat: no-repeat;
-  background-size: 12%;
-  background-position: 10px center;
-  background-image: url("https://res.cloudinary.com/charlene04/image/upload/v1572281389/34-347424_google-play-store-logo-png-transparent-play-store_n6dpm5.jpg");
+  background-size: 15%;
+  background-position: 7px center;
+  background-image: url("https://res.cloudinary.com/charlene04/image/upload/v1572311685/play-store-icon-png-7_wbt0ic.png");
 }
+
+
 
 
 @media screen and (max-height: 500px) {
@@ -376,23 +402,19 @@ div.redirect-btns div:nth-of-type(3) button{
 @media screen and (max-height: 630px) {
   .container{
     height: 100%;
-    width: 100%;
+    border-radius: 0;
   } 
 }
 /*=======================================*/
 
 
-@media screen and (max-height:470px){
+@media screen and (max-height:530px){
   .sign-in-container, .sign-up-container{
     overflow: auto;
   }
 }
 
-@media screen and (max-height:550px), (max-width: 670px) {
-  .container{
-    height: 100%;
-    border-radius: 0;
-  } 
+@media screen and (max-height:530px), (max-width: 670px) {
 
   button{
     margin-bottom: 0;
@@ -401,7 +423,7 @@ div.redirect-btns div:nth-of-type(3) button{
     font-size: 35px;
   }
   
-[sign-up-link], [sign-in-link]{
+[sign-up-link], [sign-in-link], div.btns{
   display: block;
 }
 
