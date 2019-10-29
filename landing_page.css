@@ -229,6 +229,9 @@ i {
 .blockquote-footer::before {
   content: " ";
 }
+.photo {
+  border-radius: 50%;
+}
 /* FOOTER */
 .footer {
   background: #3684eb;
@@ -305,9 +308,13 @@ a:hover {
   color: #fff;
   transition: 0.6s ease-in-out;
 }
-button:focus:active {
+.btn-success:active:focus {
   outline: none !important;
   box-shadow: none !important;
+  background: #1350a0 !important;
+}
+.btn-outline-success:focus:active {
+  background: #ffc408 !important;
 }
 /* RESPONSIVENESS */
 @media (min-width: 992px) {
