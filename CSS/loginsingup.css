@@ -96,6 +96,7 @@ button.ghost {
 }
 
 form {
+  justify-content: center;
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -378,7 +379,11 @@ div.redirect-btns div:nth-of-type(3) button{
 
 
 [create-account-form]{
-  justify-content: center;
+  height: inherit;
+}
+
+[sign-in-form]{
+  margin-top:30px;
 }
 
 @media screen and (max-height: 500px) {
