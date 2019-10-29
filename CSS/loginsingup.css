@@ -286,6 +286,10 @@ div.btns{
   width: 100%;
 }
 
+form div.btns{
+  padding: 0;
+}
+
 .logo-container3{
   display: none;
 }
@@ -394,7 +398,7 @@ div.redirect-btns div:nth-of-type(3) button{
 }
 @media screen and (max-width: 1000px) {
   form {
-  padding: 0 40px;
+  padding: 0 30px;
   }
  
 }
