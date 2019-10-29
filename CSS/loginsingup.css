@@ -283,11 +283,6 @@ div.form-container.sign-up-container, div.form-container.sign-in-container {
 div.btns{
   display: none;
   padding: 0 40px;
-  width: 100%;
-}
-
-form div.btns{
-  padding: 0;
 }
 
 .logo-container3{
@@ -395,10 +390,13 @@ div.redirect-btns div:nth-of-type(3) button{
   .sign-up-container, .sign-in-container, .overlay {
     overflow: auto;
   }
+  [create-account-form]{
+    height: min-content;
+  }
 }
 @media screen and (max-width: 1000px) {
   form {
-  padding: 0 30px;
+  padding: 0 40px;
   }
  
 }
@@ -448,6 +446,9 @@ div.redirect-btns div:nth-of-type(3) button{
 }
 
 @media screen and (max-height:550px), (max-width: 800px) {
+  [create-account-form]{
+    height: min-content;
+  }
   .container{
     border-radius: 0;   
   }
