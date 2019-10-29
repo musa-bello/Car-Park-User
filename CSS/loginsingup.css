@@ -399,13 +399,25 @@ div.redirect-btns div:nth-of-type(3) button{
 }
 
 /*========================================*/
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1200px) {
+  .container{
+    width: 80%;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container{
+    width: 90%;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .container{
     width: 100%;
     border-radius: 0;
   }
 }
-
 @media screen and (max-height: 630px) {
   .container{
     height: 100%;
@@ -433,7 +445,7 @@ div.redirect-btns div:nth-of-type(3) button{
   }
 }
 
-@media screen and (max-height:550px), (max-width: 670px) {
+@media screen and (max-height:550px), (max-width: 800px) {
 
   button{
     margin-bottom: 0;
