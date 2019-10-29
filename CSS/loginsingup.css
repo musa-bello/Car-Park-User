@@ -383,7 +383,7 @@ div.redirect-btns div:nth-of-type(3) button{
 }
 
 [sign-in-form]{
-  margin-top:20px;
+  margin-top:15px;
 }
 
 @media screen and (max-height: 500px) {
@@ -402,20 +402,17 @@ div.redirect-btns div:nth-of-type(3) button{
 @media screen and (max-width: 1200px) {
   .container{
     width: 80%;
-    border-radius: 0;
   }
 }
 @media screen and (max-width: 1000px) {
   .container{
     width: 90%;
-    border-radius: 0;
   }
 }
 
 @media screen and (max-width: 900px) {
   .container{
     width: 100%;
-    border-radius: 0;
   }
 }
 @media screen and (max-height: 630px) {
@@ -446,7 +443,9 @@ div.redirect-btns div:nth-of-type(3) button{
 }
 
 @media screen and (max-height:550px), (max-width: 800px) {
-
+  .container{
+    border-radius: 0;   
+  }
   button{
     margin-bottom: 0;
   }
