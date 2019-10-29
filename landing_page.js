@@ -15,7 +15,6 @@ $(window).on("scroll", function() {
   }
 });
 
- let toggler = document.querySelector(".navbar-toggler");
 
  function heroClassToggle() {
   var element = document.getElementById("hero-section");
