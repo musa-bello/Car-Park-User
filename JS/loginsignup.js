@@ -84,7 +84,7 @@ function checkForm(){
       pword.focus();
       return false;
   }
-
+  window.alert("REGISTRATION SUCCESSFUL!")
   return true
 }
 }
