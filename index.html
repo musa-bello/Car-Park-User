@@ -13,6 +13,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="landing_page.css" />
   </head>
   <body data-spy="scroll" data-target=".nav" data-offset="15">
@@ -30,7 +31,7 @@
             alt=""
           />
         </a>
-        <button
+        <button onclick="heroClassToggle()"
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -52,13 +53,13 @@
             </li>
           </ul>
           <button
-            class="btn btn-outline-success my-2 mr-4 my-sm-0 nav-btn nav-btn1"
+            class="btn btn-outline-success my-2 mr-4 my-sm-0 nav-btn nav-btn1 shadow-none"
             type="submit"
           >
             Book Space
           </button>
           <button
-            class="btn btn-success my-2 my-sm-0 nav-btn nav-btn2"
+            class="btn btn-success my-2 my-sm-0 nav-btn nav-btn2 shadow-none"
             type="submit"
           >
             Download App
@@ -70,30 +71,34 @@
     <!--NAVBAR ENDS-->
 
     <!--HERO SECTION-->
-    <div class="container hero" data-aos="fade-left">
+    <div id="hero-section" class="container hero" data-aos="fade-left">
       <div class="row">
         <div class="align-self-center col-sm-12 col-md-6 col-lg-6 hero1">
           <h5 class="h-five">PARK AND REST</h5>
           <h1 class="h-one">
             Find packing spaces around your location in no time.
           </h1>
-          <p class="paragraph">
+          <p class="paragraph mb-4">
             This application is built to seamlessly attend to the needs of
             vehicle owners to allow them easily find affordable and safe parking
             spaces worldwide.
           </p>
           <button
-            class=" nav-btn btn btn-success my-2 my-sm-0 hero-btn"
+            class=" nav-btn btn btn-success my-2 my-sm-0 hero-btn shadow-none"
             type="submit"
           >
-            <img
-              src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
-              alt="Google Playstore"
-            />
-            Download App
+            <div>
+              <img
+                src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
+                alt="Google Playstore"
+              />
+              Download App
+            </div>
           </button>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 hero2 d-none d-lg-block">
+        <div
+          class="col-sm-12 col-md-6 col-lg-6 hero2 d-none d-md-block d-xl-block"
+        >
           <div>
             <div class="eclipse">
               <img
@@ -113,7 +118,7 @@
     </div>
 
     <!--SECTION 2-->
-    <div class="container-fluid section2 mt-3">
+    <div class="container-fluid section2 mt-4">
       <div class="row">
         <div class="col-sm-12 col-md-6" data-aos="fade-right">
           <img
@@ -130,13 +135,13 @@
           <h1 class="h-one">
             We care about your comfort and the safety of your vehicle.
           </h1>
-          <p class="paragraph">
+          <p class="paragraph mb-4">
             Tunguska event how far away. Extraordinary claims require
             extraordinary evidence the ash of stellar alchemy a mote of dust
             suspended in a sunbeam descended from astronomers.
           </p>
           <button
-            class="btn btn-success my-2 my-sm-0 nav-btn nav-btn2 book-btn"
+            class="btn btn-success my-2 my-sm-0 nav-btn nav-btn2 shadow-none"
             type="submit"
           >
             Book space
@@ -213,11 +218,13 @@
       <br />
       <div class="card-deck">
         <div class="card" data-aos="slide-up">
-          <img
-            src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571939420/Car%20Park/Rectangle_12_euowbq.svg"
-            class="card-img-top"
-            alt="Car depot"
-          />
+          <div class="inner">
+            <img
+              src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571939420/Car%20Park/Rectangle_12_euowbq.svg"
+              class="card-img-top"
+              alt="Car depot"
+            />
+          </div>
           <div class="card-body">
             <h5 class="card-title">Ilupeju car depot</h5>
             <p class="card-text cdtxt">
@@ -230,11 +237,13 @@
           </div>
         </div>
         <div class="card" data-aos="slide-up">
-          <img
-            src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571939431/Car%20Park/Rectangle_13_xysale.svg"
-            class="card-img-top"
-            alt="Car park"
-          />
+          <div class="inner">
+            <img
+              src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571939431/Car%20Park/Rectangle_13_xysale.svg"
+              class="card-img-top"
+              alt="Car park"
+            />
+          </div>
           <div class="card-body">
             <h5 class="card-title">Iyana-oworo car park</h5>
             <p class="card-text cdtxt">
@@ -248,11 +257,13 @@
           </div>
         </div>
         <div class="card" data-aos="slide-up">
-          <img
-            src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571939597/Car%20Park/Rectangle_14_zjbgd0.svg"
-            class="card-img-top"
-            alt="Car park"
-          />
+          <div class="inner">
+            <img
+              src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571939597/Car%20Park/Rectangle_14_zjbgd0.svg"
+              class="card-img-top"
+              alt="Car park"
+            />
+          </div>
           <div class="card-body">
             <h5 class="card-title">Odekun car park</h5>
             <p class="card-text cdtxt">
@@ -270,7 +281,7 @@
     <!--SECTION 5-->
     <div class="testimonials mt-5">
       <div class="container section5">
-        <h5 class="h-five">WHAT OUR CUSTOMERS SAY</h5>
+        <h5 class="h-five pt-4 pl-3">WHAT OUR CUSTOMERS SAY</h5>
         <br />
         <div class="row" data-aos="fade-left">
           <div class="col-md-6 col-lg-4">
@@ -286,7 +297,7 @@
                 </p>
                 <footer class="blockquote-footer">
                   <img
-                    class="mr-3"
+                    class="mr-3 photo"
                     src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571947889/Car%20Park/Ellipse_1_q0de4l.png"
                     alt=""
                   />
@@ -309,7 +320,7 @@
                 </p>
                 <footer class="blockquote-footer">
                   <img
-                    class="mr-3"
+                    class="mr-3 photo"
                     src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571947851/Car%20Park/Ellipse_1_1_vbpw76.png"
                     alt=""
                   />
@@ -332,7 +343,7 @@
                 </p>
                 <footer class="blockquote-footer">
                   <img
-                    class="mr-3"
+                    class="mr-3 photo"
                     src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571947866/Car%20Park/Ellipse_1_2_p3rw3q.png"
                     alt=""
                   />
@@ -353,22 +364,24 @@
             Finding a parking space should be easy, convenient and not
             stressful.
           </h1>
-          <p class="foot-paragraph">
+          <p class="foot-paragraph mb-4">
             Download the carpark app today and find secure spaces to park your
             vehicles .
           </p>
           <button
-            class="btn btn-success my-2 my-sm-0 nav-btn foot-btn"
+            class="btn btn-success my-2 my-sm-0 nav-btn foot-btn shadow-none"
             type="submit"
           >
-            <img
-              src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
-              alt="Google Playstore"
-            />
-            Download App
+            <div>
+              <img
+                src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
+                alt="Google Playstore"
+              />
+              Download App
+            </div>
           </button>
         </div>
-        <div class="col-sm-12 col-md-6 hero2 d-none d-lg-block">
+        <div class="col-sm-12 col-md-6 hero2 d-none d-md-block d-xl-block">
           <div>
             <div class="eclipse2">
               <img
