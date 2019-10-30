@@ -291,6 +291,7 @@ div.ghost-header{
 }
 div.ghost-header p{
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .logo-container3{
@@ -467,6 +468,8 @@ div.redirect-btns div:nth-of-type(3) button{
     height: min-content;
   }
   .container{
+    padding-left: 10px;
+    padding-right: 10px;
     height: 100%;
     border-radius: 0;   
   }
@@ -507,7 +510,6 @@ div.redirect-btns div:nth-of-type(3) button{
   display: none;
 }
 form {
-  margin: 0 10px;
  justify-content: normal;
   }
 
