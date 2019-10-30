@@ -437,11 +437,8 @@ div.redirect-btns div:nth-of-type(3) button{
 }
 
 @media screen and (min-height: 700px) {
-  body{
-    background-color: #E5E5E5;
-  }
+  
   .container{
-    background-color: #E5E5E5;
     height: 650px;
   } 
 }
