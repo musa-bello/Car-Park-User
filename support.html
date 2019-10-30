@@ -5,16 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Car Park| Support Page</title>
+    <title>Car Park | Support Page</title>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
     <link rel="stylesheet" href="support.css" />
   </head>
@@ -51,26 +51,24 @@
 
     <!--SECOND NAVBAR-->
 
-    <div class="container tabs-pills">
-      <a class="navbar-brand" href="#">
-        <img class="navbar-logo text-center"
-          src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571942740/Car%20Park/Group_9640_w7taay.svg"
+    <div class="container navbar tabs-pills">
+      <a class="navbar-brand img-container-block" href="#">
+        <img
+          src="https://res.cloudinary.com/favourchi-/image/upload/v1572282236/white_logo_bwmido.svg"
           width="30"
           height="30"
           alt=""
         />
       </a>
-<h3>Getting Started</h3>
-      <p>Welcome to CarPark. We're so excited that you are here. Let's get Started.</p>
+<h3 style="position: absolute;left: 77px;top: 51.5px;margin-bottom: 13px;">Getting Started</h3>
+      <p class="navbar-text">Welcome to CarPark. We're so excited that you are here. Let's get Started.</p>
 
       <div
-      class="col-sm-12 col-md-6"
+      class="float-right contact"
     >
     <p class="paragraph ptabs"><a href="#">
     <i class="fa fa-headphones" aria-hidden="true"></i>
-        Speak to A Customer Service Representative</a>
-      </p>
-      <p class="paragraph ptabs">
+        Speak to A Customer Service Representative</a> <br>
       <i class="fa fa-envelope" aria-hidden="true"></i>
       <a href="#">
           Send Us an Email Today</a>
@@ -78,16 +76,16 @@
       </div>
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Getting Started</a>
+          <a class="nav-link active" href="support.html">Getting Started</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-pill" href="#">Using CarPark</a>
+          <a class="nav-link nav-pill" href="support2.html">Using CarPark</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-pill" href="#">CarPark Administration</a>
+          <a class="nav-link nav-pill" href="support3.html">CarPark Administration</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-pill" href="#">Tip&More</a>
+          <a class="nav-link nav-pill" href="support4.html">Tip&More</a>
         </li>
       </ul>
     </div>
@@ -108,11 +106,9 @@
           </p>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6 hero1">
-          <div>
-        <ul class="hero-li">
-            <h5 class="hero-ky">Key Features</h5>
-                  <li>Downloading the CarPark App</li>
-                  <li>CarPark Pricing Plan</li>
+          <p class="para2"><button class="Keyfeat active" href =""> Key Features</button><br>
+            <a class="color" href ="">Downloading the CarPark App</a><br>
+            <a class="color" href ="">CarPark Pricing Plan</a></p>
                </ul>
             </div>
           </div>
@@ -122,97 +118,100 @@
 
     <!--SECTION 2-->
     <div class="container-fluid section2 mt-5">
-      
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+    <div class="card-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-      <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingOne">
-              <h4 class="panel-title">
+      <div class="card card-default">
+          <div class="card-header" role="tab" id="headingOne">
+              <h4 class="card-title">
                   <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <i class="more-less glyphicon glyphicon-plus"></i>
+                      <i class="more-less fa fa-plus"></i>
                       Key Features
                   </a>
               </h4>
           </div>
-          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-              <div class="panel-body">
+          </div>
+          </div>
+          <div id="collapseOne" class="card-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="card-body">
                 <ul>
-                  <li>
-                      Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
-                  <li>
-                      View Available Park Space
+                    <li class="card-list">
+                        Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
+                    <li class="card-list">
+                        View Available Park Space
+                    </li>
+                    <li class="card-list">
+                        Booking & Making Payment for Park Space online
+                    </li>
+                    <li class="card-list">
+                        Retain Favourite Park Space
+                    </li>
+                  <li class="card-list">
+                        Security
                   </li>
-                  <li>
-                      Booking & Making Payment for Park Space online
-                  </li>
-                  <li>
-                      Retain Favourite Park Space
-                  </li>
-                <li>
-                      Security
-                </li>
               </ul>
             </div>
           </div>
       </div>
-
-      <div class="row">
+      </div>
+</div>
         <div class="col-sm-12 col-md-6" data-aos="fade-right">
          
-      <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingTwo">
-              <h4 class="panel-title">
+      <div class="card card-default">
+          <div class="card-header" role="tab" id="headingTwo">
+              <h4 class="card-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <i class="more-less glyphicon glyphicon-plus"></i>
+                      <i class="more-less fa fa-plus"></i>
                     Downloading the CarPark App
                   </a>
               </h4>
           </div>
-          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-              <div class="panel-body">
+          <div id="collapseTwo" class="card-collapse collapse" role="tabcard" aria-labelledby="headingTwo">
+              <div class="card-body">
                 <ul>
-                    <li>
+                    <li class="card-list">
                         Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
-                    <li>
+                    <li class="card-list">
                         View Available Park Space
                     </li>
-                    <li>
+                    <li class="card-list">
                         Booking & Making Payment for Park Space online
                     </li>
-                    <li>
+                    <li class="card-list">
                         Retain Favourite Park Space
                     </li>
-                  <li>
+                  <li class="card-list">
                         Security
                   </li>
               </ul></div>
           </div>
       </div>
 
-      <div class="panel panel-default">
-          <div class="panel-heading" role="tab" id="headingThree">
-              <h4 class="panel-title">
+      <div class="card card-default">
+          <div class="card-header" role="tab" id="headingThree">
+              <h4 class="card-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      <i class="more-less glyphicon glyphicon-plus"></i>
+                      <i class="more-less fa fa-plus"></i>
                       CarPark Pricing Plans
                   </a>
               </h4>
           </div>
-          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-              <div class="panel-body">
+          <div id="collapseThree" class="card-collapse collapse" role="tabcard" aria-labelledby="headingThree">
+              <div class="card-body">
                 <ul>
-                    <li>
+                    <li class="card-list">
                         Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
-                    <li>
+                    <li class="card-list">
                         View Available Park Space
                     </li>
-                    <li>
+                    <li class="card-list">
                         Booking & Making Payment for Park Space online
                     </li>
-                    <li>
+                    <li class="card-list">
                         Retain Favourite Park Space
                     </li>
-                  <li>
+                  <li class="card-list">
                         Security
                   </li>
               </ul>
@@ -220,9 +219,9 @@
           </div>
       </div>
 
-  </div><!-- panel-group -->
+  </div><!-- card-group -->
   
-  
+  </div>
     
     
 
@@ -230,9 +229,9 @@
 
     <div class="container-fluid section2 mt-5">
       <div class="row">
-          <div class="col-sm-12 col-md-6 sect2">
-          <p class="paragraph"><a href="#">
-            <i class="fa fa-headphones" aria-hidden="true"></i>
+          <div class="col-sm-12 col-md-6 sect2" data-aos="fade-right">
+          <p class="paragraph para2"><a href="#">
+            <i class="fa fa-headphones icon-color" aria-hidden="true"></i>
               Speak to A Customer Service Representative</a>
             </p>
          
@@ -241,8 +240,8 @@
           class="col-sm-12 col-md-6 sect2"
           data-aos="fade-left"
         >
-        <a href="#"><p class="paragraph">
-        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <a href="#"><p class="paragraph para2">
+        <i class="fa fa-envelope icon-color" aria-hidden="true"></i>
             Send Us an Email Today</a>
           </p>
           
@@ -288,6 +287,14 @@
       </div>
       <hr />
       <div class="footer-links">
+          <a class="navbar-brand" href="#">
+              <img
+                src="https://res.cloudinary.com/favourchi-/image/upload/v1572282236/white_logo_bwmido.svg"
+                width="30"
+                height="30"
+                alt=""
+              />
+            </a>
         <a href="#">Service Agreement</a>
         <a href="#">Privacy Policy</a>
         <a href="#">&#9400;HNG Internship, 2019 </a>
@@ -322,12 +329,12 @@
 
       function toggleIcon(e) {
     $(e.target)
-        .prev('.panel-heading')
+        .prev('.card-heading')
         .find(".more-less")
-        .toggleClass('glyphicon-plus glyphicon-minus');
+        .toggleClass('fa-plus fa-minus');
 }
-$('.panel-group').on('hidden.bs.collapse', toggleIcon);
-$('.panel-group').on('shown.bs.collapse', toggleIcon);
+$('.card-group').on('hidden.bs.collapse', toggleIcon);
+$('.card-group').on('shown.bs.collapse', toggleIcon);
 
     </script>
   </body>
