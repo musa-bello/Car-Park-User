@@ -100,7 +100,7 @@ form {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 0 50px;
+  padding: 0  50px 15px 50px;
   text-align: center;
 }
 
@@ -437,6 +437,9 @@ div.redirect-btns div:nth-of-type(3) button{
 }
 
 @media screen and (min-height: 700px) {
+  body{
+    background-color: #E5E5E5;
+  }
   .container{
     height: 650px;
   } 
@@ -468,9 +471,8 @@ div.redirect-btns div:nth-of-type(3) button{
     height: min-content;
   }
   .container{
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100%;
+    background-color: #E5E5E5;
+    height: 100vh;
     border-radius: 0;   
   }
   button{
@@ -491,7 +493,6 @@ div.redirect-btns div:nth-of-type(3) button{
 .sign-in-container {
   width: 100%;
   display: block;
-  background-color:  #E5E5E5;
 }
 .container.right-panel-active .sign-up-container {
    transform: translateX(0);
@@ -500,16 +501,19 @@ div.redirect-btns div:nth-of-type(3) button{
   transform: translateX(0);
 }
 .sign-up-container{
-  background-color:  #E5E5E5;
   display: block;
   width: 100%;
   transform: translateX(0);
 }
 
+
 .overlay-container{
   display: none;
 }
 form {
+  padding-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
  justify-content: normal;
   }
 
@@ -520,6 +524,6 @@ div.btns{
 
 @media screen and (max-width: 400px) {
   form {
-  padding: 0 10px;
+  padding: 0 10px 10px 10px;
   }
 }
