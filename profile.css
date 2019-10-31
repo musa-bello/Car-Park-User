@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:600&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
+    height: 100%;
+    width: 100%;
 }
 .btn-label {
     position: relative;
@@ -37,6 +45,10 @@ body {
     color: #fff;
     font-size: 13px;
 }
+button.navbar-toggler{
+    margin-left: -100px;
+}
+
 .heading {
     color: #2F4B6E;
     font-weight: bold;
@@ -72,7 +84,7 @@ body {
 
 .customer{
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 15px;
     grid-template-columns: (3, 1fr);
     grid-template-rows: (2, 1fr);
 }
@@ -102,12 +114,20 @@ div.sign{
 }
 
 .sign img{
-    border: 1px solid black;
+    border: 1px solid grey;
     padding: 2%;
+    margin-left: 2%
 }
 
+#footer{
+    background: url("https://res.cloudinary.com/meritiyke/image/upload/v1572512595/Subtract_6_m74mql.png");
+    background-position: 4% 15%;
+    background-repeat: no-repeat;
+    background-size: 22% 100%;  
+}
 footer{
     margin-top: 5rem;
+    
 }
 
 .footer{
@@ -184,6 +204,15 @@ footer{
 }
 
 @media (max-width: 768px){
+
+    button.navbar-toggler{
+        margin-left: -100px;
+
+    }
+    .center{
+       margin-left: 5% 
+    }
+    
     .customer{
         display: block;
     }
@@ -283,6 +312,19 @@ footer{
         font-size: 0.1rem;
         padding-left: 40px;
     }
+
+    #footer{
+        background: none;
+    }
+
+    .sub1 span{
+        margin-left: -17%;
+        
+    }
+    .sub1 span img{
+        width: 20%;
+    }
+    
 }
 
 
