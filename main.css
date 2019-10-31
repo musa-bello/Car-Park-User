@@ -238,8 +238,9 @@ hr {
   font-weight: normal;
   font-size: 14px;
   line-height: 160%;
-  color: #a599d2;
+  color: #fff;
   text-decoration: none;
+  display:block!important;
 }
 a:hover {
   color: rgb(233, 230, 230);
