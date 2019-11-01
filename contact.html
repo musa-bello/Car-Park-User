@@ -9,17 +9,43 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins');
+
         body {
             box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
             margin: 0;
             padding: 0;
         }
 
+        .top-nav-collapse {
+            background-color: #fff;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+
+        nav {
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+        }
+
+        .nav-item a {
+            transition: transform 0.5s;
+        }
+
+        .nav-item a:hover {
+            font-weight: bold;
+            transform: scale(1.05);
+        }
+
         .wrapper,
         .contact {
-            padding-top: 4rem;
+            padding-top: 5rem;
         }
 
         .wrapper h1,
@@ -86,9 +112,17 @@
             padding: .5rem 0 1rem;
         }
 
-        .btn-light {
-            border-radius: 30px;
-            color: #3684eb;
+        .play-store {
+            background: #fff;
+            border-radius: 48px;
+            border: 0;
+            transition: background-color 1s;
+
+        }
+
+        .play-store:hover {
+            background-color: #1A73E8;
+            color: #fff;
         }
 
         .eclipse2 {
@@ -137,18 +171,12 @@
         .footer-links li {
             list-style: none;
             display: inline-block;
-            padding: 0 3rem;
+            padding: 0 1.8rem;
         }
 
-        .footer-links li:last-child {
-            float: right;
-        }
 
-        .footer-links li:first-child {
-            float: left;
-        }
-
-        .footer-links a {
+        .footer-links a,
+        li {
             color: #fff;
             text-decoration: none;
         }
@@ -233,7 +261,7 @@
 
         @media (max-width: 680px) {
             .left {
-                padding:0 2rem;
+                padding: 0 2rem;
                 padding-top: 5rem;
                 padding-bottom: 3rem;
             }
@@ -247,7 +275,7 @@
             }
 
             .wrapper {
-                padding: 2rem 1rem 0;
+                padding: 3rem 1rem 0;
             }
 
             .contact {
@@ -261,7 +289,7 @@
 
         @media (max-width: 480px) {
             .left {
-                padding:0 2rem;
+                padding: 0 2rem;
                 padding-top: 3rem;
             }
 
@@ -274,7 +302,7 @@
             }
 
             .wrapper {
-                padding: 2rem 1rem 0;
+                padding: 3rem 1rem 0;
             }
 
             .contact {
@@ -294,10 +322,6 @@
 
             .right {
                 display: none;
-            }
-
-            .footer-links li:last-child {
-                float: left;
             }
 
             .btn {
@@ -323,18 +347,61 @@
             }
 
             .wrapper {
-                padding: 2rem 1rem 0 1rem;
+                padding: 3rem 1rem 0 1rem;
             }
 
             .contact {
                 padding: 1rem;
+            }
+
+            .footer-links li {
+                list-style: none;
+                font-size: 14px;
+                display: block;
+                padding: 0;
             }
         }
     </style>
 </head>
 
 <body>
+    <div class="mt-5">
+        <nav class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top px-5 py-4">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="http://3.86.112.219:8000/logo.svg"
+                        alt="Car Park logo"></a>
+                <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-dark" href="#">My Parking Space</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Schedule</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Femi
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </div>
     <div class="container-fluid">
+
         <div class="row bt-padding">
             <div class="col-md-6 ">
                 <div class="wrapper">
@@ -430,10 +497,8 @@
                     Download the carpark app today and find secure spaces to park your
                     vehicles.
                 </p>
-                <button class="btn btn-light" type="submit">
-                    <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg" width="20"
-                        alt="Google Playstore">
-                    Download App
+                <button class="play-store py-2 px-3 primary-blue mt-3">
+                    <span><img src="http://3.86.112.219:8000/PS-logo.svg" alt="Play store logo"></span> Download App
                 </button>
             </div>
             <div class="col-md-6 right">
@@ -445,21 +510,48 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12" style="padding: 0;">
                 <hr>
                 <div class="footer-links">
                     <ul>
                         <li><a href="index.html" style="font-size: 20px; letter-spacing: 2px;"> CarP<span><i
                                         class="fas fa-map-marker-alt"
                                         style="font-size: 16px; color: #ffc107;"></i></span>rk</li>
-                        <li><a href="termsOfService.html">Service <br> Agreement</a></li>
-                        <li><a href="termsOfService.html">Privacy <br> Policy</a></li>
-                        <li><a href="#">ⒸHNG Internship, 2019 </a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="partner.html">Become a Partner</a></li>
+                        <li><a href="http://car-park.ga">Admin</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="termsOfService.html">Privacy Policy</a></li>
+                        <li>ⒸHNG Internship, 2019</li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200
+        });
+        var SCROLLING_NAVBAR_OFFSET_TOP = 50;
+        $(window).on("scroll", function () {
+            var $navbar = $(".navbar");
+
+            if ($navbar.length) {
+                if ($navbar.offset().top > SCROLLING_NAVBAR_OFFSET_TOP) {
+                    $(".scrolling-navbar").addClass("top-nav-collapse");
+                } else {
+                    $(".scrolling-navbar").removeClass("top-nav-collapse");
+                }
+            }
+        });
+
+
+    </script>
 </body>
 
 </html>

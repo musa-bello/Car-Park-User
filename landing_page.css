@@ -189,6 +189,10 @@ span {
   font-size: 18px;
   cursor: pointer;
 }
+#book-space a {
+  color: #ffbd49 !important;
+  text-decoration: none;
+}
 #book-space:hover {
   color: #d3901c;
 }
@@ -276,21 +280,21 @@ i {
   color: #dbd6ed;
 }
 hr {
-  width: 1050px;
+  width: 1100px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
   border: 1px solid #1a73e8;
 }
 .footer-links {
-  padding: 0 0 2em 0;
+  padding: 1em 3.5em 2em;
   display: flex;
   justify-content: space-evenly;
 }
 .footer-links a {
   font-style: normal;
   font-weight: 200;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 160%;
   color: #f5f5f5;
   text-decoration: none;
@@ -377,9 +381,14 @@ a:hover {
     margin-left: 0;
     margin-top: 100px;
   }
+  .foot-brand {
+    width: 100px;
+  }
   .footer-links {
+    padding: 0 0 2em;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .footer-links a {
     margin: 1em;
