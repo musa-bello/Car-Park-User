@@ -30,7 +30,6 @@ signUpContainer.style.display="none";
 signInContainer.style.display="block";
 signInContainer.style.opacity="1";
 signInContainer.style.width="100%";
-
 });
 
 
@@ -84,7 +83,7 @@ function checkForm(){
       pword.focus();
       return false;
   }
-  window.alert("REGISTRATION SUCCESSFUL!")
+  window.alert("REGISTRATION COMPLETE!")
   return true
 }
 }
