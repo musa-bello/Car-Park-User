@@ -1,7 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 * {
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 html, body{
   height: 100%;
@@ -15,7 +15,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
