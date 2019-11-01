@@ -119,6 +119,108 @@
         .myaccordion li+li {
             margin-bottom: 10px;
         }
+
+        /* FOOTER */
+        .footer {
+        background: #3684eb;
+        height: fit-content;
+        margin-left: 0px;
+        margin-top: 560px;
+        }
+        .eclipse2 {
+        background: #1a73e8;
+        width: 400px;
+        height: 400px;
+        margin-left: 73px;
+        margin-top: 6em;
+        border-radius: 50%;
+        z-index: 1000;
+        }
+        .foot1 {
+        padding-left: 7.5rem;
+        padding-top: 5rem;
+        }
+        .foot-btn {
+        background: white;
+        color: #3684eb;
+        border: none;
+        }
+        .foot-one {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 130%;
+        color: #ffffff;
+        }
+        .foot-paragraph {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        color: #dbd6ed;
+        }
+        hr {
+        width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        border: 1px solid #1a73e8;
+        }
+        .footer-links {
+        padding: 1em 3.5em 2em;
+        display: flex;
+        justify-content: space-evenly;
+        }
+        .footer-links a {
+        font-style: normal;
+        font-weight: 200;
+        font-size: 12px;
+        line-height: 160%;
+        color: #f5f5f5;
+        text-decoration: none;
+        padding-right: 70px;
+        }
+        a:hover {
+        color: #f8d373;
+        transition: 0.6s ease-in-out;
+        }
+
+/*Footer Responsivenes*/
+
+@media (max-width: 990px) {
+
+            .foot1 {
+    padding-left: 1em;
+    padding-top: 5em;
+    margin-bottom: 2em;
+  }
+  hr {
+    width: 350px;
+    margin-left: 0;
+    margin-top: 100px;
+  }
+  .foot-brand {
+    width: 100px;
+  }
+  .footer-links {
+    padding: 0 0 2em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-links a {
+    margin: 1em;
+    padding: 0px;
+  }
+  .mystyle {
+    margin-top: 130px !important;
+  }
+}
+
+
+        }
+
+
     </style>
 
 </head>
@@ -272,10 +374,72 @@
                 </div>
             </div>
         </section>
+       
+        <!--Footer-->
+        <footer class="container-fluid footer mt-5">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 align-self-center hero1 foot1">
+                <h1 class="foot-one">
+                  Finding a parking space should be easy, convenient and not
+                  stressful.
+                </h1>
+                <p class="foot-paragraph mb-4">
+                  Download the carpark app today and find secure spaces to park your
+                  vehicles .
+                </p>
+                <button class="btn btn-success my-2 my-sm-0 nav-btn foot-btn shadow-none" type="submit">
+                  <div>
+                    <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
+                      alt="Google Playstore" />
+                    Download App
+                  </div>
+                </button>
+              </div>
+              <div class="col-sm-12 col-md-6 hero2 d-none d-md-block d-xl-block">
+                <div>
+                  <div class="eclipse2">
+                    <img class="hero-img img-fluid"
+                      src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
+                      alt="Android Phone" />
+                  </div>
+                  <img class="hero-dots"
+                    src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572276314/Car%20Park/Group_31_dlt1bx.svg"
+                    alt="dots" />
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="footer-links">
+                <a href="#">
+                    <img class="foot-brand "
+                      src="logo-white.svg"           
+                      alt="Logo"
+                    />
+                  </a>
+              <a href="faq.html">FAQ</a>
+              <a href="contact.html">Contact Us</a>
+              <a href="partner.html">Become a Partner</a>
+              <a href="http://car-park.ga">Admin</a>
+              <a href="support.html">Support</a>
+              <a href="termsOfService.html">Service Agreement</a>
+              <a href="termsOfService.html">Privacy Policy</a>
+              <a href="">&#9400;HNG Internship, 2019 </a>
+            </div>
+          </footer>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+       
+
+        <script src="https://kit.fontawesome.com/2534cfc66b.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     
 </body>
 </html>
