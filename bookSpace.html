@@ -177,6 +177,9 @@
         input[type="date"], input[type="time"]{
             border: none;
         }
+        input[type="date"]{
+            background: #fff;
+        }
         input[type="date"]::-webkit-inner-spin-button{
             display: none;
         }
@@ -396,27 +399,6 @@
 
 
         window.onload = function () {
-            var date = new Date();
-            var day = date.getDate();
-            var month = date.getMonth() + 1;
-            var year = date.getFullYear();
-            var hour = date.getHours();
-            var min = date.getMinutes();
-
-           month= (month < 10 ? "0" : "") + month;
-           day = (day < 10 ? "0" : "") + day;
-           hour = (hour < 10 ? "0" : "") + hour;
-           min = (min < 10 ? "0" : "") + min;
-
-            var today = year + "-" + month + "-" + day;
-            var displayTime = hour + ":" + min;
-            document.getElementById("DATE1").defaultValue = today;
-            document.getElementById("DATE1").min = today;
-            document.getElementById("TIME1").defaultValue = displayTime;
-            document.getElementById("DATE2").defaultValue = today;
-            document.getElementById("DATE2").min = today;
-            document.getElementById("TIME2").defaultValue = displayTime;
-
             
             const [calendarObj1, calendarObj2] = Array.from(document.getElementsByClassName("my-calendar")).map((element) => jsCalendar.new({ target: element, monthFormat: "month YYYY" }));
             calendar1Image.addEventListener("click", () => {
@@ -450,6 +432,26 @@
             });
 
         }
+        var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+            var year = date.getFullYear();
+            var hour = date.getHours();
+            var min = date.getMinutes();
+
+           month= (month < 10 ? "0" : "") + month;
+           day = (day < 10 ? "0" : "") + day;
+           hour = (hour < 10 ? "0" : "") + hour;
+           min = (min < 10 ? "0" : "") + min;
+
+            var today = year + "-" + month + "-" + day;
+            var displayTime = hour + ":" + min;
+            document.getElementById("DATE1").defaultValue = today;
+            document.getElementById("DATE1").min = today;
+            document.getElementById("TIME1").defaultValue = displayTime;
+            document.getElementById("DATE2").defaultValue = today;
+            document.getElementById("DATE2").min = today;
+            document.getElementById("TIME2").defaultValue = displayTime;
     </script>
 
 
