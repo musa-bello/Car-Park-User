@@ -174,6 +174,20 @@
         #save:hover {
             background-color: rgb(0, 50, 116);
         }
+        input[type="date"], input[type="time"]{
+            border: none;
+        }
+        input[type="date"]::-webkit-inner-spin-button{
+            display: none;
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator{
+            opacity: 0;
+        }
+
+        input#DATE1:focus, input#TIME1:focus{
+            border: none;
+            outline: none;
+        }
 
         @media screen and (max-width: 768px) {
             .park-container {
@@ -277,7 +291,11 @@
                         <div id="my-dropdown" class=" dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false"></div>
                         <div class="dropdown-menu" aria-labelledby="my-dropdown">
-                            <a class="dropdown-item active" href="#">Text</a>
+                            <a class="dropdown-item active" href="#">Toyota</a>
+                            <a class="dropdown-item active" href="#">Hilux</a>
+                            <a class="dropdown-item active" href="#">Hyunda</a>
+                            <a class="dropdown-item active" href="#">Honda</a>
+                            <a class="dropdown-item active" href="#">Peageout</a>
                         </div>
                     </div>
                 </div>
@@ -306,10 +324,10 @@
                                     src="https://res.cloudinary.com/dqcsk8rsc/image/upload/v1572470481/calendar_1_mhhkfz.svg"
                                     alt="">
                             </span>
-                            <p class="mr-2" id="date1">21/02/19</p>
+                            <p class="mr-2" id="date1"><input id="DATE1" type="date"></p>
 
 
-                            <p>10:00</p>
+                            <p><input id="TIME1" type="time"></p>
                         </div>
                         <div class="mr-3">
                             <img id="arrow"
@@ -322,8 +340,8 @@
                                     src="https://res.cloudinary.com/dqcsk8rsc/image/upload/v1572470481/calendar_1_mhhkfz.svg"
                                     alt="">
                             </span>
-                            <p class="mr-2" id="date2">21/02/19</p>
-                            <p>10:00</p>
+                            <p class="mr-2" id="date2"><input id="DATE2" type="date" name="" id=""></p>
+                            <p><input id="TIME2" type="time"></p>
                         </div>
                     </div>
                 </div>
@@ -378,6 +396,28 @@
 
 
         window.onload = function () {
+            var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+            var year = date.getFullYear();
+            var hour = date.getHours();
+            var min = date.getMinutes();
+
+           month= (month < 10 ? "0" : "") + month;
+           day = (day < 10 ? "0" : "") + day;
+           hour = (hour < 10 ? "0" : "") + hour;
+           min = (min < 10 ? "0" : "") + min;
+
+            var today = year + "-" + month + "-" + day;
+            var displayTime = hour + ":" + min;
+            document.getElementById("DATE1").defaultValue = today;
+            document.getElementById("DATE1").min = today;
+            document.getElementById("TIME1").defaultValue = displayTime;
+            document.getElementById("DATE2").defaultValue = today;
+            document.getElementById("DATE2").min = today;
+            document.getElementById("TIME2").defaultValue = displayTime;
+
+            
             const [calendarObj1, calendarObj2] = Array.from(document.getElementsByClassName("my-calendar")).map((element) => jsCalendar.new({ target: element, monthFormat: "month YYYY" }));
             calendar1Image.addEventListener("click", () => {
                 calendarContainer.classList.toggle("d-none");
