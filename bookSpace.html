@@ -133,59 +133,13 @@
             margin-bottom: 0;
         }
 
-      button.save-searches{
+      button{
           padding: 7px 30px;
-      }
-
-        .calendar-container {
-            position: fixed;
-            display: flex;
-            top: 0;
-            left: 0;
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.4);
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
+    
         }
 
-        .calendar-image {
-            cursor: pointer;
-        }
 
-        .d-none {
-            display: none;
-        }
-
-        #cancel {
-            color: white;
-            font-size: 2rem;
-            justify-content: flex-end;
-            cursor: pointer;
-        }
-
-        .cancel-container {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            padding: 0.1rem 1.5rem;
-
-            border-radius: 5px;
-            transition: background-color 0.5s;
-        }
-
-        .cancel-container:hover {
-            background-color: rgba(0, 0, 0, 0.4)
-        }
-
-        #save {
-            padding: 0.5em 2em;
-            transition: background-color 1.5s;
-            cursor: pointer;
-
-        }
+       
 
         #save:hover {
             background-color: rgb(0, 50, 116);
@@ -206,6 +160,16 @@
         input#DATE1:focus, input#TIME1:focus{
             border: none;
             outline: none;
+        }
+
+        @media screen and (max-height:600px){
+            .park-container {
+
+position: absolute;
+width: 100%;
+top: 25vh;
+
+}
         }
         @media screen and (max-width: 1300px){
             div.park{
@@ -426,32 +390,8 @@
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
     <script>
-        window.onload = function () {
-            
-            const [calendarObj1, calendarObj2] = Array.from(document.getElementsByClassName("my-calendar")).map((element) => jsCalendar.new({ target: element, monthFormat: "month YYYY" }));
-            calendar1Image.addEventListener("click", () => {
-                calendarContainer.classList.toggle("d-none");
-                calendar1.classList.toggle("d-none");
-            });
-            calendar2Image.addEventListener("click", () => {
-                calendarContainer.classList.toggle("d-none");
-                calendar2.classList.toggle("d-none");
-            });
-            cancel.addEventListener("click", cancelFunction);
-            save.addEventListener("click", cancelFunction);
-
-        }
-
-        function cancelFunction() {
-            arr.forEach(element => {
-                if (!element.classList.contains("d-none")) {
-                    element.classList.toggle("d-none");
-                }
-            });
-
-        }
         var date = new Date();
             var day = date.getDate();
             var month = date.getMonth() + 1;
@@ -474,7 +414,11 @@
             document.getElementById("TIME2").defaultValue = displayTime;
     </script>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 </body>
 
 </html>
