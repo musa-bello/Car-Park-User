@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Book Space</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
         body {
             font-family: "Roboto", sans-serif;
         }
@@ -33,11 +36,11 @@
         }
 
         .park-container {
-            box-sizing: border-box;
+            box-sizing: content-box;
             position: fixed;
             width: 100%;
             top: 42.5%;
-            overflow: auto;
+            
 
         }
        
@@ -70,11 +73,13 @@
                 width: 10%;
             }
             div.item1{
+                margin-right: 5px;
                 width: 15%;
                 padding: 30px auto ;
                 justify-content: space-between;
             }
             div.item2{
+                margin-right: 10px;
                 width: 75%;
             }
             div#where-to-park{
@@ -135,7 +140,7 @@
         }
 
       button{
-          padding: 7px 30px;
+          padding: 6.5px;
     
         }
 
@@ -207,6 +212,26 @@ top: 25vh;
 
         }
         @media screen and (max-width: 700px) {
+            div#park-time{
+                display: flex;
+                border: none;
+                margin: 0;
+                padding: 0;
+            }
+            [time1], [time2]{
+                padding: 8px;
+                margin-top: 5px;
+                width: 100%;
+                border-radius:6px ;
+                border: 1px solid #C4C4C4;
+                height: inherit;
+            }
+            [arrow]{
+                border: none;
+            }
+            div.item1, div#where-to-park{
+                justify-content: start;
+            }
             .park-container {
                 top: 30%;
             }
@@ -346,7 +371,7 @@ top: 25vh;
                         </div>
                     </div>
                     <div id="park-time">
-                        <div class="d-flex mr-3 park-time-flex-child">
+                        <div class="d-flex mr-3 park-time-flex-child" time1>
                             <span class="mr-2">
                                 <img class="calendar-image"
                                     src="https://res.cloudinary.com/dqcsk8rsc/image/upload/v1572470481/calendar_1_mhhkfz.svg"
@@ -357,12 +382,12 @@ top: 25vh;
 
                             <p><input id="TIME1" type="time"></p>
                         </div>
-                        <div class="mr-3">
+                        <div class="mr-3" arrow>
                             <img id="arrow"
                                 src="https://res.cloudinary.com/dqcsk8rsc/image/upload/v1572470481/arrow_forward_gls3w1.svg"
                                 alt="">
                         </div>
-                        <div class="d-flex park-time-flex-child">
+                        <div class="d-flex park-time-flex-child" time2>
                             <span class="mr-2">
                                 <img class="calendar-image"
                                     src="https://res.cloudinary.com/dqcsk8rsc/image/upload/v1572470481/calendar_1_mhhkfz.svg"
@@ -381,15 +406,7 @@ top: 25vh;
         </div>
 
     </div>
-    <div class="calendar-container d-none">
-        <div class="cancel-container">
-            <span id="cancel">&times;</span>
-        </div>
-        <div class=" my-calendar d-none" id="calendar1"></div>
-        <div class=" my-calendar d-none" id="calendar2"></div>
-        <div><button class="save-searches" id="save">Save</button></div>
-    </div>
-
+    
 
     
     <script>
@@ -414,12 +431,12 @@ top: 25vh;
             document.getElementById("DATE2").min = today;
             document.getElementById("TIME2").defaultValue = displayTime;
     </script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script
+  <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
 </body>
 
 </html>
