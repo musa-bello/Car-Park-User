@@ -381,10 +381,10 @@ top: 25vh;
                                     src="https://res.cloudinary.com/dqcsk8rsc/image/upload/v1572470481/calendar_1_mhhkfz.svg"
                                     alt="">
                             </span>
-                            <p class="mr-2" id="date1"><input id="DATE1" type="date"></p>
+                            <p class="mr-2" id="date1"><input id="DATE1" type="date" placeholder="dd/mm/yyyy"></p>
 
 
-                            <p><input id="TIME1" type="time"></p>
+                            <p><input id="TIME1" type="time" placeholder="Set Time"></p>
                         </div>
                         <div class="mr-3" arrow>
                             <img id="arrow"
@@ -397,8 +397,8 @@ top: 25vh;
                                     src="https://res.cloudinary.com/dqcsk8rsc/image/upload/v1572470481/calendar_1_mhhkfz.svg"
                                     alt="">
                             </span>
-                            <p class="mr-2" id="date2"><input id="DATE2" type="date" name="" id=""></p>
-                            <p><input id="TIME2" type="time"></p>
+                            <p class="mr-2" id="date2"><input id="DATE2" type="date" name="" placeholder="dd/mm/yyyy"></p>
+                            <p><input id="TIME2" type="time" placeholder="Set Time"></p>
                         </div>
                     </div>
                 </div>
@@ -428,12 +428,9 @@ top: 25vh;
 
             var today = year + "-" + month + "-" + day;
             var displayTime = hour + ":" + min;
-            document.getElementById("DATE1").defaultValue = "dd/mm/yyyy";
+          
             document.getElementById("DATE1").min = today;
-            document.getElementById("TIME1").defaultValue = "Set Time";
-            document.getElementById("DATE2").defaultValue = "dd/mm/yyyy";
             document.getElementById("DATE2").min = today;
-            document.getElementById("TIME2").defaultValue ="Set Time";
     </script>
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
