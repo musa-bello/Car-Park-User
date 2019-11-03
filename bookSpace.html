@@ -33,8 +33,9 @@
         }
 
         .map {
-            width: 100%;
+            width: 100vw;
             height: 100vh;
+            min-height: 100vh;
         }
 
         .park-container {
@@ -427,12 +428,12 @@ top: 25vh;
 
             var today = year + "-" + month + "-" + day;
             var displayTime = hour + ":" + min;
-            document.getElementById("DATE1").defaultValue = today;
+            document.getElementById("DATE1").defaultValue = "dd/mm/yyyy";
             document.getElementById("DATE1").min = today;
-            document.getElementById("TIME1").defaultValue = displayTime;
-            document.getElementById("DATE2").defaultValue = today;
+            document.getElementById("TIME1").defaultValue = "Set Time";
+            document.getElementById("DATE2").defaultValue = "dd/mm/yyyy";
             document.getElementById("DATE2").min = today;
-            document.getElementById("TIME2").defaultValue = displayTime;
+            document.getElementById("TIME2").defaultValue ="Set Time";
     </script>
   <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
