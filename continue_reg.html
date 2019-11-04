@@ -46,6 +46,18 @@
             cursor:pointer;
         }
 
+    .form-check{
+        padding-left:2%;
+    }
+    .form-check-label{
+        margin-top:5px;
+    }
+    .form-check-input{
+        margin-top:10px;
+    }
+    .add-button{
+        width:40%;
+    }
     </style>
 </head>
 <body>
@@ -140,7 +152,27 @@
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="N2000">
                 </div>
               </form>
-        </div>    
+        </div>
+        <div class="form-check">
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">Car Park Facilities &nbsp; &nbsp;</label>
+                <label class="form-check-label" for="inlineCheckbox1">Security</label>
+                <input class="form-check-input form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="inlineCheckbox1">Value</label>
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label" for="inlineCheckbox1">CarPark</label>
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            </div>
+             <small id="emailHelp" class="mt-3 ml-1 form-text text-muted">By clicking oh the button you accept tthe terms of the carpark
+             </small>
+            <div class="text-center mt-5 ">
+                    <button class="btn btn-primary add-button text-center">Add Car Park</button>
+            </div>
+        </div>
     </div>
 </div>
     <script>
