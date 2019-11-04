@@ -1,3 +1,4 @@
+
 const signUpButton = document.getElementById("signUp");
 const signInButton = document.getElementById("signIn");
 const container = document.getElementById("container");
@@ -10,27 +11,33 @@ var signUpContainer=  document.getElementById("sign-up-container1");
 signUpButton.addEventListener("click", () => {
   container.classList.add("right-panel-active");
   signInContainer.style.display="none";
+  
 
 });
 
 signInButton.addEventListener("click", () => {
   container.classList.remove("right-panel-active");
   signInContainer.style.display="block";
+  
 });
 
 link1.addEventListener("click", function(){
   signInContainer.style.display="none";
   signUpContainer.style.display="block";
+  signUpContainer.style.transition="all 0.6s ease-in-out";
   signUpContainer.style.opacity="1";
   signUpContainer.style.width="100%";
-
+  
 });
 link2.addEventListener("click", function(){
-signUpContainer.style.display="none";
-signInContainer.style.display="block";
-signInContainer.style.opacity="1";
-signInContainer.style.width="100%";
+  signUpContainer.style.display="none";
+  signInContainer.style.display="block";
+  signInContainer.style.transition="all 0.6s ease-in-out";
+  signInContainer.style.opacity="1";
+  signInContainer.style.width="100%";
 });
+
+
 
 
 
