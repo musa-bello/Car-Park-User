@@ -7,8 +7,12 @@
     <title>Frequently Asked Questions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     
+
+
+
 
 
     <style>
@@ -121,8 +125,7 @@
         .myaccordion li+li {
             margin-bottom: 10px;
         }
-
-        /* FOOTER */
+        /*Footer */
         .footer {
         background: #3684eb;
         height: fit-content;
@@ -161,12 +164,12 @@
         line-height: 160%;
         color: #dbd6ed;
         }
-        hr {
-        width: 1100px;
+        .footer-hr{
+        /* width: 1100px; */
         margin-left: auto;
         margin-right: auto;
         margin-top: 100px;
-        border: 1px solid #1a73e8;
+        border: 1px solid #fff;
         }
         .footer-links {
         padding: 1em 3.5em 2em;
@@ -187,10 +190,30 @@
         }
 
 /*Footer Responsivenes*/
-
+@media (max-width: 375px) {
+     /*footer*/
+     .foot-brand {
+            width: 100px;
+         }
+         .foot1{
+            padding-left: 0rem;
+         }
+         .footer-links {
+            padding: 0 0 2em;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+         }
+         .footer-links a {
+            margin: 1em;
+         }
+         .mystyle {
+            margin-top: 130px !important;
+         }
+}
 @media (max-width: 990px) {
 
-            .foot1 {
+    .foot1 {
     padding-left: 1em;
     padding-top: 5em;
     margin-bottom: 2em;
@@ -217,6 +240,9 @@
     margin-top: 130px !important;
   }
 }
+
+
+
 
 
 
@@ -385,7 +411,7 @@
                 </h1>
                 <p class="foot-paragraph mb-4">
                   Download the carpark app today and find secure spaces to park your
-                  vehicles.
+                  vehicles .
                 </p>
                 <button class="btn btn-success my-2 my-sm-0 nav-btn foot-btn shadow-none" type="submit">
                   <div>
@@ -411,8 +437,8 @@
             <hr />
             <div class="footer-links">
                 <a href="index.html">
-                    <img class="foot-brand "
-                      src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"           
+                    <img class="foot-brand"
+                    src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"           
                       alt="Logo"
                     />
                   </a>
