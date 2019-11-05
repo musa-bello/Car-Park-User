@@ -21,6 +21,7 @@ body {
 /* NAVBAR */
 .navbar {
   padding: 0;
+  background: #fafafa;
 }
 .nav-link {
   color: #11092cb3 !important;
