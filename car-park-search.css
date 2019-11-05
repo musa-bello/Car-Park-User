@@ -5,9 +5,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-.datetimepicker .form-control {
-  background: #fff;
-}
 html,
 body {
   background: rgba(77, 158, 246, 0.4);
@@ -19,7 +16,7 @@ body {
 }
 .search-bar {
   /* background: white; */
-  padding: 0;
+  padding: 10px 0;
   max-width: 1200px;
   margin-left: 240px;
   margin-right: auto;
@@ -27,13 +24,54 @@ body {
 }
 .form-group {
   width: 730px;
+  margin-bottom: 0;
+  background: #fff;
+}
+.formGroup {
+  display: flex;
 }
 input[type="text"] {
   border-radius: 0;
+  border: none;
+  width: 350px;
+  height: 50px;
+  padding: 0 15px;
+  outline: none !important;
 }
-.btn-primary {
+input[type="text"]:active:focus {
+  background-color: transparent;
+}
+::placeholder {
+  padding-left: 2em;
+  font-size: 15px;
+}
+.input[value="12/31/2017 - 01/31/2018"] {
+  padding-left: 2em;
+  font-size: 2px;
+}
+.datetimerange .search {
   position: relative;
-  left: 4em;
+  margin: 0 auto;
+  text-align: center;
+}
+.search i {
+  position: absolute;
+  top: 5em;
+  left: 43%;
+  font-size: 18px;
+  color: #1a73e8;
+}
+.search-btn {
+  width: 101px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 5px;
+  background: #1a73e8;
+  box-shadow: 0px 2px 4px rgba(26, 115, 232, 0.16);
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
 }
 .container-fluid {
   padding: 0;
@@ -68,27 +106,33 @@ small {
 .form-control-select {
   width: 70%;
 }
-.btn-primary {
-  position: relative;
+.book-now {
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: middle;
-  top: 4.1em;
-  left: -4.7em;
-  height: 40px;
-  background: #1a73e8 !important;
-  box-shadow: 0px 2px 4px rgba(26, 115, 232, 0.16);
-  border-radius: 5px;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
   color: white;
+  padding: 0.5em 1.5em;
+  margin-top: 4.2em;
+  margin-left: -4.7em;
+  height: 40px;
+  background: #1a73e8 !important;
+  box-shadow: 0px 2px 4px rgba(26, 115, 232, 0.16);
+  border-radius: 5px;
+  border: none;
 }
 .btn:active:focus:hover {
   outline: none !important;
   box-shadow: none !important;
   border: none;
+}
+.vl {
+  color: #666;
+  margin: 0 15px;
+  font-weight: 100;
 }
 .location {
   display: grid;
@@ -124,17 +168,6 @@ small {
   text-decoration: none;
   color: #1350a0;
 }
-/* .vl {
-  border-left: 6px solid green;
-  height: 50px;
-} */
-/* #hr2 {
-  width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  border: 1px solid #fff;
-} */
 
 /* FOOTER */
 .footer {
@@ -218,7 +251,8 @@ a:hover {
   transition: 0.6s ease-in-out;
 }
 /* BUTTONS */
-.btn-success:hover {
+.btn-success:hover,
+.btn-primary:hover {
   background: #1350a0;
   border: none;
   color: #fff;
@@ -255,5 +289,66 @@ a:hover {
   }
   .mystyle {
     margin-top: 130px !important;
+  }
+  .search-bar {
+    padding: 10px 0;
+    max-width: 1200px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  input[type="text"] {
+    width: 300px;
+  }
+  .loc-text {
+    padding: 0 20px;
+  }
+  .loc-text p {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .loc-text small {
+    font-size: 10px;
+    line-height: 8px;
+    font-weight: 200;
+  }
+  .loc-info p {
+    font-size: 15px;
+  }
+  .book-now {
+    font-size: 10px;
+    line-height: 12px;
+    color: white;
+    padding: 0.5em 1.5em;
+    margin-top: 12px;
+    margin-left: 0;
+    height: 30px;
+  }
+  .vl {
+    margin: 0 5px;
+  }
+  .column5 {
+    padding-top: 20px;
+    padding-right: 30px;
+    width: 100%;
+  }
+  .first-part {
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .first-part-text {
+    /* width: 90em; */
+    margin: 0 0.1em;
+  }
+  .form-control-select {
+    width: 100%;
+  }
+  #hr2 {
+    width: 350px;
+    margin-left: 0;
+    margin-top: 0;
   }
 }

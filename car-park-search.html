@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Car Park Search</title>
 
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"
-    />
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
+    <!-- CSS -->
+<!--  -->
 
     <link rel="stylesheet" href="car-park-search.css" />
   </head>
@@ -54,38 +56,14 @@
     </nav>
 
     <div class="container search-bar my-2">
-      <div class="form-group">
-        <div class="input-group datetimepicker">
-            <!-- <div class="input-group">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="">First and last name</span>
-                </div>
-                <input type="text" class="form-control">
-                <input type="text" class="form-control">
-              </div> -->
-          <input
-            type="text"
-            class="search form-control"
-            placeholder="Lekki Gardens"
-          />
-          <span class="fa fa-calendar"></span>
-          <input
-            type="text"
-            class="form-control"
-            placeholder="10/11/2019  11:10pm"
-          />
-          <input
-            type="text"
-            class="form-control"
-            placeholder="10/11/2019  11:10pm"
-          />
-        
-          <!-- <span class="input-group-addon">
-            <span class="fa fa-calendar"></span>
-          </span> -->          
-        </div>
+      <div class="form-group formGroup">          
+            <input type="text" name="search" placeholder="Lekki Gardens" />
+            <div class="search">                
+                <span><i class="fa fa-calendar"></i></span>
+                <input type="text" class="datetimerange"  value="12/31/2017 - 01/31/2018">
+            </div>                
       </div>
-      <button type="button" class="btn btn-primary">Search</button>
+      <button type="button" class="btn btn-primary search-btn">Search</button>
     </div>
 
     <div class="container-fluid">
@@ -118,7 +96,7 @@
               <div class="loc-text">
                 <p>Palms Mall Parking Lot</p>
                 <small>3km away</small>
-                <button type="button" class="btn btn-primary">₦200  |  Book now</button>
+                <button type="button" class="btn btn-primary book-now">₦200 <span class="vl">|</span> Book now</button>
               </div>
               
               <div class="loc-info grid-item">
@@ -133,7 +111,7 @@
                   <div class="loc-text">
                     <p>Civic Towers Car Park</p>
                     <small>2km away</small>
-                    <button type="button" class="btn btn-primary">₦200  |  Book now</button>
+                    <button type="button" class="btn btn-primary book-now">₦200 <span class="vl">|</span> Book now</button>
                   </div>
                   
                   <div class="loc-info grid-item">
@@ -148,7 +126,7 @@
                   <div class="loc-text">
                     <p>Zenith Bank Car Park</p>
                     <small>1km away</small>
-                    <button type="button" class="btn btn-primary">₦200  |  Book now</button>
+                    <button type="button" class="btn btn-primary book-now">₦200<span class="vl">|</span>Book now</button>
                   </div>
                   
                   <div class="loc-info grid-item">
@@ -163,7 +141,7 @@
                   <div class="loc-text">
                     <p>Deloitte Car Park</p>
                     <small>3km away</small>
-                    <button type="button" class="btn btn-primary">₦200  |  Book now</button>
+                    <button type="button" class="btn btn-primary book-now">₦200 <span class="vl">|</span> Book now</button>
                   </div>
                   
                   <div class="loc-info grid-item">
@@ -178,7 +156,7 @@
                   <div class="loc-text">
                     <p>Regus Parking</p>
                     <small>2km away</small>
-                    <button type="button" class="btn btn-primary">₦200  |  Book now</button>
+                    <button type="button" class="btn btn-primary book-now">₦200 <span class="vl">|</span> Book now</button>
                   </div>
                   
                   <div class="loc-info grid-item">
@@ -193,7 +171,7 @@
                   <div class="loc-text">
                     <p>National Industrial Car Park</p>
                     <small>3km away</small>
-                    <button type="button" class="btn btn-primary">₦200  |  Book now</button>
+                    <button type="button" class="btn btn-primary book-now">₦200<span class="vl">|</span> Book now</button>
                   </div>                  
                   <div class="loc-info grid-item">
                     <p>12 spots</p>
@@ -284,8 +262,7 @@
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/locale/nl.js"></script>
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -296,39 +273,38 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
+    <!-- JS -->
+<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script> -->
+<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script> -->
+   
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <!-- <script>
+    $(function() {
+  $('input[name="datetimes"]').daterangepicker({
+    timePicker: true,
+    startDate: moment().startOf('hour'),
+    endDate: moment().startOf('hour').add(32, 'hour'),
+    locale: {
+      format: 'M/DD hh:mm A'
+    }
+  });
+});
+    </script> -->
     <script>
-      var defaults = {
-        calendarWeeks: true,
-        showClear: true,
-        showClose: true,
-        allowInputToggle: true,
-        useCurrent: false,
-        ignoreReadonly: true,
-        minDate: new Date(),
-        toolbarPlacement: "top",
-        locale: "nl",
-        icons: {
-          time: "fa fa-clock-o",
-          date: "fa fa-calendar",
-          up: "fa fa-angle-up",
-          down: "fa fa-angle-down",
-          previous: "fa fa-angle-left",
-          next: "fa fa-angle-right",
-          today: "fa fa-dot-circle-o",
-          clear: "fa fa-trash",
-          close: "fa fa-times"
-        }
-      };
-
-      $(function() {
-        var optionsDatetime = $.extend({}, defaults, {
-          format: "DD-MM-YYYY HH:mm"
+        $(function() {   
+           $('.datetimerange').daterangepicker({
+                timePicker: true,
+                timePickerIncrement: 30,
+                locale: {
+                    format: 'MM/DD/YYYY  h:mm A'
+                }
+            });
         });
-
-        $(".datetimepicker").datetimepicker(optionsDatetime);
-      });
-    </script>
+        </script>
   </body>
 </html>
