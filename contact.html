@@ -9,17 +9,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <link rel="stylesheet" href="landing_page.css" /> -->
+
 
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins');
+
         body {
+            overflow-x: hidden;
+            width: 100%;
             box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
             margin: 0;
             padding: 0;
         }
 
+        .top-nav-collapse {
+            background-color: #fff;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+
+        nav {
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+        }
+
+        
+
         .wrapper,
         .contact {
-            padding-top: 4rem;
+            padding-top: 5rem;
         }
 
         .wrapper h1,
@@ -61,11 +83,7 @@
             float: right;
             padding: .2rem 2rem;
         }
-
-        footer {
-            background: #3684eb;
-        }
-
+        
         .title {
             font-size: 1.5rem;
             color: #fff;
@@ -80,122 +98,8 @@
             padding-left: 10rem;
         }
 
-        .foot-paragraph {
-            font-size: 1rem;
-            color: #fff;
-            padding: .5rem 0 1rem;
-        }
+       
 
-        .btn-light {
-            border-radius: 30px;
-            color: #3684eb;
-        }
-
-        .eclipse2 {
-            background: #1a73e8;
-            width: 18rem;
-            margin: 5rem 0;
-            height: 20rem;
-            border-radius: 50%;
-        }
-
-        .hero-img {
-            height: 150%;
-            margin-top: -20%;
-            margin-left: 6%;
-            /* box-shadow: 0px 4px 25px rgba(81, 76, 101, 0.1); */
-        }
-
-        .hero-img {
-            -webkit-animation: float 2s infinite alternate;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% {
-                /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
-                transform: translatey(0px);
-            }
-
-            50% {
-                /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
-                transform: translatey(-40px);
-            }
-
-            100% {
-                /* box-shadow: 0 5px 15px 0px rgba(207, 207, 207, 0.6); */
-                transform: translatey(0px);
-            }
-        }
-
-        hr {
-            width: 90%;
-            margin-top: 2rem;
-            border: 1px solid #fff;
-        }
-
-        .footer-links li {
-            list-style: none;
-            display: inline-block;
-            padding: 0 3rem;
-        }
-
-        .footer-links li:last-child {
-            float: right;
-        }
-
-        .footer-links li:first-child {
-            float: left;
-        }
-
-        .footer-links a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        @media (max-width: 1280px) {
-            .left {
-                padding-right: 3rem;
-                padding-top: 10rem;
-            }
-
-            .right {
-                padding-left: 8rem;
-                padding-top: 4rem;
-            }
-        }
-
-        @media (max-width: 980px) {
-            .left {
-                padding-right: 3rem;
-                padding-top: 8rem;
-            }
-
-            .right {
-                padding-left: 6rem;
-                padding-top: 3rem;
-            }
-
-            .wrapper {
-                letter-spacing: 0;
-                padding-left: 1rem;
-            }
-        }
-
-        @media (max-width: 880px) {
-            .left {
-                padding-right: 2rem;
-                padding-top: 5rem;
-            }
-
-            .right {
-                padding-left: 6rem;
-                padding-top: 2rem;
-            }
-
-            .footer-links li {
-                padding: 0 1rem;
-            }
 
             .wrapper {
                 letter-spacing: 0;
@@ -226,14 +130,12 @@
                 padding-top: 2rem;
             }
 
-            .footer-links li {
-                padding: 0 1rem;
-            }
+          
         }
 
         @media (max-width: 680px) {
             .left {
-                padding:0 2rem;
+                padding: 0 2rem;
                 padding-top: 5rem;
                 padding-bottom: 3rem;
             }
@@ -247,21 +149,19 @@
             }
 
             .wrapper {
-                padding: 2rem 1rem 0;
+                padding: 3rem 1rem 0;
             }
 
             .contact {
                 padding-top: 2rem;
             }
 
-            .footer-links li {
-                padding: 0 1rem;
-            }
+           
         }
 
         @media (max-width: 480px) {
             .left {
-                padding:0 2rem;
+                padding: 0 2rem;
                 padding-top: 3rem;
             }
 
@@ -274,7 +174,7 @@
             }
 
             .wrapper {
-                padding: 2rem 1rem 0;
+                padding: 3rem 1rem 0;
             }
 
             .contact {
@@ -291,13 +191,11 @@
                 padding-left: 2rem;
                 padding-top: 3rem;
             }
-
+            .foot1{
+                padding-left: 1.8rem;
+            }
             .right {
                 display: none;
-            }
-
-            .footer-links li:last-child {
-                float: left;
             }
 
             .btn {
@@ -323,18 +221,256 @@
             }
 
             .wrapper {
-                padding: 2rem 1rem 0 1rem;
+                padding: 3rem 1rem 0 1rem;
             }
 
             .contact {
                 padding: 1rem;
             }
+
+            
         }
+        /* FOOTER */
+.footer {
+  background: #3684eb;
+  height: fit-content;
+  
+  margin-top: 560px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.eclipse2 {
+  background: #1a73e8;
+  width: 400px;
+  height: 400px;
+  margin-left: 73px;
+  margin-top: 6em;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.foot1 {
+  padding-left: 7.5rem;
+  padding-top: 5rem;
+}
+.nav-btn {
+  width: 163px;
+  height: 44px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+.foot-btn {
+  background: white;
+  color: #3684eb;
+  border: none;
+}
+.foot-one {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 130%;
+  color: #ffffff;
+}
+.foot-paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #dbd6ed;
+}
+hr.footer {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  border: 1px solid #fff;
+}
+.footer-links {
+  padding: 1em 3.5em 2em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-links a {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 160%;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+a:hover {
+  color: #f8d373;
+  transition: 0.6s ease-in-out;
+}
+.hero {
+  margin-top: 8em;
+}
+.h-five {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 160%;
+  color: #ffc408;
+}
+.h-one {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 130%;
+  color: #11092c;
+  margin: 20px 0;
+}
+.paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #514c65;
+}
+.hero-btn {
+  background: #3684eb;
+  border: none;
+  color: #e6effb;
+}
+.eclipse {
+  width: 400px;
+  height: 400px;
+  margin-left: 73px;
+  margin-top: 44px;
+  background: #f7f4ef;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.hero-dots {
+  margin-left: 25em;
+  margin-top: -12em;
+  z-index: -1;
+  position: relative;
+  opacity: 0.5;
+}
+
+
+  .hero-img {
+  height: auto;
+  margin-top: -18%;
+  margin-left: 12%;
+  -webkit-animation: float 2s infinite alternate;
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+  50% {
+    /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+    transform: translatey(-20px);
+  }
+  100% {
+    /* box-shadow: 0 5px 15px 0px rgba(207, 207, 207, 0.6); */
+    transform: translatey(0px);
+  }
+}
+.blockquote-footer {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #11092c;
+}
+.blockquote-footer::before {
+  content: " ";
+}
+@media (max-width: 990px) {
+  .navbar-toggler {
+    margin-right: 1em;
+  }
+  .navbar-brand {
+    margin-left: 1em;
+  }
+  .eclipse,
+  .eclipse2 {
+    margin: auto;
+    width: 300px;
+    padding-right: 15px;
+    padding-left: 45px;
+  }
+  .hero-img,
+  .hero-dots {
+    height: -webkit-fill-available;
+    margin: auto;
+  }
+  .hero {
+    padding-top: 6em !important;
+  }
+  .hero2 {
+    padding-top: 2em;
+  }
+  .foot1 {
+    
+    padding-top: 4em;
+    margin-bottom: 2em;
+  }
+  hr.footer {
+    width: 350px;
+    margin-left: 0;
+  }
+  .foot-brand {
+    width: 100px;
+  }
+  .footer-links {
+    padding: 0 0 2em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-links a {
+    margin: 1em;
+  }
+  
+}
+       
     </style>
 </head>
 
 <body>
+    <div class="mt-5">
+        <nav class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="http://3.86.112.219:8000/logo.svg"
+                        alt="Car Park logo"></a>
+                <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link text-dark" href="#">My Parking Space</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Schedule</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Femi
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </div>
     <div class="container-fluid">
+
         <div class="row bt-padding">
             <div class="col-md-6 ">
                 <div class="wrapper">
@@ -419,47 +555,80 @@
             </div>
         </div>
     </div>
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 left">
-                <h1 class="title">
-                    Finding a parking space should be easy, convenient and not
-                    stressful.
-                </h1>
-                <p class="foot-paragraph">
-                    Download the carpark app today and find secure spaces to park your
-                    vehicles.
-                </p>
-                <button class="btn btn-light" type="submit">
-                    <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg" width="20"
-                        alt="Google Playstore">
-                    Download App
-                </button>
+ <!--Footer-->
+ <<footer class="footer mt-5">
+        <div class="row ">
+          <div class="col-sm-12 col-md-6 align-self-center hero1 foot1">
+            <h1 class="foot-one">
+              Finding a parking space should be easy, convenient and not
+              stressful.
+            </h1>
+            <p class="foot-paragraph mb-4">
+              Download the carpark app today and find secure spaces to park your
+              vehicles .
+            </p>
+            <button class="btn btn-success my-2 my-sm-0 nav-btn foot-btn shadow-none" type="submit">
+              <div>
+                <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
+                  alt="Google Playstore" />
+                Download App
+              </div>
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-6 hero2 d-none d-md-block d-xl-block">
+            <div>
+              <div class="eclipse2">
+                <img class="hero-img img-fluid"
+                  src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
+                  alt="Android Phone" />
+              </div>
+              <img class="hero-dots"
+                src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572276314/Car%20Park/Group_31_dlt1bx.svg"
+                alt="dots" />
             </div>
-            <div class="col-md-6 right">
-                <div class="eclipse2">
-                    <img class="hero-img"
-                        src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
-                        alt="Android Phone">
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <hr>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="index.html" style="font-size: 20px; letter-spacing: 2px;"> CarP<span><i
-                                        class="fas fa-map-marker-alt"
-                                        style="font-size: 16px; color: #ffc107;"></i></span>rk</li>
-                        <li><a href="termsOfService.html">Service <br> Agreement</a></li>
-                        <li><a href="termsOfService.html">Privacy <br> Policy</a></li>
-                        <li><a href="#">ⒸHNG Internship, 2019 </a></li>
-                    </ul>
-                </div>
-            </div>
+        <hr class="footer" />
+        <div class="footer-links container pr-3 pl-3">
+            <a href="index.html">
+                <img class="foot-brand"
+                src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"           
+                  alt="Logo"
+                />
+              </a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="partner.html">Become a Partner</a>
+          <a href="http://car-park.ga">Admin</a>
+          <a href="support.html">Support</a>
+          <a href="termsOfService.html">Service Agreement</a>
+          <a href="termsOfService.html">Privacy Policy</a>
+          <a href="">&#9400;HNG Internship, 2019 </a>
         </div>
-    </footer>
+      </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200
+        });
+        var SCROLLING_NAVBAR_OFFSET_TOP = 50;
+        $(window).on("scroll", function () {
+            var $navbar = $(".navbar");
+
+            if ($navbar.length) {
+                if ($navbar.offset().top > SCROLLING_NAVBAR_OFFSET_TOP) {
+                    $(".scrolling-navbar").addClass("top-nav-collapse");
+                } else {
+                    $(".scrolling-navbar").removeClass("top-nav-collapse");
+                }
+            }
+        });
+
+
+    </script>
 </body>
 
 </html>
