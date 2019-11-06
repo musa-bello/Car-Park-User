@@ -16,7 +16,6 @@ body {
 }
 
 .daterangepicker {
-  /* top: -5em !important; */
   display: none;
 }
 .search-bar {
@@ -29,7 +28,6 @@ body {
 .form-group {
   width: 730px;
   margin-bottom: 0;
-  /* background: #fff; */
   display: flex;
 }
 input[type="text"] {
@@ -54,14 +52,15 @@ input[type="text"]:active:focus {
   width: 400px !important;
   padding: 0 0 0 55px;
 }
-.datetimerange .search {
-  position: relative;
-  margin: 0 auto;
-  text-align: center;
-}
 .btn-success {
   color: #fff;
-  background-color: #1a73e8;
+  background-color: #1a73e8 !important;
+  border-color: #1a73e8;
+}
+.btn-success:disabled {
+  color: #fff;
+  background-color: #1a73e8 !important;
+  border-color: #1a73e8;
 }
 .search i {
   position: absolute;
@@ -285,6 +284,8 @@ a:hover {
   box-shadow: none !important;
   background: #1350a0 !important;
 }
+
+/* RESPONSIVENESS */
 
 @media (max-width: 990px) {
   .foot1 {
