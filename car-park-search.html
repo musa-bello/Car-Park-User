@@ -7,7 +7,11 @@
     <title>Car Park Search</title>
 
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" /> -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -16,7 +20,7 @@
     />
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
     <!-- CSS -->
-<!--  -->
+    <!--  -->
 
     <link rel="stylesheet" href="car-park-search.css" />
   </head>
@@ -55,18 +59,29 @@
       </div>
     </nav>
 
-    <div class="container search-bar my-2">
-      <div class="form-group formGroup">          
-            <input type="text" name="search" placeholder="Lekki Gardens" />
-            <div class="search">                
-                <span><i class="fa fa-calendar"></i></span>
-                <input type="text" class="datetimerange"  value="12/31/2017 - 01/31/2018">
-            </div>                
+    <div class="container-fluid section-search">
+      <div class="container search-bar mt-2">
+        <div class="form-group formGroup">
+          <input type="text" name="search" placeholder="Lekki Gardens" />
+          <div class="search">
+            <span><i class="fa fa-calendar"></i></span>
+            <input
+              type="text"
+              class="datetimerange"
+              value="12/31/2017 - 01/31/2018"
+            />
+          </div>
+        </div>
       </div>
-      <button type="button" class="btn btn-primary search-btn">Search</button>
+        <div class="search-btn">
+          <button type="button" class="btn btn-primary search-btn">
+            Search
+          </button>
+        </div>
+      </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid section-list">
       <div class="row">
         <div class="col-sm-12 col-md-5 column5">
           <div class="first-part">
@@ -91,92 +106,122 @@
           <div class="div">
             <div class="location loc1">
               <div class="loc-image">
-                <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572964741/Car%20Park/Rectangle_4667_eenlzr.png" alt="Parking space">
+                <img
+                  src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572964741/Car%20Park/Rectangle_4667_eenlzr.png"
+                  alt="Parking space"
+                />
               </div>
               <div class="loc-text">
                 <p>Palms Mall Parking Lot</p>
                 <small>3km away</small>
-                <button type="button" class="btn btn-primary book-now">₦200 <span class="vl">|</span> Book now</button>
+                <button type="button" class="btn btn-primary book-now">
+                  ₦200 <span class="vl">|</span> Book now
+                </button>
               </div>
-              
+
               <div class="loc-info grid-item">
                 <p>12 spots</p>
                 <a href="#">Details</a>
               </div>
             </div>
             <div class="location loc2">
-                <div class="loc-image">
-                    <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572964752/Car%20Park/Rectangle_4667_1_pcfar5.png" alt="Parking space">
-                  </div>
-                  <div class="loc-text">
-                    <p>Civic Towers Car Park</p>
-                    <small>2km away</small>
-                    <button type="button" class="btn btn-primary book-now">₦200 <span class="vl">|</span> Book now</button>
-                  </div>
-                  
-                  <div class="loc-info grid-item">
-                    <p>12 spots</p>
-                    <a href="#">Details</a>
-                  </div>
+              <div class="loc-image">
+                <img
+                  src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572964752/Car%20Park/Rectangle_4667_1_pcfar5.png"
+                  alt="Parking space"
+                />
+              </div>
+              <div class="loc-text">
+                <p>Civic Towers Car Park</p>
+                <small>2km away</small>
+                <button type="button" class="btn btn-primary book-now">
+                  ₦200 <span class="vl">|</span> Book now
+                </button>
+              </div>
+
+              <div class="loc-info grid-item">
+                <p>12 spots</p>
+                <a href="#">Details</a>
+              </div>
             </div>
             <div class="location loc3">
-                <div class="loc-image">
-                    <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572964751/Car%20Park/Rectangle_4667_2_wefu5k.png" alt="Parking space">
-                  </div>
-                  <div class="loc-text">
-                    <p>Zenith Bank Car Park</p>
-                    <small>1km away</small>
-                    <button type="button" class="btn btn-primary book-now">₦200<span class="vl">|</span>Book now</button>
-                  </div>
-                  
-                  <div class="loc-info grid-item">
-                    <p>12 spots</p>
-                    <a href="#">Details</a>
-                  </div>
+              <div class="loc-image">
+                <img
+                  src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572964751/Car%20Park/Rectangle_4667_2_wefu5k.png"
+                  alt="Parking space"
+                />
+              </div>
+              <div class="loc-text">
+                <p>Zenith Bank Car Park</p>
+                <small>1km away</small>
+                <button type="button" class="btn btn-primary book-now">
+                  ₦200<span class="vl">|</span>Book now
+                </button>
+              </div>
+
+              <div class="loc-info grid-item">
+                <p>12 spots</p>
+                <a href="#">Details</a>
+              </div>
             </div>
             <div class="location loc4">
-                <div class="loc-image">
-                    <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572964749/Car%20Park/Rectangle_4667_3_nbba9e.png" alt="Parking space">
-                  </div>
-                  <div class="loc-text">
-                    <p>Deloitte Car Park</p>
-                    <small>3km away</small>
-                    <button type="button" class="btn btn-primary book-now">₦200 <span class="vl">|</span> Book now</button>
-                  </div>
-                  
-                  <div class="loc-info grid-item">
-                    <p>12 spots</p>
-                    <a href="#">Details</a>
-                  </div>
+              <div class="loc-image">
+                <img
+                  src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572964749/Car%20Park/Rectangle_4667_3_nbba9e.png"
+                  alt="Parking space"
+                />
+              </div>
+              <div class="loc-text">
+                <p>Deloitte Car Park</p>
+                <small>3km away</small>
+                <button type="button" class="btn btn-primary book-now">
+                  ₦200 <span class="vl">|</span> Book now
+                </button>
+              </div>
+
+              <div class="loc-info grid-item">
+                <p>12 spots</p>
+                <a href="#">Details</a>
+              </div>
             </div>
             <div class="location loc5">
-                <div class="loc-image">
-                    <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572964741/Car%20Park/Rectangle_4667_4_jivyz0.png" alt="Parking space">
-                  </div>
-                  <div class="loc-text">
-                    <p>Regus Parking</p>
-                    <small>2km away</small>
-                    <button type="button" class="btn btn-primary book-now">₦200 <span class="vl">|</span> Book now</button>
-                  </div>
-                  
-                  <div class="loc-info grid-item">
-                    <p>12 spots</p>
-                    <a href="#">Details</a>
-                  </div>
+              <div class="loc-image">
+                <img
+                  src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572964741/Car%20Park/Rectangle_4667_4_jivyz0.png"
+                  alt="Parking space"
+                />
+              </div>
+              <div class="loc-text">
+                <p>Regus Parking</p>
+                <small>2km away</small>
+                <button type="button" class="btn btn-primary book-now">
+                  ₦200 <span class="vl">|</span> Book now
+                </button>
+              </div>
+
+              <div class="loc-info grid-item">
+                <p>12 spots</p>
+                <a href="#">Details</a>
+              </div>
             </div>
             <div class="location loc6">
-                <div class="loc-image">
-                    <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572964736/Car%20Park/Rectangle_4667_5_titvz2.png" alt="Parking space">
-                  </div>
-                  <div class="loc-text">
-                    <p>National Industrial Car Park</p>
-                    <small>3km away</small>
-                    <button type="button" class="btn btn-primary book-now">₦200<span class="vl">|</span> Book now</button>
-                  </div>                  
-                  <div class="loc-info grid-item">
-                    <p>12 spots</p>
-                    <a href="#">Details</a>
-                  </div>
+              <div class="loc-image">
+                <img
+                  src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572964736/Car%20Park/Rectangle_4667_5_titvz2.png"
+                  alt="Parking space"
+                />
+              </div>
+              <div class="loc-text">
+                <p>National Industrial Car Park</p>
+                <small>3km away</small>
+                <button type="button" class="btn btn-primary book-now">
+                  ₦200<span class="vl">|</span> Book now
+                </button>
+              </div>
+              <div class="loc-info grid-item">
+                <p>12 spots</p>
+                <a href="#">Details</a>
+              </div>
             </div>
           </div>
         </div>
@@ -274,37 +319,24 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- JS -->
-<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script> -->
-<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script> -->
-   
- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-
-    <!-- <script>
-    $(function() {
-  $('input[name="datetimes"]').daterangepicker({
-    timePicker: true,
-    startDate: moment().startOf('hour'),
-    endDate: moment().startOf('hour').add(32, 'hour'),
-    locale: {
-      format: 'M/DD hh:mm A'
-    }
-  });
-});
-    </script> -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
     <script>
-        $(function() {   
-           $('.datetimerange').daterangepicker({
-                timePicker: true,
-                timePickerIncrement: 30,
-                locale: {
-                    format: 'MM/DD/YYYY  h:mm A'
-                }
-            });
+      $(function() {
+        $(".datetimerange").daterangepicker({
+          timePicker: true,
+          timePickerIncrement: 1,
+          locale: {
+            format: "MM/DD/YYYY  h:mm A"
+          }
         });
-        </script>
+      });
+    </script>
   </body>
 </html>

@@ -7,15 +7,18 @@
 }
 html,
 body {
-  background: rgba(77, 158, 246, 0.4);
+  background: white;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   width: 100%;
   margin: 0px;
   padding: 0px;
 }
+.daterangepicker {
+  /* top: -5em !important; */
+  display: none;
+}
 .search-bar {
-  /* background: white; */
   padding: 10px 0;
   max-width: 1200px;
   margin-left: 240px;
@@ -26,8 +29,6 @@ body {
   width: 730px;
   margin-bottom: 0;
   background: #fff;
-}
-.formGroup {
   display: flex;
 }
 input[type="text"] {
@@ -44,10 +45,6 @@ input[type="text"]:active:focus {
 ::placeholder {
   padding-left: 2em;
   font-size: 15px;
-}
-.input[value="12/31/2017 - 01/31/2018"] {
-  padding-left: 2em;
-  font-size: 2px;
 }
 .datetimerange .search {
   position: relative;
@@ -73,7 +70,10 @@ input[type="text"]:active:focus {
   line-height: 24px;
   color: #ffffff;
 }
-.container-fluid {
+.section-search {
+  background: rgba(77, 158, 246, 0.4);
+}
+.section-list {
   padding: 0;
   background: white;
 }
@@ -133,6 +133,10 @@ small {
   color: #666;
   margin: 0 15px;
   font-weight: 100;
+}
+.div {
+  overflow-y: scroll;
+  height: 700px;
 }
 .location {
   display: grid;
@@ -293,11 +297,22 @@ a:hover {
   .search-bar {
     padding: 10px 0;
     max-width: 1200px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .search-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form-group {
+    display: block;
   }
   input[type="text"] {
-    width: 300px;
+    width: 100px;
+  }
+  input[type="text"] {
+    width: 330px;
   }
   .loc-text {
     padding: 0 20px;
@@ -343,6 +358,13 @@ a:hover {
     /* width: 90em; */
     margin: 0 0.1em;
   }
+  .div {
+    height: fit-content;
+    overflow-y: auto;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
   .form-control-select {
     width: 100%;
   }
@@ -350,5 +372,9 @@ a:hover {
     width: 350px;
     margin-left: 0;
     margin-top: 0;
+    display: none;
+  }
+  .form-group {
+    width: 100px;
   }
 }
