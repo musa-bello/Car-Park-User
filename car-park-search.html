@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="car-park-search.css" />
   </head>
   <body>
+ 
+
     <nav class="navbar navbar-expand-sm navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -51,9 +53,14 @@
             <li class="nav-item">
               <a class="nav-link text-dark" href="bookSpace.html">Schedule</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link text-dark" href="#">Femi</a>
-            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Femi
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+              </li>
           </ul>
         </div>
       </div>
@@ -62,20 +69,20 @@
     <div class="container-fluid section-search">
       <div class="container search-bar mt-2">
         <div class="form-group">
-          <input type="text" name="search" placeholder="Lekki Gardens" />
+          <input type="text" class="search-input" placeholder="Lekki Gardens" />
           <div class="search">
             <span><i class="fa fa-calendar"></i></span>
             <input
               type="text"
-              class="datetimerange"
+              class="datetimerange range"
               value="12/31/2017 - 01/31/2018"
             />
           </div>
-         
+          <button type="button" class="btn btn-primary search-btn">
+              Search
+            </button>
         </div>
-        <button type="button" class="btn btn-primary search-btn">
-            Search
-          </button>
+       
       </div>
       </div>
     </div>
@@ -225,6 +232,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-7 columnMap">
+           
           <iframe
             class="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.45932584812!2d3.143870842679279!3d6.548376811897792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1572273126205!5m2!1sen!2sng"
@@ -297,6 +305,7 @@
         <a href="">&#9400;HNG Internship, 2019 </a>
       </div>
     </footer>
+
     <script
       src="https://kit.fontawesome.com/2534cfc66b.js"
       crossorigin="anonymous"
@@ -322,10 +331,15 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
     ></script>
-    <script
+    <!-- <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
-    ></script>
+    ></script> -->
+
+      <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+
     <script>
       $(function() {
         $(".datetimerange").daterangepicker({
@@ -336,6 +350,7 @@
           }
         });
       });
+
     </script>
   </body>
 </html>
