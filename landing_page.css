@@ -141,7 +141,15 @@ ul {
 .sect2 {
   padding: 0 5em 0 0;
 }
-
+/* SECTION 3 */
+.fa-car,
+.fa-parking,
+.fa-cc-amazon-pay {
+  font-size: 40px;
+  margin-left: -0.01em;
+  margin-top: 0.9em;
+  color: #3684eb;
+}
 /* SECTION 4 */
 .card {
   border: none;
@@ -359,7 +367,7 @@ a:hover {
   .sect2 {
     padding: 15px !important;
   }
-  
+
   .section4 {
     margin-top: 0;
   }
