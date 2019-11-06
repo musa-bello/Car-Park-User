@@ -8,6 +8,7 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
+
 }
 .mt-5 {
   margin-top: 8em !important;
@@ -244,7 +245,7 @@ i {
 /* FOOTER */
 .footer {
   background: #3684eb;
-  height: fit-content;
+  height: 100%;
   margin-left: 0px;
   margin-top: 560px;
 }
@@ -271,7 +272,7 @@ i {
   font-weight: normal;
   font-size: 28px;
   line-height: 130%;
-  color: #ffffff;
+  /*color: #ffffff;*/
 }
 .foot-paragraph {
   font-style: normal;
