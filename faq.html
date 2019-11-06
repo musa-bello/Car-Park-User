@@ -20,11 +20,16 @@
         nav {
             margin-bottom:40px;
         }
-        html, body {
-            width: 100%;
-            overflow-x: hidden;
-            text-align: center;
-        }
+            @import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
         .d-flex {
             color: black;
@@ -129,6 +134,7 @@
         }
         /* FOOTER */
 .footer {
+    width: fit-content;
   background: #3684eb;
   height: fit-content;
   text-align: left;
@@ -175,7 +181,7 @@
   line-height: 160%;
   color: #dbd6ed;
 }
-hr.footer {
+hr.footer-hr {
   width: 1100px;
   margin-left: auto;
   margin-right: auto;
@@ -527,7 +533,7 @@ a:hover {
                 </div>
               </div>
             </div>
-            <hr />
+            <hr class="footer-hr" />
             <div class="footer-links">
                 <a href="index.html">
                     <img class="foot-brand"
