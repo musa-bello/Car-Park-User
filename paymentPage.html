@@ -7,7 +7,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="landing_page.css" />
 
 </head>
 <style>
@@ -112,86 +112,49 @@ body {
     }
   }
  /* FOOTER */
-.navbar {
-  padding: 0;
-  background: #fafafa;
-}
-.nav-link {
-  color: #11092cb3 !important;
-  font-size: 16px;
-}
-.nav-item {
-  margin: 0 2em;
-}
-ul {
-  margin: auto;
-}
-.nav-link:hover {
-  transition: 0.5s;
-  color: #11092c !important;
-}
-.nav-btn {
-  width: 163px;
-  height: 44px;
-  border-radius: 50px;
-  font-size: 0.9rem;
-}
-.nav-btn1 {
-  border-color: #f8d373;
-  color: #f8d373;
-}
-.nav-btn2 {
-  background: #3684eb;
-  border: none;
-  color: #e6effb;
-}
-.navbar-brand img {
-  width: 5em;
-}
-.top-nav-collapse {
-  background-color: #fff;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-.container .navbar {
-  margin-top: 1em;
-}
+
 </style>
 
 <body>
-    <div class=" bg-white fixed-top">
-         <nav class="navbar navbar-expand-sm navbar-light bg-white">
-               <div class="container">
-                  <a class="navbar-brand" href="index.html">
-                     <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282259/CarPark_Logo.svg"
-                        style="width:120px;" alt="Car-Park logo">
-                  </a>
-                  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                           <a class="nav-link text-dark" href="selectSpot.html">My Parking Space</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link text-dark" href="bookSpace.html">Schedule</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                               <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                   Femi
-                               </a>
-                               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                   <a class="dropdown-item" href="#">Action</a>
-                                   <a class="dropdown-item" href="#">Another action</a>
-                                   <div class="dropdown-divider"></div>
-                                   <a class="dropdown-item" href="#">Something else here</a>
-                               </div>
-                           </li>
-                     </ul>
-                  </div>
-               </div>
-            </nav>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white scrolling-navbar fixed-top">
+        <div class="container my-4">
+           <a class="navbar-brand" href="index.html">
+              <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282259/CarPark_Logo.svg"
+                 style="width:120px;" alt="Car-Park logo">
+           </a>
+           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                 <li class="nav-item">
+                    <a class="nav-link text-dark" href="selectSpot.html">My Parking Space</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link text-dark" href="bookSpace.html">Schedule</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Femi
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+              </ul>
+           </div>
+        </div>
+     </nav>
+            
+        </ul>
+    </div>
+</div>
+
+</nav>
 
   <div class="container pt-5 mt-5">
     <div class="row pt-5">
@@ -205,19 +168,19 @@ ul {
             <div class="col-6"> To</div>
           </div>
           <div class="divider-text">
-            <p style="padding: 4px;background-color: #f1f1f1;margin-right: 4px; margin-left: -1.2em; width: 100%;">
+            <p style="padding: 7px;background-color: #f1f1f1;margin-right: 9px; margin-left: -1.2em; width: 100%;">
               <i class="fas fa-calendar-alt" style="color:#17a2b8;"></i>wed Oct 23,
             </p>
-            <p style="padding: 4px;background-color: #f1f1f1;margin-right: 9px; width: 100%;">
+            <p style="padding: 7px;background-color: #f1f1f1;margin-right: 9px; width: 100%;">
               <i class="fas fa-clock" style="color:#17a2b8;"></i> 8:30am
             </p>
 
             <hr style="border: 1px solid black; width: 12%; margin-right: 18px;margin-top: -6px;">
 
-            <p style="padding: 4px;background-color: #f1f1f1;margin-right: 9px; width: 100%;">
+            <p style="padding: 7px;background-color: #f1f1f1;margin-right: 9px; width: 100%;">
               <i class="fas fa-calendar-alt" style="color:#17a2b8;"></i>wed Oct 23,
             </p>
-            <p style="padding: 4px;background-color: #f1f1f1;margin-right: 9px; width: 100%;">
+            <p style="padding: 7px;background-color: #f1f1f1;margin-right: 9px; width: 100%;">
               <i class="fas fa-clock" style="color:#17a2b8;"></i> 8:30am
             </p>
           </div>
@@ -397,7 +360,7 @@ ul {
     </div>
    
   </div>
-  <!--FOOTER-->
+   <!--FOOTER-->
   <footer class="container-fluid footer mt-5">
     
     <div class="row">
