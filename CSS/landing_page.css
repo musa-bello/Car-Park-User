@@ -8,6 +8,7 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
+
 }
 .mt-5 {
   margin-top: 8em !important;
@@ -140,7 +141,15 @@ ul {
 .sect2 {
   padding: 0 5em 0 0;
 }
-
+/* SECTION 3 */
+.fa-car,
+.fa-parking,
+.fa-cc-amazon-pay {
+  font-size: 40px;
+  margin-left: -0.01em;
+  margin-top: 0.9em;
+  color: #3684eb;
+}
 /* SECTION 4 */
 .card {
   border: none;
@@ -244,7 +253,7 @@ i {
 /* FOOTER */
 .footer {
   background: #3684eb;
-  height: fit-content;
+  height: 100%;
   margin-left: 0px;
   margin-top: 560px;
 }
@@ -271,7 +280,7 @@ i {
   font-weight: normal;
   font-size: 28px;
   line-height: 130%;
-  color: #ffffff;
+  /*color: #ffffff;*/
 }
 .foot-paragraph {
   font-style: normal;
@@ -358,7 +367,7 @@ a:hover {
   .sect2 {
     padding: 15px !important;
   }
-  
+
   .section4 {
     margin-top: 0;
   }

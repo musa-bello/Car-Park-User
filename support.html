@@ -1,800 +1,626 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Car Park | Support Page</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
 
-    <!--CSS STARTS-->
-    <style>
-  @import url("https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap");
-body {
-  font-family: "Poppins", sans-serif;
-}
-.mt-5 {
-  margin-top: 8em !important;
-}
-.mt-4 {
-  margin-top: 5em !important;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Car Park | Support Page</title>
 
-/* NAVBAR */
-.navbar {
-  padding: 0.5rem 1rem 0.5rem 0;
-  /* position: fixed; */
-}
-.nav-btn {
-  width: 163px;
-  height: 44px;
-  border-radius: 50px;
-}
-.nav-btn1 {
-  border-color: #f8d373;
-  color: #f8d373;
-}
-.nav-btn2 {
-  background: #4a85e4;
-  border: none;
-  color: #e6effb;
-}
-.navbar-brand img {
-  width: 5em;
-}
-.tabs-pills {
-  background-color: #3684eb;
-  color: white;
-  padding-top: 5em;
-  padding-left: 5em;
-  padding-bottom: 0;
-  border-bottom: none;
-}
-.nav-pill{
-  color:white;
-}
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+<link rel="stylesheet" href="CSS/support.css">
 
-.nav-pill:active{
-  background-color: rgb(226, 189, 189);
-  color: black;
-  }
-  .Keyfeat{
-   width: 30%;
-   border-radius: 5px;
-background-color:#2b6acf;
-color:white
- }
-
- .color{
-   color: black;
-   font-size:0.7em;
- }
-  
-.ptabs a{
-  color:#fff;
- text-decoration: none;
-}
-button span.icon-bar{
-  color:#0000 !important;
-}
-.contact{
-  margin-top: -2em;
-}
-.img-container-block {
-  text-align: center;
-margin-top: -5em;
-margin-left: 25em;
-}
-
-/* HERO SECTION */
-.hero1 {
- margin-top: 1.4em;
-}
-.fl li{
-  display: inline-flex;
-}
-.container .navbar {
-  margin-top: 1em;
-}
-
-.h-one {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 130%;
-  color: #11092c;
-  margin: 20px 0;
-}
-.paragraph {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 26px;
-  color: #514c65;
-}
-.hero-ky {
-  background: #3684eb;
-  border-radius: 5px;
-  border: none;
-  width: 50%;
-text-align: left;
-color: #fff;
-font-size: 17px;
-font-style: normal;
-  font-weight: normal;
-padding: 5px;
-  
-}
-.hero-li {
-  list-style: none;
-  margin-top: 8px;
-}
-.eclipse {
-  width: 400px;
-  height: 400px;
-  margin-left: 73px;
-  margin-top: 54px;
-  background: #f7f4ef;
-  border-radius: 50%;
-}
-
-/* SECTION 2 */
-.section2,
-.section5 {
-  background: rgba(245, 244, 250, 0.25);
-}
-.sect2 {
-  padding: 0;
-}
-.book-btn {
-  margin: 2em 0 0 26em !important;
-}
-/* SECTION 4 */
-
-.card-title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 160%;
-  color: #3684eb;
-}
-.cdtxt {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 160%;
-  color: #514c65;
-}
-.icons {
-  display: flex;
-  margin-bottom: 3rem;
-}
-.list {
-  margin-left: 30px;
-}
-span {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  color: #3684eb;
-  line-height: 50px;
-}
-#book-space {
-  color: #ffbd49;
-  font-size: 18px;
-  cursor: pointer;
-}
-i {
-  margin-left: 0.5em;
-  color: #ffbd49;
-}
-/* SECTION 5 */
-
-.card-group .card {
-   box-shadow: none;
-  border: none;
-  margin-right: 30px;
-}
-.card-header{
-  height:40px;
-  padding: 0px;
-}
-.card-default > .card-heading {
-  padding: 0;
-  border-radius: 0;
-  color: #212121;
-  border-bottom: 1px solid black;
-  color: black;
-}
-.card-header{
-  border: none;
-  border-bottom: 1px solid grey;
-  background-color: none;
-}
-
-.card-title {
-  font-size: 14px;
-  line-height: 10px;
-background-color: #fff !important;
-border-bottom: 1px solid grey;
-}
-
-.card-title > a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
-  color: black;
-}
-.card-body{
-  padding: 0;
-}
-.card-list {
-  border-bottom: 1px solid grey; 
-}
-.card-title > a:hover{
-  color:goldenrod;
-}
-
-.more-less {
-  float: right;
-  color: #212121;
-}
-
-.card-default > .card-heading + .card-collapse > .card-body {
-  border-top-color: black;
-list-style: none;
-border-bottom: 2px;
-}
-.card-body ul{
-  list-style: none;
-  border-bottom: 2px;
-  border: none;
-  }
- .card{
-   border: none !important;
-  border-style: solid;
-    border-width:.5px;
-    margin-top:10px;
- }
-.demo {
-padding-top: 60px;
-padding-bottom: 60px;
-}
-
-.cdtxt1 {
-  font-family: Apercu;
-  font-size: 16px;
-  line-height: 160%;
-  color: #514c65;
-}
-.blockquote-footer {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #11092c;
-}
-.blockquote-footer::before {
-  content: " ";
-}
-/* FOOTER */
-.footer {
-  background: #3684eb;
-  height: fit-content;
-  margin-left: 0px;
-  margin-right: 0;
-  margin-top: 560px;
-}
-.eclipse2 {
-  background: #1a73e8;
-  width: 400px;
-  height: 400px;
-  margin-left: 73px;
-  margin-top: 54px;
-  border-radius: 50%;
-}
-.foot1 {
-  padding-left: 10rem;
-  padding-top: 5rem;
-}
-.foot-btn {
-  background: white;
-  color: #1a73e8;
-  border-radius: 50px;
-}
-.foot-one {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 130%;
-  color: #ffffff;
-}
-.foot-paragraph {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 160%;
-  color: #dbd6ed;
-}
-hr {
-  width: 1000px;
-  margin-left: 164px;
-  margin-top: 200px;
-  border: 1px   solid #fff;
-}
-.footer-links {
-  padding: 0 0 2em 0;
-  display: flex;
-  justify-content: space-evenly;
-}
-.footer-links a {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 160%;
-color: #fff;
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(233, 230, 230);
-}
-/* BUTTONS */
-.btn-success:hover {
-  background: #1350a0;
-  border: none;
-  color: #fff;
-}
-.btn-outline-success:hover {
-  background: #ffc408;
-  border: none;
-  color: #fff;
-}
-.icon-color {
-color: black;
-font-size: 30px;
-}
-
-.para2 {
-margin-top: 0.5em;
-  margin-left: 15px;
-  font-size: 1.3em;
-text-decoration: none;
-}
-.para2 a{
-text-decoration: none;
-}
-.para2 a:hover{
-  color: black;
-  }
-/* RESPONSIVENESS */
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-preferred-size: auto;
-    flex-basis: auto;
-    justify-content: flex-end;
-  }
-}
-@media (max-width: 640px) {
-  .eclipse,
-  .eclipse2 {
-    margin: auto;
-    width: 300px;
-    padding-right: 15px;
-    padding-left: 45px;
-  }
-  .hero2{
-    display: none;
-  }
-  .hero-img {
-    height: -webkit-fill-available;
-    margin: auto;
-  }
-  .Keyfeat {
-   padding: 10px;
-   width: 50%;
-  }
-  .section2,
-  .sect2 {
-    margin-top: 2em !important;
-  }
-  .sect2 {
-    padding: none !important;
-  }
-  .container,
-  .container-fluid {
-    margin-top: 2em !important;
-  }
-  
-  .foot1 {
-    padding-left: 1em;
-    padding-top: 5em;
-    margin-bottom: 2em;
-  }
-  .para2{
-    margin-top: 1.5em;
-  }
-  .nav-item{
-font-size: 0.5em;
-  }
-  .tabs-pills{
-    width: 100%;
-  padding-left: 10px;
-  }
-  .nav-link{
-    padding: 1em;
-  }
-  .img-container-block{
-    text-align: center;
-    position: absolute;
-    left: -19em;
-    top: 97px;
-    margin-bottom: 13px;
-  }
-  h3{
-    margin-left: -4em;
-    font-size: 1em;
-  }
-  .navbar-text{
-    font-size: -0.2em;
-    
-  }
-   .ptabs{
-    font-size: 0.7em;
-    line-break: -1.2em;
-    right: -14em;
-    float: right;
-  }
-    .contact{
-    margin: 0;
-  }
-  hr {
-    width: 100%;
-    margin-left: 0;
-    margin-top: 0;
-  }
-  .book-btn {
-    margin: 0.6em 0 0 10em !important;
-  }
-}
-
-</style>
-<!--CSS ENDS HERE-->
   </head>
   <body>
     <!--NAVBAR STARTS-->
-    <div class="container my-4">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <img
-            src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571942740/Car%20Park/Group_9640_w7taay.svg"
-            width="30"
-            height="30"
-            alt=""
-          />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">My Parking Space</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Schedule</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Femi</a>
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+            <div class="container">
+               <a class="navbar-brand" href="index.html">
+                  <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282259/CarPark_Logo.svg"
+                     style="width:120px;" alt="Car-Park logo">
+               </a>
+               <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
+                        <a class="nav-link text-dark" href="selectSpot.html">My Parking Space</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link text-dark" href="bookSpace.html">Schedule</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Femi
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+                
+            </ul>
         </div>
-        </nav>
     </div>
 
-    <!--SECOND NAVBAR-->
+</nav>
 
-    <div class="navbar tabs-pills">
-      <a class="navbar-brand img-container-block" href="#">
-        <img
-          src="https://res.cloudinary.com/favourchi-/image/upload/v1572282236/white_logo_bwmido.svg"
-          width="30"
-          height="30"
-          alt=""
-        />
-      </a>
-<h3 style="position: absolute;left: 77px;top: 51.5px;margin-bottom: 13px;">Getting Started</h3>
-      <p class="navbar-text">Welcome to CarPark. We're so excited that you are here. Let's get Started.</p>
+  <div class="tabs-pills">
+    <h3>Getting Started</h3>
+    <p class="navbar-text">Welcome to CarPark. We're so excited that you are here. Let's get Started.</p>
 
-      <div
-      class="float-right contact"
-    >
-    <p class="paragraph ptabs"><a href="#">
-    <i class="fa fa-headphones" aria-hidden="true"></i>
-        Speak to A Customer Service Representative</a> <br>
-      <i class="fa fa-envelope" aria-hidden="true"></i>
-      <a href="#">
+    <div class="float-right contact">
+      <p class="paragraph ptabs"><a href="#">
+          <i class="fa fa-headphones" aria-hidden="true"></i>
+          Speak to A Customer Service Representative</a> <br>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <a href="#">
           Send Us an Email Today</a>
-        </p>
-      </div>
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" href="support.html">Getting Started</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-pill" href="support2.html">Using CarPark</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-pill" href="support3.html">CarPark Administration</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link nav-pill" href="support4.html">Tip&More</a>
-        </li>
-      </ul>
+      </p>
     </div>
-    
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link nav-pill active" id="get_started-tab" data-toggle="tab" href="#get_started" role="tab"
+          aria-controls="get_started" aria-selected="true">Get Started</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-pill" id="using_carpark-tab" data-toggle="tab" href="#using_carpark" role="tab"
+          aria-controls="using_carpark">Using CarPark</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-pill" id="carpark_administration-tab" data-toggle="tab" href="#carpark_administration"
+          role="tab" aria-controls="carpark_administration">CarPark Administration</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-pill" id="tips&more-tab" data-toggle="tab" href="#tips_more" role="tab"
+          aria-controls="tips&more">Tips & More</a>
+      </li>
+    </ul>
+  </div>
+  </div>
 
-    <!--NAVBAR ENDS-->
+  <!--NAVBAR ENDS-->
+
+  <!-- tab contents start-->
+
+
+  <div class="tab-content">
+
+    <!--Getstarted-->
 
     <!--HERO SECTION-->
-    <div class="container hero">
-      <div class="row">
-        <div class="align-self-center col-sm-12 col-md-6 col-lg-6">
-          <h3 class="h-one">
-            What is CarPark ?</h3>
-          <p class="paragraph">
+    <div class="tab-pane active" role="tabpanel" id="get_started">
+      <div class="container hero ">
+        <div class="row">
+          <div class="align-self-center col-sm-12 col-md-6 col-lg-6">
+            <h3 class="h-one">
+              What is CarPark ?</h3>
+            <p class="paragraph">
               CarPark is convenience. It is a service that makes it easier for you to find, book,
-               & make payment online for the closest available car parking space while making use of 
-               <a href="#"></a>CarPark Mobile App</a> or <a href="#">CarPark Web App. </a>
-          </p>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 hero1">
-          <p class="para2"><button class="Keyfeat active" href =""> Key Features</button><br>
-            <a class="color" href ="">Downloading the CarPark App</a><br>
-            <a class="color" href ="">CarPark Pricing Plan</a></p>
-               </ul>
-            </div>
+              & make payment online for the closest available car parking space while making use of
+              <a href="#">CarPark Mobile App</a> or <a href="index.html">CarPark Web App. </a>
+            </p>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 hero1">
+            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+              Key Features
+            </button>
+            <br>
+            <a class="para2 color" href="">Downloading the CarPark App</a><br>
+            <a class="para2 color" href="">CarPark Pricing Plan</a>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
 
-    <!--SECTION 2-->
-    <div class="container-fluid section2">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-    <div class="card-group" id="accordion" role="tablist" aria-multiselectable="true">
 
-      <div class="card card-default">
-          <div class="card-header" role="tab" id="headingOne">
-              <h4 class="card-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <!--SECTION 2-->
+      <div class="container-fluid section2">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="card-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+              <div class="card card-default">
+                <div class="card-header" role="tab" id="headingOne">
+                  <h4 class="card-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
                       <i class="more-less fa fa-plus"></i>
                       Key Features
-                  </a>
-              </h4>
-          </div>
-          </div>
-          </div>
-          <div id="collapseOne" class="card-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    </a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div id="collapseOne" class="card-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
               <div class="card-body">
                 <ul>
-                    <li class="card-list">
-                        Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
-                    <li class="card-list">
-                        View Available Park Space
-                    </li>
-                    <li class="card-list">
-                        Booking & Making Payment for Park Space online
-                    </li>
-                    <li class="card-list">
-                        Retain Favourite Park Space
-                    </li>
                   <li class="card-list">
-                        Security
+                    Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
+                  <li class="card-list">
+                    View Available Park Space
                   </li>
-              </ul>
+                  <li class="card-list">
+                    Booking & Making Payment for Park Space online
+                  </li>
+                  <li class="card-list">
+                    Retain Favourite Park Space
+                  </li>
+                  <li class="card-list">
+                    Security
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
+        </div>
       </div>
-      </div>
-</div>
-        <div class="col-sm-12 col-md-6" data-aos="fade-right">
-         
-      <div class="card card-default">
+      <div class="col-sm-12 col-md-6" data-aos="fade-right">
+
+        <div class="card card-default">
           <div class="card-header" role="tab" id="headingTwo">
-              <h4 class="card-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      <i class="more-less fa fa-plus"></i>
-                    Downloading the CarPark App
-                  </a>
-              </h4>
+            <h4 class="card-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                <i class="more-less fa fa-plus"></i>
+                Downloading the CarPark App
+              </a>
+            </h4>
           </div>
           <div id="collapseTwo" class="card-collapse collapse" role="tabcard" aria-labelledby="headingTwo">
-              <div class="card-body">
-                <ul>
-                    <li class="card-list">
-                        Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
-                    <li class="card-list">
-                        View Available Park Space
-                    </li>
-                    <li class="card-list">
-                        Booking & Making Payment for Park Space online
-                    </li>
-                    <li class="card-list">
-                        Retain Favourite Park Space
-                    </li>
-                  <li class="card-list">
-                        Security
-                  </li>
-              </ul></div>
-          </div>
-      </div>
-
-      <div class="card card-default">
-          <div class="card-header" role="tab" id="headingThree">
-              <h4 class="card-title">
-                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      <i class="more-less fa fa-plus"></i>
-                      CarPark Pricing Plans
-                  </a>
-              </h4>
-          </div>
-          <div id="collapseThree" class="card-collapse collapse" role="tabcard" aria-labelledby="headingThree">
-              <div class="card-body">
-                <ul>
-                    <li class="card-list">
-                        Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
-                    <li class="card-list">
-                        View Available Park Space
-                    </li>
-                    <li class="card-list">
-                        Booking & Making Payment for Park Space online
-                    </li>
-                    <li class="card-list">
-                        Retain Favourite Park Space
-                    </li>
-                  <li class="card-list">
-                        Security
-                  </li>
+            <div class="card-body">
+              <ul>
+                <li class="card-list">
+                  Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
+                <li class="card-list">
+                  View Available Park Space
+                </li>
+                <li class="card-list">
+                  Booking & Making Payment for Park Space online
+                </li>
+                <li class="card-list">
+                  Retain Favourite Park Space
+                </li>
+                <li class="card-list">
+                  Security
+                </li>
               </ul>
             </div>
           </div>
+        </div>
+
+        <div class="card card-default">
+          <div class="card-header" role="tab" id="headingThree">
+            <h4 class="card-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                aria-expanded="false" aria-controls="collapseThree">
+                <i class="more-less fa fa-plus"></i>
+                CarPark Pricing Plans
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="card-collapse collapse" role="tabcard" aria-labelledby="headingThree">
+            <div class="card-body">
+              <ul>
+                <li class="card-list">
+                  Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
+                <li class="card-list">
+                  View Available Park Space
+                </li>
+                <li class="card-list">
+                  Booking & Making Payment for Park Space online
+                </li>
+                <li class="card-list">
+                  Retain Favourite Park Space
+                </li>
+                <li class="card-list">
+                  Security
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card-group -->
+    </div>
+    <!-- Getstarted ends -->
+
+    <!--Using Carpark-->
+    <div role="tabpanel" class="tab-pane fade" id="using_carpark">
+      <!--HERO SECTION-->
+      <div class="container hero" style="margin-top:50px;">
+        <div class="row">
+          <div class="col-sm-12 col-md-6" data-aos="fade-right">
+            <div class="card card-default">
+              <div class="card-header" role="tab" id="headingThree">
+                <h4 class="card-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="more-less fa fa-plus"></i>
+                    Onboarding
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="card-collapse collapse" role="tabcard" aria-labelledby="headingThree">
+                <div class="card-body">
+                  <ul>
+
+                    <li class="card-list">
+                      User SiginUp/Registration
+                    </li>
+                    <li class="card-list">
+                      User SigIn
+                    </li>
+                    <li class="card-list">
+                      Password Recovery Options
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- card-group -->
+
+
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-1">
+            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+              Onboarding</button><br>
+              <a href="">Your Profile</a><br>
+            </p>
+          </div>
+        </div>
       </div>
 
-  </div><!-- card-group -->
-  
-  </div>
-    
-    
 
-    <!--SECTION 4-->
 
-    <div class="container-fluid section2 mt-5">
-      <div class="row">
-          <div class="col-sm-12 col-md-6" data-aos="fade-right">
-          <p class="paragraph para2"><a href="#">
-            <i class="fa fa-headphones icon-color" aria-hidden="true"></i>
-              Speak to A Customer Service Representative</a>
-            </p>
-         
+      <div class="container hero">
+        <div class="row">
+          <div class="align-self-center col-sm-12 col-md-6">
+            <div class="card card-default">
+              <div class="card-header" role="tab" id="headingTwo">
+                <h4 class="card-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="more-less fa fa-plus"></i>
+                    Your Profile</a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="card-collapse collapse" role="tabcard" aria-labelledby="headingTwo">
+                <div class="card-body">
+                  <ul>
+                    <li class="card-list">
+                      Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
+                    <li class="card-list">
+                      View Available Park Space
+                    </li>
+                    <li class="card-list">
+                      Booking & Making Payment for Park Space online
+                    </li>
+                    <li class="card-list">
+                      Retain Favourite Park Space
+                    </li>
+                    <li class="card-list">
+                      Security
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
         </div>
-        <div
-          class="col-sm-12 col-md-6"
-          data-aos="fade-left"
-        >
-        <a href="#"><p class="paragraph para2">
-        <i class="fa fa-envelope icon-color" aria-hidden="true"></i>
-            Send Us an Email Today</a>
-          </p>
-          
+      </div>
+
+      <!--SECTION 2-->
+
+    </div>
+    <!--Using Carpark ends-->
+
+    <!--Carpark Administration-->
+    <div role="tabpanel" class="tab-pane fade" id="carpark_administration">
+      <!--HERO SECTION-->
+      <div class="container hero" style="margin-top:50px;">
+        <div class="row">
+          <div class="col-sm-12 col-md-6" data-aos="fade-right">
+            <div class="card card-default">
+              <div class="card-header" role="tab" id="headingThree">
+                <h4 class="card-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="more-less fa fa-plus"></i>
+                    Onboarding
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="card-collapse collapse" role="tabcard" aria-labelledby="headingThree">
+                <div class="card-body">
+                  <ul>
+
+                    <li class="card-list">
+                      User SiginUp/Registration
+                    </li>
+                    <li class="card-list">
+                      User SigIn
+                    </li>
+                    <li class="card-list">
+                      Password Recovery Options
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- card-group -->
+
+
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-1">
+            <p class="para2"> <button class="Keyfeat btn btn-primary active" href="">Onboarding</button><br>
+              <a href="">Your Profile</a><br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container hero">
+        <div class="row">
+          <div class="align-self-center col-sm-12 col-md-6">
+            <div class="card card-default">
+              <div class="card-header" role="tab" id="headingTwo">
+                <h4 class="card-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="more-less fa fa-plus"></i>
+                    Your Profile</a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="card-collapse collapse" role="tabcard" aria-labelledby="headingTwo">
+                <div class="card-body">
+                  <ul>
+                    <li class="card-list">
+                      Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
+                    <li class="card-list">
+                      View Available Park Space
+                    </li>
+                    <li class="card-list">
+                      Booking & Making Payment for Park Space online
+                    </li>
+                    <li class="card-list">
+                      Retain Favourite Park Space
+                    </li>
+                    <li class="card-list">
+                      Security
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--SECTION 2-->
+    </div>
+
+    <!--Carpark Administration ends-->
+
+    <!--Tips and More-->
+    <div role="tabpanel" class="tab-pane fade" id="tips_more">
+
+      <!--HERO SECTION-->
+      <div class="container hero" style="margin-top:50px;">
+        <div class="row">
+          <div class="col-sm-12 col-md-6" data-aos="fade-right">
+            <div class="card card-default">
+              <div class="card-header" role="tab" id="headingThree">
+                <h4 class="card-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                    href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="more-less fa fa-plus"></i>
+                    Onboarding
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="card-collapse collapse" role="tabcard" aria-labelledby="headingThree">
+                <div class="card-body">
+                  <ul>
+
+                    <li class="card-list">
+                      User SiginUp/Registration
+                    </li>
+                    <li class="card-list">
+                      User SigIn
+                    </li>
+                    <li class="card-list">
+                      Password Recovery Options
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- card-group -->
+
+
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-1">
+            <p class="para2"> <button class="Keyfeat btn btn-primary active" href="">Onboarding</button><br>
+              <a href="">Your Profile</a><br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container hero">
+        <div class="row">
+          <div class="align-self-center col-sm-12 col-md-6">
+            <div class="card card-default">
+              <div class="card-header" role="tab" id="headingTwo">
+                <h4 class="card-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                    aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="more-less fa fa-plus"></i>
+                    Your Profile</a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="card-collapse collapse" role="tabcard" aria-labelledby="headingTwo">
+                <div class="card-body">
+                  <ul>
+                    <li class="card-list">
+                      Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
+                    <li class="card-list">
+                      View Available Park Space
+                    </li>
+                    <li class="card-list">
+                      Booking & Making Payment for Park Space online
+                    </li>
+                    <li class="card-list">
+                      Retain Favourite Park Space
+                    </li>
+                    <li class="card-list">
+                      Security
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--SECTION 2-->
+    </div>
+    <!--Tips and More ends-->
+
+
+  </div>
+  <!-- tab contents end-->
+
+
+
+  <!--SECTION 3-->
+
+  <div class="container-fluid section2 mt-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-6" data-aos="fade-right">
+        <p class="paragraph para2"><a href="#">
+            <i class="fa fa-headphones icon-color" aria-hidden="true"></i>
+            Speak to A Customer Service Representative</a>
+        </p>
+
+      </div>
+      <div class="col-sm-12 col-md-6" data-aos="fade-left">
+        <a href="#">
+          <p class="paragraph para2">
+            <i class="fa fa-envelope icon-color" aria-hidden="true"></i>
+            Send Us an Email Today
+        </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!--FOOTER-->
+  <footer class="container-fluid footer mt-5">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 align-self-center hero1 foot1">
+        <h1 class="foot-one">
+          Finding a parking space should be easy, convenient and not
+          stressful.
+        </h1>
+        <p class="foot-paragraph mb-4">
+          Download the carpark app today and find secure spaces to park your
+          vehicles .
+        </p>
+        <button class="btn btn-success my-2 my-sm-0 nav-btn foot-btn shadow-none" type="submit">
+          <div>
+            <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
+              alt="Google Playstore" />
+            Download App
+          </div>
+        </button>
+      </div>
+      <div class="col-sm-12 col-md-6 hero2 d-none d-md-block d-xl-block">
+        <div>
+          <div class="eclipse2">
+            <img class="hero-img img-fluid"
+              src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
+              alt="Android Phone" />
+          </div>
+          <img class="hero-dots"
+            src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572276314/Car%20Park/Group_31_dlt1bx.svg"
+            alt="dots" />
         </div>
       </div>
     </div>
+    <hr class="footer-hr" />
+    <div class="footer-links">
+      <a href="index.html">
+        <img class="foot-brand"
+          src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg" alt="Logo" />
+      </a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="partner.html">Become a Partner</a>
+      <a href="http://car-park.ga">Admin</a>
+      <a href="support.html">Support</a>
+      <a href="termsOfService.html">Service Agreement</a>
+      <a href="termsOfService.html">Privacy Policy</a>
+      <a href="">&#9400;HNG Internship, 2019 </a>
+    </div>
+  </footer>
 
-    
-    <!--FOOTER-->
-    <footer class="container-fluid footer mt-5">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 align-self-center hero1 foot1">
-          <h1 class="foot-one">
-            Finding a parking space should be easy, convenient and not
-            stressful.
-          </h1>
-          <p class="foot-paragraph">
-            Download the carpark app today and find secure spaces to park your
-            vehicles .
-          </p>
-          <button
-            class="btn btn-success my-2 my-sm-0 hero-btn foot-btn"
-            type="submit"
-          >
-            <img
-              src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
-              alt="Google Playstore"
-            />
-            Download App
-          </button>
-        </div>
-        <div class="col-sm-12 col-md-6 hero2">
-          <div>
-            <div class="eclipse2">
-              <img
-                class="hero-img"
-                src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
-                alt="Android Phone"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="footer-links">
-          <a class="navbar-brand" href="#">
-              <img
-                src="https://res.cloudinary.com/favourchi-/image/upload/v1572282236/white_logo_bwmido.svg"
-                width="30"
-                height="30"
-                alt=""
-              />
-            </a>
-            <a href="#">FAQ</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Become a partner</a>
-        <a href="#">Privacy Policy</a>
-        </div>
 
-      
-      
-    </footer>
+  <script src="https://kit.fontawesome.com/2534cfc66b.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <script
-      src="https://kit.fontawesome.com/2534cfc66b.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200
+    });
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 1200
-      });
-
-      function toggleIcon(e) {
-    $(e.target)
+    function toggleIcon(e) {
+      $(e.target)
         .prev('.card-heading')
         .find(".more-less")
         .toggleClass('fa-plus fa-minus');
-}
-$('.card-group').on('hidden.bs.collapse', toggleIcon);
-$('.card-group').on('shown.bs.collapse', toggleIcon);
+    }
+    $('.card-group').on('hidden.bs.collapse', toggleIcon);
+    $('.card-group').on('shown.bs.collapse', toggleIcon);
 
-</script>
-  </body>
+  </script>
+</body>
+
 </html>
