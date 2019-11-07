@@ -708,7 +708,7 @@
                 left: 7rem;
             }
 
-            .fa-trash-alt {
+            .trash {
                 display: none;
             }
 
@@ -870,7 +870,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 trash">
                                     <p><i class="fas fa-trash-alt" style="font-size: 1.5rem; color: #E5201C;"></i></p>
                                 </div>
 
@@ -1039,7 +1039,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6 trash">
                                     <p><i class="fas fa-trash-alt" style="font-size: 1.5rem; color: #E5201C;"></i></p>
                                 </div>
 
@@ -1137,35 +1137,7 @@
 
             </div>
         </div>
-        <script>
-            const pastBookingDiv = document.getElementById('main');
-            const currentBookingDiv = document.getElementById('current-booking');
-            const cancelBookingDiv = document.getElementById('cancel-booking');
 
-            const pastBookingBtn = document.getElementById('past');
-            const currentBookingBtn = document.getElementById('current');
-            const cancelBookingBtn = document.getElementById('cancel');
-
-            pastBookingBtn.onclick = function () {
-                currentBookingDiv.classList.add('hidden')
-                cancelBookingDiv.classList.add('hidden');
-                console.log("past booking clicked");
-            };
-
-            currentBookingBtn.onclick = function () {
-                pastBookingDiv.classList.add('hidden');
-                cancelBookingDiv.classList.add('hidden');
-                currentBookingDiv.classList.remove('hidden');
-                console.log("current booking clicked");
-            };
-
-            cancelBookingBtn.onclick = function () {
-                pastBookingDiv.classList.add('hidden');
-                currentBookingDiv.classList.add('hidden');
-                cancelBookingDiv.classList.remove('hidden');
-                console.log("cancel booking clicked");
-            };
-        </script>
         <script src="https://kit.fontawesome.com/2534cfc66b.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -1196,8 +1168,35 @@
 
 
         </script>
+        <script>
+            const pastBookingDiv = document.getElementById('main');
+            const currentBookingDiv = document.getElementById('current-booking');
+            const cancelBookingDiv = document.getElementById('cancel-booking');
 
+            const pastBookingBtn = document.getElementById('past');
+            const currentBookingBtn = document.getElementById('current');
+            const cancelBookingBtn = document.getElementById('cancel');
 
+            pastBookingBtn.onclick = function () {
+                currentBookingDiv.classList.add('hidden')
+                cancelBookingDiv.classList.add('hidden');
+                console.log("past booking clicked");
+            };
+
+            currentBookingBtn.onclick = function () {
+                pastBookingDiv.classList.add('hidden');
+                cancelBookingDiv.classList.add('hidden');
+                currentBookingDiv.classList.remove('hidden');
+                console.log("current booking clicked");
+            };
+
+            cancelBookingBtn.onclick = function () {
+                pastBookingDiv.classList.add('hidden');
+                currentBookingDiv.classList.add('hidden');
+                cancelBookingDiv.classList.remove('hidden');
+                console.log("cancel booking clicked");
+            };
+        </script>
 </body>
 
 </html>
