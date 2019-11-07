@@ -10,141 +10,45 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="CSS/listing-page.css">
    <title>Car-Park</title>
-
-   <style>
-      body {
-         font-family: 'Roboto', sans-serif;
-      }
-
-      .has-search .form-control {
-         padding-left: 2.375rem;
-      }
-
-      .h-line {
-         margin-top: 0rem !important;
-         margin-bottom: 0rem !important;
-      }
-
-      .form-section {
-         display: flex;
-         padding-top: 0.8rem;
-      }
-
-      .has-search .form-control-feedback {
-         position: absolute;
-         z-index: 2;
-         display: block;
-         width: 2.375rem;
-         height: 2.375rem;
-         line-height: 2.375rem;
-         text-align: center;
-         pointer-events: none;
-         color: #aaa;
-         right: 2;
-      }
-
-      .searchbtn {
-         height: 40px !important;
-      }
-
-      .card {
-         width: 14.8rem;
-         margin-bottom: 1rem;
-         box-shadow: 0 5px 2px -2px #3684EB;
-      }
-
-      .map {
-         width: 100%;
-         height: 100%;
-         ;
-      }
-
-      .card-img-top {
-         height: 12.06rem;
-      }
-
-      .card-badge {
-         position: absolute;
-         color: white;
-         background: rgba(0, 0, 0, 0.5);
-         font-size: 0.7rem;
-         padding: 0.4rem 1rem;
-         text-align: center;
-
-      }
-
-      @media (max-width: 375px) {
-         .form-section {
-            flex-direction: column;
-         }
-         .map{
-            margin-top: 200px;
-         }
-         .sideSection{
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-         }
-         .card {
-            width: 18rem;
-         }
-
-         .buttons {
-            padding-bottom: 1rem;
-         }
-
-         .row {
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-         }
-
-         .map {
-            height: 350px;
-            margin-bottom: 1rem;
-            padding: 0.5rem;
-         }
-
-         .desc {
-            padding-left: 2rem !important;
-            padding-right: 0.5rem !important;
-            float: right !important;
-         }
-      }
-
-      @media (max-width: 768px) {
-         .card {
-            width: 20rem;
-         }
-      }
-   </style>
 </head>
 
 <body>
    <div class=" bg-white fixed-top">
-   <nav class="navbar navbar-expand-sm navbar-light bg-white">
-      <div class="container">
-         <a class="navbar-brand" href="index.html">
-            <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282259/CarPark_Logo.svg"
-               style="width:120px;" alt="Car-Park logo">
-         </a>
-         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-               <li class="nav-item">
-                  <a class="nav-link text-dark" href="selectSpot.html">My Parking Space</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-dark" href="bookSpace.html">Schedule</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link text-dark" href="#">Femi</a>
-               </li>
-            </ul>
-         </div>
-      </div>
-   </nav>
+         <nav class="navbar navbar-expand-sm navbar-light bg-white">
+               <div class="container">
+                  <a class="navbar-brand" href="index.html">
+                     <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282259/CarPark_Logo.svg"
+                        style="width:120px;" alt="Car-Park logo">
+                  </a>
+                  <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                           <a class="nav-link text-dark" href="selectSpot.html">My Parking Space</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link text-dark" href="bookSpace.html">Schedule</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                               <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   Femi
+                               </a>
+                               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                   <a class="dropdown-item" href="#">Action</a>
+                                   <a class="dropdown-item" href="#">Another action</a>
+                                   <div class="dropdown-divider"></div>
+                                   <a class="dropdown-item" href="#">Something else here</a>
+                               </div>
+                           </li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
    <hr class="h-line">
    <div class="container bg-white form-section">
       <div class="form-group has-search  position-relative d-inline-block">
@@ -186,7 +90,7 @@
                   </div>
                </div>
             </div>
-            <div class="row mr-0 px-2 justify-content-between">
+            <div class="row mr-0 px-2 justify-content-between overflow-auto" >
                <div class = "col-md-6 m-0 p-0 pr-2">
                   <div class="card col-12 w-100 mr-0 px-0">
                      <img
@@ -303,8 +207,62 @@
             </div>
          </div>
       </div>
-
+   
    </div>
+         <!--FOOTER-->
+  <footer class="container-fluid footer mt-5">
+    
+      <div class="row">
+        <div class="col-sm-12 col-md-6 align-self-center hero1 foot1">
+          <h1 class="foot-one">
+            Finding a parking space should be easy, convenient and not
+            stressful.
+          </h1>
+          <p class="foot-paragraph mb-4">
+            Download the carpark app today and find secure spaces to park your
+            vehicles .
+          </p>
+          <button class="btn btn-success my-2 my-sm-0 nav-btn foot-btn shadow-none" type="submit">
+            <div>
+              <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
+                alt="Google Playstore" />
+              Download App
+            </div>
+          </button>
+        </div>
+        <div class="col-sm-12 col-md-6 hero2 d-none d-md-block d-xl-block">
+          <div>
+            <div class="eclipse2">
+              <img class="hero-img img-fluid"
+                src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
+                alt="Android Phone" />
+            </div>
+            <img class="hero-dots"
+              src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572276314/Car%20Park/Group_31_dlt1bx.svg"
+              alt="dots" />
+          </div>
+        </div>
+      </div>
+      <hr class="footer-hr"/>
+      <div class="footer-links">
+          <a href="index.html">
+              <img class="foot-brand"
+              src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"           
+                alt="Logo"
+              />
+            </a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="partner.html">Become a Partner</a>
+        <a href="http://car-park.ga">Admin</a>
+        <a href="support.html">Support</a>
+        <a href="termsOfService.html">Service Agreement</a>
+        <a href="termsOfService.html">Privacy Policy</a>
+        <a href="">&#9400;HNG Internship, 2019 </a>
+      </div>
+    </footer>
+
+
    <!-- jQuery library -->
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
@@ -319,6 +277,18 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
       </script>
+        <script src="https://kit.fontawesome.com/2534cfc66b.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+          crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+          crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        
 
 </body>
 
