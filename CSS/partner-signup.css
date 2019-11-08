@@ -246,8 +246,8 @@ margin-bottom: 10px;
   }
   @media screen and (max-width: 400px){
     .get-started{
-        padding: 0;
-        font-size: 25px;
+        text-align: center;
+        font-size: 30px;
     }
     h3.line{
         line-height: 0;
