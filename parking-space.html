@@ -88,9 +88,14 @@
             transition: transform 0.5s;
         }
 
-        .nav-item a:hover {
+        .contact .nav-item a:hover {
             font-weight: bold;
             transform: scale(1.05);
+        }
+
+        .nav-tabs .nav-link:focus,
+        .nav-tabs .nav-link:hover {
+            border-color: transparent;
         }
 
         .terms {
@@ -142,10 +147,6 @@
 
         }
 
-        .header-links {
-
-            margin-top: 3rem
-        }
 
         .header-links a {
             color: #fff;
@@ -199,46 +200,47 @@
             padding: 0 0 0 20rem;
         }
 
-        .spacing{
+        .spacing {
             padding: 2rem 5rem 1rem;
         }
 
-        .inner{
-            margin-top: 1rem; 
-            padding:2rem 0 1rem 4rem;
+        .inner {
+            margin-top: 1rem;
+            padding: 2rem 0 1rem 4rem;
         }
 
-        .section-center{
-            margin-top: 1rem; 
-            padding:2rem 0 1rem 4rem;
+        .section-center {
+            margin-top: 1rem;
+            padding: 2rem 0 1rem 4rem;
         }
 
-        .section-title{
-            font-size: 1.3rem; 
+        .section-title {
+            font-size: 1.3rem;
             padding: .8rem 1rem .3rem;
         }
 
-        .date{
+        .date {
             padding: 1rem 0 0 1rem;
         }
 
-        .fa-calendar, .fa-clock{
-            padding-right: 1rem; 
+        .fa-calendar,
+        .fa-clock {
+            padding-right: 1rem;
             color: #1A73E8;
         }
 
-        .parking-space{
-            padding: 2rem 3rem 0; 
+        .parking-space {
+            padding: 2rem 3rem 0;
         }
 
 
-        .left{
+        .left {
             display: inline-block;
             width: 50%;
             margin-bottom: 0;
         }
 
-        .right{
+        .right {
             display: inline-block;
             width: 50%;
             position: absolute;
@@ -253,231 +255,298 @@
             display: block;
         }
 
-        .header-links buttun .bt-link{
+        .header-links buttun .bt-link {
             color: #fff !important;
             text-decoration: none !important;
         }
 
         .header-links .btn-link:hover {
-        color: #fff !important;
-         text-decoration: underline;
-}
+            color: #fff !important;
+            text-decoration: underline;
+        }
 
-.header-links .btn{
-    color: ;
-}
 
-.header-links .btn-link{
-    color: white;
-}
+        .tabs-pills {
+            background-color: #3684eb;
+            color: white;
+            padding-top: 5em;
+            padding-left: 5em;
+            padding-bottom: 0;
+            border-bottom: none;
+            padding-right: 5em;
+        }
 
-        @media (max-width: 1400px){
-            .or{
-               display: none;
+        .tabs-pills  p{ 
+            padding-bottom: 5rem;
+        }
+
+        .tabs-pills  h3{ 
+            padding-top: 3rem;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #495057;
+            background-color: #fff;
+            border-color: #dee2e6 #dee2e6 #fff;
+        }
+
+        .fa-headset,
+        .fa-envelope {
+            margin-right: 0.5em;
+            color: #ffbd49;
+        }
+
+        .header-links .btn-link {
+            color: white;
+        }
+
+        @media (max-width: 1400px) {
+            .or {
+                display: none;
             }
 
-            .adjust{
+            .adjust {
                 padding: 0;
             }
 
-            .adjust p{
+            .adjust p {
                 margin-left: .8rem;
             }
 
-            .adjust2, adjust{
+            .adjust2,
+            adjust {
                 padding: 0;
             }
-            
-            .spacing{
+
+            .spacing {
                 padding: 1rem 2rem;
             }
 
-            .section-center, .inner{
+            .section-center,
+            .inner {
                 padding: 2rem;
 
             }
 
-            .amount{
+            .amount {
                 position: absolute;
                 left: 50%;
             }
 
-            .adjust2 .btn{
+            .adjust2 .btn {
                 margin-left: 40%;
             }
 
-            .adjust .btn-primary{
+            .adjust .btn-primary {
                 margin-left: .9rem;
             }
 
         }
 
         @media (max-width: 1200px) {
-            .or{
+            .or {
                 display: none;
             }
 
-            .adjust{
+            .adjust {
                 padding: 0;
             }
 
-            .adjust p{
+            .adjust p {
                 margin-left: .8rem;
             }
 
-            .adjust2, adjust{
+            .adjust2,
+            adjust {
                 padding: 0;
             }
-            
-            .spacing{
+
+            .spacing {
                 padding: 1rem 2rem;
             }
 
-            .section-center, .inner{
+            .section-center,
+            .inner {
                 padding: 2rem;
 
             }
 
-            .amount{
+            .amount {
                 position: absolute;
                 left: 50%;
             }
 
-            .adjust2 .btn{
+            .adjust2 .btn {
                 margin-left: 40%;
             }
 
-            .adjust .btn-primary{
+            .adjust .btn-primary {
                 margin-left: .9rem;
             }
-        }        
-        
+        }
+
         @media only screen and (max-width: 990px) {
-            .or{
+            .or {
                 display: none;
             }
 
-            .adjust{
+            .contact{
+                display: none;
+            }
+
+            .tabs-pills{
+                padding-left: 3rem;
+                padding-right: 1rem;
+            }
+
+            .nav-link {
+                padding: .5rem .5rem;
+            }
+
+            .adjust {
                 padding: 0;
             }
 
-            .adjust p{
+            .adjust p {
                 margin-left: .8rem;
             }
 
-            .adjust2, adjust{
+            .adjust2,
+            adjust {
                 padding: 0;
             }
-            
-            .spacing{
+
+            .spacing {
                 padding: 1rem 2rem;
             }
 
-            .section-center, .inner{
+            .section-center,
+            .inner {
                 padding: 2rem;
 
             }
 
-            .amount{
+            .amount {
                 position: absolute;
                 left: 50%;
             }
 
-            .adjust2 .btn{
+            .adjust2 .btn {
                 margin-left: 40%;
             }
 
-            .adjust .btn-primary{
+            .adjust .btn-primary {
                 margin-left: .9rem;
             }
 
         }
 
         @media (max-width: 880px) {
-            .or{
+            .or {
                 display: none;
             }
 
-            .adjust{
+            .contact {
+                display: none;
+            }
+
+            .adjust {
                 padding: 0;
             }
 
-            .adjust p{
+            .adjust p {
                 margin-left: .8rem;
             }
 
-            .adjust2, adjust{
+            .adjust2,
+            adjust {
                 padding: 0;
             }
-            
-            .spacing{
+
+            .spacing {
                 padding: 1rem 2rem;
             }
 
-            .section-center, .inner{
+            .section-center,
+            .inner {
                 padding: 2rem;
 
             }
 
-            .amount{
+            .amount {
                 position: absolute;
                 left: 50%;
             }
 
-            .adjust2 .btn{
+            .adjust2 .btn {
                 margin-left: 40%;
             }
 
-            .adjust .btn-primary{
+            .adjust .btn-primary {
                 margin-left: .9rem;
             }
 
         }
 
         @media (max-width: 768px) {
-            .or{
+            .or {
                 display: none;
             }
 
-            .adjust{
+            .tabs-pills{
+                padding-left: 3rem;
+                padding-right: 1rem
+            }
+
+            .nav-link {
+                padding: .5rem .5rem;
+            }
+
+            .contact {
+                display: none;
+            }
+
+            .adjust {
                 padding: 0;
             }
 
-            .adjust p{
+            .adjust p {
                 margin-left: .8rem;
             }
 
-            .adjust2, adjust{
+            .adjust2,
+            adjust {
                 padding: 0;
             }
-            
-            .spacing{
+
+            .spacing {
                 padding: 1rem 2rem;
             }
 
-            .section-center, .inner{
+            .section-center,
+            .inner {
                 padding: 2rem;
 
             }
 
-            .amount{
+            .amount {
                 position: absolute;
-                top:-2.5rem;
+                top: -2.5rem;
                 left: 25rem;
             }
 
-            .fa-trash-alt{
+            .fa-trash-alt {
                 position: absolute;
-                top:1.5rem;
+                top: 1.5rem;
                 left: 25rem;
             }
 
-            .adjust button:first-child{
+            .adjust button:first-child {
                 margin-right: 45%;
             }
 
-            .adjust2 .btn-danger{
-                margin-left:1rem;   
+            .adjust2 .btn-danger {
+                margin-left: 1rem;
             }
 
 
@@ -506,151 +575,189 @@
 
         }
 
-        @media (max-width: 680px){
-            .or{
+        @media (max-width: 680px) {
+            .or {
                 display: none;
             }
 
-            .adjust{
+            .tabs-pills{
+                padding-left: 2rem;
+                padding-right: .5rem;
+            }
+
+            .nav-link {
+                padding: .5rem .5rem;
+            }
+
+            .adjust {
                 padding: 0;
             }
 
-            .adjust p{
+            .adjust p {
                 margin-left: .8rem;
             }
 
-            .adjust2, adjust{
+            .adjust2,
+            adjust {
                 padding: 0;
             }
-            
-            .spacing{
+
+            .spacing {
                 padding: 1rem 2rem;
             }
 
-            .section-center, .inner{
+            .section-center,
+            .inner {
                 padding: 2rem;
 
             }
 
-            .amount{
+            .amount {
                 position: absolute;
-                top:-2.5rem;
+                top: -2.5rem;
                 left: 20rem;
             }
 
-            .fa-trash-alt{
+            .fa-trash-alt {
                 position: absolute;
-                top:1.5rem;
+                top: 1.5rem;
                 left: 20rem;
             }
 
-            .adjust button:first-child{
+            .adjust button:first-child {
                 margin-right: 35%;
             }
 
-            .adjust2 .btn-danger{
-                margin-left:1rem;   
+            .adjust2 .btn-danger {
+                margin-left: 1rem;
             }
 
         }
 
-        @media (max-width: 580px){
-            .or{
+        @media (max-width: 580px) {
+            .or {
                 display: none;
             }
 
-            .adjust{
+            .tabs-pills{
+                padding-left: .5rem;
+                padding-right: .5rem;
+            }
+
+            .nav-link {
+                padding: .5rem .5rem;
+            }
+
+            .adjust {
                 padding: 0;
             }
 
-            .adjust p{
+            .adjust p {
                 margin-left: .8rem;
             }
 
-            .adjust2, adjust{
+            .adjust2,
+            adjust {
                 padding: 0;
             }
-            
-            .spacing{
+
+            .spacing {
                 padding: 1rem 2rem;
             }
 
-            .section-center, .inner{
+            .section-center,
+            .inner {
                 padding: 2rem;
 
             }
 
-            .amount{
+            .amount {
                 position: absolute;
-                top:-2.5rem;
+                top: -2.5rem;
                 left: 15rem;
             }
 
-            .fa-trash-alt{
+            .fa-trash-alt {
                 position: absolute;
-                top:1.5rem;
+                top: 1.5rem;
                 left: 15rem;
             }
 
-            .adjust button:first-child{
+            .adjust button:first-child {
                 margin-right: 30%;
             }
 
-            .adjust2 .btn-danger{
-                margin-left:1rem;
-                
+            .adjust2 .btn-danger {
+                margin-left: 1rem;
+
             }
 
         }
 
-        @media (max-width: 480px){
-            .or{
+        @media (max-width: 480px) {
+            .or {
                 display: none;
             }
 
-            .adjust{
+            .nav-tabs{
+                font-size: .7rem;
+            }
+
+            .tabs-pills{
+                padding-left: .5rem;
+                padding-right: .5rem;
+            }
+
+            .nav-link {
+                padding: .5rem .5rem;
+            }
+
+            .adjust {
                 padding: 0;
             }
 
-            .adjust p{
+            .adjust p {
                 margin-left: .8rem;
             }
 
-            .adjust2, adjust{
+            .adjust2,
+            adjust {
                 padding: 0;
             }
-            
-            .spacing{
+
+            .spacing {
                 padding: 1rem 2rem;
             }
 
-            .section-center, .inner{
+            .section-center,
+            .inner {
                 padding: 2rem;
 
             }
-            
-            .adjust2 .btn-danger{
-                margin-left:1rem;
-                
+
+            .adjust2 .btn-danger {
+                margin-left: 1rem;
+
             }
 
-            .adjust .btn-primary{
+            .adjust .btn-primary {
                 margin-left: .9rem;
             }
 
-            .bt-link, .btn-primary{
+            .bt-link,
+            .btn-primary {
                 width: 90%;
             }
 
-            .amount{
+            .amount {
                 position: absolute;
-                top:-2.5rem;
+                top: -2.5rem;
                 left: 11rem;
             }
 
-            .fa-trash-alt{
+            .fa-trash-alt {
                 position: absolute;
-                top:1.5rem;
+                top: 1.5rem;
                 left: 12rem;
             }
 
@@ -658,54 +765,59 @@
 
         }
 
-        @media (max-width: 380px){
-            
-
-            .or{
+        @media (max-width: 380px) {
+            .or {
                 display: none;
             }
 
-            .adjust{
+            .nav-link {
+                padding: .5rem .3rem;
+            }
+
+            .adjust {
                 padding: 0;
             }
 
-            .adjust p{
+            .adjust p {
                 margin-left: .8rem;
             }
 
-            .adjust2, adjust{
+            .adjust2,
+            adjust {
                 padding: 0;
             }
 
-            .adjust .btn-primary{
+            .adjust .btn-primary {
                 margin-left: .9rem;
             }
 
-            .adjust2 .btn-danger{
-                margin:0;
+            .adjust2 .btn-danger {
+                margin: 0;
                 width: 100%;
             }
 
-            .btn-link, .btn-primary{
+            .btn-link,
+            .btn-primary {
                 width: 90%;
             }
-            
-            .spacing{
+
+            .spacing {
                 padding: 1rem 2rem;
             }
 
-            .section-center, .inner{
+            .section-center,
+            .inner {
                 padding: 2rem;
 
             }
 
-            .amount{
+            .amount {
                 position: absolute;
-                top:-2.5rem;
+                top: -2.5rem;
                 left: 7rem;
             }
 
-            .trash{
+            .trash {
                 display: none;
             }
 
@@ -750,386 +862,367 @@
 
         </nav>
     </div>
-    <div class="container-fluid">
-        <div class="row" style="background:#1A73E8;">
-            <div class="col-md-12 parking-space">
-                <div style="padding: 3rem 0">
-                        <h2 class="text-white" >My Parking Space</h2>
-                        <p class="text-white">Track and organize all your bookings</p>
+
+    <div class="tabs-pills">
+        <h3>My Parking Space</h3>
+        <p class="navbar-text">Track and organize all your bookings</p>
+
+        <div class="float-right contact">
+            <p class="paragraph ptabs"><a href="#">
+                    <i class="fa fa-headset" aria-hidden="true"></i>
+                    Speak to A Customer Service Representative</a> <br>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a href="#">
+                    Send Us an Email Today</a>
+            </p>
+        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link nav-pill active" id="past_booking-tab" data-toggle="tab" href="#past_booking"
+                    role="tab" aria-controls="past_booking" aria-selected="false">Past Booking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-pill" id="current_booking-tab" data-toggle="tab" href="#current_booking"
+                    role="tab" aria-controls="current_booking" aria-selected="false">Current Booking</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-pill" id="cancel_booking-tab" data-toggle="tab" href="#cancel_booking" role="tab"
+                    aria-controls="cancel_booking" aria-selected="false">Cancel Booking</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tab-content">
+
+        <!-- past booking section -->
+        <div class="tab-pane active" role="tabpanel" id="past_booking">
+            <div class="row">
+                <div class="col-md-12 title spacing">
+                    <div class="border">
+                        <h3 class="section-title"><strong>Past Booking</strong></h3>
+                    </div>
                 </div>
-                    
-                    <div class="left">
-                            <div class="header-links">
-                                    <button type="button" class="btn btn-light" id="past">Past booking</button>
-                                    <button type="button" class="btn btn-link active" id="current" >Current booking</button>
-                                    <button type="button" class="btn btn-link" id="cancel">Cancelled booking</button>
-        
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 spacing">
+                    <div class="section-center border">
+                        <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Fri, 28 Sep 2019</p>
+                            </div>
+                            <div class="col-md-4 adjust">
+                                <p>Parking lot: 7</p>
+                            </div>
+                            <div class="col-md-4 adjust">
+                                <button type="button" class="btn btn-link">Hide details</button>
+                                <button type="button" class="btn btn-primary">Rebook</button>
                             </div>
                         </div>
-                        <div class=" text-white right">
-                                <a href="">
-                                    <p><i class="fas fa-headset" style="padding-right: 1rem; color: #F9CD40"></i>Speak to A customer
-                                        Service Representative</p>
-                                </a>
-                                <a href="">
-                                    <p><i class="fas fa-envelope" style="padding-right: 1rem; color: #F9CD40"></i>Send Us An Email
-                                        Today
-                                    </p>
-                                </a>
-                            </div>
-            </div>
-        </div>
-        
-    
-    <!-- past booking section -->
-    <div class="visible" id="pastBooking-section">
-        <div class="row">
-            <div class="col-md-12 title spacing">
-                <div class="border">
-            <h3 class="section-title"><strong>Past Booking</strong></h3>
-        </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-md-12 spacing">
-                    <div class="section-center border">
-                            <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <p>Fri, 28 Sep 2019</p>
-                                </div>
-                                <div class="col-md-4 adjust">
-                                    <p>Parking lot: 7</p>
-                                </div>
-                                <div class="col-md-4 adjust">
-                                    <button type="button" class="btn btn-link">Hide details</button>
-                                    <button type="button" class="btn btn-primary">Rebook</button>
-                                </div>
-                            </div>
-                
-                            <div class="row" style="padding:2rem 0">
-                                <div class="col-md-4">
-                                    <p>From</p>
-                                    <div class="row" style="font-size: .9rem;">
-                                        <div class="col-md-5 border date">
-                                            <p><i class="fas fa-calendar"></i><strong>Wed, Oct 23</strong></p>
-                                        </div>
-                                        <div class="col-md-1"></div>
-                                        <div class="col-md-5 border date">
-                                            <p><i class="far fa-clock"></i><strong>8:00am</strong></p>
-                                        </div>
+                        <div class="row" style="padding:2rem 0">
+                            <div class="col-md-4">
+                                <p>From</p>
+                                <div class="row" style="font-size: .9rem;">
+                                    <div class="col-md-5 border date">
+                                        <p><i class="fas fa-calendar"></i><strong>Wed, Oct 23</strong></p>
                                     </div>
-                                </div>
-                                <div class="col-md-4">
-                                            <div class="or" style="margin-top: 3rem;">
-                                                <hr class="bar">
-                                                <span>4 hrs</span>
-                                                <hr class="bar">
-                                            </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <p>To</p>
-                                    <div class="row" style="font-size: .9rem;">
-                                        <div class="col-md-5 border date">
-                                            <p><i class="fas fa-calendar"></i><strong>Wed, Oct 23</strong></p>
-                                        </div>
-                                        <div class="col-md-1"></div>
-                                        <div class="col-md-5 border date">
-                                            <p><i class="far fa-clock"></i><strong>8:00am</strong></p>
-                                        </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-5 border date">
+                                        <p><i class="far fa-clock"></i><strong>8:00am</strong></p>
                                     </div>
                                 </div>
                             </div>
-                
-                
+                            <div class="col-md-4">
+                                <div class="or" style="margin-top: 3rem;">
+                                    <hr class="bar">
+                                    <span>4 hrs</span>
+                                    <hr class="bar">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <p>To</p>
+                                <div class="row" style="font-size: .9rem;">
+                                    <div class="col-md-5 border date">
+                                        <p><i class="fas fa-calendar"></i><strong>Wed, Oct 23</strong></p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-5 border date">
+                                        <p><i class="far fa-clock"></i><strong>8:00am</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="border" style="padding: 1rem 3rem 0;">
-                            <p style="font-size: 1.2rem; "> Plate Number: ABC-123DE </p>
-                        </div>
+                        <p style="font-size: 1.2rem; "> Plate Number: ABC-123DE </p>
+                    </div>
+                </div>
             </div>
 
-            
-            
-        </div>
-
-        <div class="row">
+            <div class="row">
                 <div class="col-md-12 spacing">
                     <div class="border inner">
-                        <div >
-                                <div class="row">
-                                        <div class="col-md-6">
-                                            <p><strong>Total</strong></p>
-                                        </div>
-                        
-                                        <div class="col-md-6 adjust2">
-                                            <span class="amount" style="color: #42E11A;">₦1,000</span>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6 trash">
-                                            <p><i class="fas fa-trash-alt" style="font-size: 1.5rem; color: #E5201C;"></i></p>
-                                        </div>
-                        
-                                        <div class="col-md-6 adjust2">
-                                            <button type="button" class="btn btn-danger">Cancel booking</button>
-                                        </div>
-                                    </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Total</strong></p>
+                            </div>
+                            <div class="col-md-6 adjust2">
+                                <span class="amount" style="color: #42E11A;">₦1,000</span>
+                            </div>
                         </div>
-                            
-            </div>
+                        <div class="row">
+                            <div class="col-md-6 trash">
+                                <p><i class="fas fa-trash-alt" style="font-size: 1.5rem; color: #E5201C;"></i></p>
+                            </div>
+                            <div class="col-md-6 adjust2">
+                                <button type="button" class="btn btn-danger">Cancel booking</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-md-12 spacing">
-                        <div class="border inner">
-                                <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <p>Fri, 28 Sep 2019</p>
-                                    </div>
-                                    <div class="col-md-4 adjust">
-                                        <p>Parking lot: 7</p>
-                                    </div>
-                                    <div class="col-md-4 adjust">
-                                        <button type="button" class="btn btn-link">View details</button>
-                                        <button type="button" class="btn btn-primary">Rebook</button>
-                                    </div>
-                                </div>
+                    <div class="border inner">
+                        <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Fri, 28 Sep 2019</p>
                             </div>
+                            <div class="col-md-4 adjust">
+                                <p>Parking lot: 7</p>
+                            </div>
+                            <div class="col-md-4 adjust">
+                                <button type="button" class="btn btn-link">View details</button>
+                                <button type="button" class="btn btn-primary">Rebook</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="row">
-                    <div class="col-md-12 spacing">
-                            <div class="border inner">
-                                    <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <p>Fri, 28 Sep 2019</p>
-                                        </div>
-                                        <div class="col-md-4 adjust">
-                                            <p>Parking lot: 7</p>
-                                        </div>
-                                        <div class="col-md-4 adjust">
-                                            <button type="button" class="btn btn-link">View details</button>
-                                            <button type="button" class="btn btn-primary">Rebook</button>
-                                        </div>
-                                    </div>
-                                </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                        <div class="col-md-12 spacing">
-                                <div class="border inner">
-                                        <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <p>Fri, 28 Sep 2019</p>
-                                            </div>
-                                            <div class="col-md-4 adjust">
-                                                <p>Parking lot: 7</p>
-                                            </div>
-                                            <div class="col-md-4 adjust">
-                                                <button type="button" class="btn btn-link">View details</button>
-                                                <button type="button" class="btn btn-primary">Rebook</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="col-md-12 spacing">
+                    <div class="border inner">
+                        <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Fri, 28 Sep 2019</p>
+                            </div>
+                            <div class="col-md-4 adjust">
+                                <p>Parking lot: 7</p>
+                            </div>
+                            <div class="col-md-4 adjust">
+                                <button type="button" class="btn btn-link">View details</button>
+                                <button type="button" class="btn btn-primary">Rebook</button>
+                            </div>
                         </div>
                     </div>
-    </div>
-    <!-- end of past booking section -->
+                </div>
+            </div>
 
-    <!-- current booking section -->
-    <div class="hidden" id="currentBooking-section">
-        <div class="row">
-            <div class="col-md-12 spacing">
-                <div class="border">
-                    <h3 class=" section-title"><strong>Current Booking</strong></h3>
+            <div class="row">
+                <div class="col-md-12 spacing">
+                    <div class="border inner">
+                        <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Fri, 28 Sep 2019</p>
+                            </div>
+                            <div class="col-md-4 adjust">
+                                <p>Parking lot: 7</p>
+                            </div>
+                            <div class="col-md-4 adjust">
+                                <button type="button" class="btn btn-link">View details</button>
+                                <button type="button" class="btn btn-primary">Rebook</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
-            <div class="row">
-                    <div class="col-md-12 spacing">
-                            <div class="section-center border">
-                                    <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <p>Fri, 28 Sep 2019</p>
-                                        </div>
-                                        <div class="col-md-4 adjust">
-                                            <p>Parking lot: 7</p>
-                                        </div>
-                                        <div class="col-md-4 adjust">
-                                            <button type="button" class="btn btn-link">Hide details</button>
-                                            <button type="button" class="btn btn-primary">Rebook</button>
-                                        </div>
-                                    </div>
-                        
-                                    <div class="row" style="padding:2rem 0">
-                                        <div class="col-md-4">
-                                            <p>From</p>
-                                            <div class="row" style="font-size: .9rem;">
-                                                <div class="col-md-5 border date">
-                                                    <p><i class="fas fa-calendar"></i><strong>Wed, Oct 23</strong></p>
-                                                </div>
-                                                <div class="col-md-1"></div>
-                                                <div class="col-md-5 border date">
-                                                    <p><i class="far fa-clock"></i><strong>8:00am</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                                <div class="or" style="margin-top: 3rem;">
-                                                    <hr class="bar">
-                                                    <span>4 hrs</span>
-                                                    <hr class="bar">
-                                                </div>
-                                    </div>
-                                        <div class="col-md-4">
-                                            <p>To</p>
-                                            <div class="row" style="font-size: .9rem;">
-                                                <div class="col-md-5 border" style="padding: 1rem 0 0 1rem">
-                                                    <p><i class="fas fa-calendar" style="padding-right: 1rem; color: #1A73E8"></i><strong>Wed,
-                                                            Oct 23</strong></p>
-                                                </div>
-                                                <div class="col-md-1"></div>
-                                                <div class="col-md-5 border" style="padding: 1rem 0 0 1.5rem">
-                                                    <p><i class="far fa-clock"
-                                                            style="padding-right: 1rem; color: #1A73E8"></i><strong>8:00am</strong></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                        
-                        
-                            </div>
-                            <div class="border" style="padding: 1rem 3rem 0;">
-                                    <p style="font-size: 1.2rem; "> Plate Number: ABC-123DE </p>
-                                </div>
-                    </div>
-        
-                    
-                    
-            </div>
-        
-            <div class="row">
-                    <div class="col-md-12 spacing">
-                        <div class="border inner">
-                            <div >
-                                    <div class="row">
-                                            <div class="col-md-6">
-                                                <p><strong>Total</strong></p>
-                                            </div>
-                            
-                                            <div class="col-md-6 adjust2">
-                                                <span class="amount" style="color: #42E11A;">₦1,000</span>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 trash">
-                                                <p><i class="fas fa-trash-alt" style="font-size: 1.5rem; color: #E5201C;"></i></p>
-                                            </div>
-                            
-                                            <div class="col-md-6 adjust2">
-                                                <button type="button" class="btn btn-danger">Cancel booking</button>
-                                            </div>
-                                        </div>
-                            </div>
-                                
-                </div>
-                    </div>
-                </div>
-        
-                <div class="row">
-                        <div class="col-md-12 spacing">
-                                <div class="border inner">
-                                        <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <p>Fri, 28 Sep 2019</p>
-                                            </div>
-                                            <div class="col-md-4 adjust">
-                                                <p>Parking lot: 7</p>
-                                            </div>
-                                            <div class="col-md-4 adjust">
-                                                <button type="button" class="btn btn-link">View details</button>
-                                                <button type="button" class="btn btn-primary">Rebook</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                        </div>
-                    </div>
-    </div>
-    <!-- end of current booking section -->
+        <!-- end of past booking section -->
 
-            <!--  cancel booking section -->
-            <div class="hidden" id="cancelBooking-section">
-                <div class="row mt-5">
-                    <div class="col-md-12 spacing">
-                        <div class="border">
-                            <div class="text-center" style="margin-top: 1rem; padding:4rem 0">
-                                <h1 style=> <strong>Sorry!</strong></h1>
-                                    <p>You do not have any reservations available on this page</p>
-                                    <button type="button" class="btn btn-primary " style="width: 10rem">Book Now</button>         
-                            </div>              
+        <!-- current booking section -->
+        <div role="tabpanel" class="tab-pane fade" id="current_booking">
+            <div class="row">
+                <div class="col-md-12 spacing">
+                    <div class="border">
+                        <h3 class=" section-title"><strong>Current Booking</strong></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 spacing">
+                    <div class="section-center border">
+                        <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Fri, 28 Sep 2019</p>
+                            </div>
+                            <div class="col-md-4 adjust">
+                                <p>Parking lot: 7</p>
+                            </div>
+                            <div class="col-md-4 adjust">
+                                <button type="button" class="btn btn-link">Hide details</button>
+                                <button type="button" class="btn btn-primary">Rebook</button>
+                            </div>
+                        </div>
+
+                        <div class="row" style="padding:2rem 0">
+                            <div class="col-md-4">
+                                <p>From</p>
+                                <div class="row" style="font-size: .9rem;">
+                                    <div class="col-md-5 border date">
+                                        <p><i class="fas fa-calendar"></i><strong>Wed, Oct 23</strong></p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-5 border date">
+                                        <p><i class="far fa-clock"></i><strong>8:00am</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="or" style="margin-top: 3rem;">
+                                    <hr class="bar">
+                                    <span>4 hrs</span>
+                                    <hr class="bar">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <p>To</p>
+                                <div class="row" style="font-size: .9rem;">
+                                    <div class="col-md-5 border" style="padding: 1rem 0 0 1rem">
+                                        <p><i class="fas fa-calendar"
+                                                style="padding-right: 1rem; color: #1A73E8"></i><strong>Wed, Oct
+                                                23</strong></p>
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-5 border" style="padding: 1rem 0 0 1.5rem">
+                                        <p><i class="far fa-clock"
+                                                style="padding-right: 1rem; color: #1A73E8"></i><strong>8:00am</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border" style="padding: 1rem 3rem 0;">
+                        <p style="font-size: 1.2rem; "> Plate Number: ABC-123DE </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 spacing">
+                    <div class="border inner">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Total</strong></p>
+                            </div>
+                            <div class="col-md-6 adjust2">
+                                <span class="amount" style="color: #42E11A;">₦1,000</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 trash">
+                                <p><i class="fas fa-trash-alt" style="font-size: 1.5rem; color: #E5201C;"></i></p>
+                            </div>
+                            <div class="col-md-6 adjust2">
+                                <button type="button" class="btn btn-danger">Cancel booking</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-md-12 spacing">
+                    <div class="border inner">
+                        <h4 style="font-size: 1rem"> <strong>Diamond Parking Lot</strong></h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Fri, 28 Sep 2019</p>
+                            </div>
+                            <div class="col-md-4 adjust">
+                                <p>Parking lot: 7</p>
+                            </div>
+                            <div class="col-md-4 adjust">
+                                <button type="button" class="btn btn-link">View details</button>
+                                <button type="button" class="btn btn-primary">Rebook</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of current booking section -->
+
+        <!--  cancel booking section -->
+        <div role="tabpanel" class="tab-pane fade" id="cancel_booking">
+            <div class="row mt-5">
+                <div class="col-md-12 spacing">
+                    <div class="border">
+                        <div class="text-center" style="margin-top: 1rem; padding:4rem 0">
+                            <h1 style=> <strong>Sorry!</strong></h1>
+                            <p>You do not have any reservations available on this page</p>
+                            <button type="button" class="btn btn-primary " style="width: 10rem">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--  end of cancel booking section -->
     </div>
-     
+
     <div class="row py-5 mt-5 footer-row" style="background: #3684EB">
-            <div class="col-12 p-0 mt-md-3 mb-5 d-md-flex flex-md-row justify-content-start">
-                <div class="col-12 col-md-6 pr-0 mb-0 mb-md-5 text-and-button">
-                    <div class="footer-text-container text-left text-white ">
-                        <h3>Finding a parking space should be easy, convenient and not stressful.</h3>
-                        <p style="color: #DBD6ED;">Download the carpark app today and find secure spaces to park your
-                            vehicles
-                        </p>
-                    </div>
-                    <div>
-                        <button class="play-store py-2 px-3 primary-blue mt-3">
-                            <span><img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
-                                    alt="Google Playstore"></span> Download App
-                        </button>
-                    </div>
+        <div class="col-12 p-0 mt-md-3 mb-5 d-md-flex flex-md-row justify-content-start">
+            <div class="col-12 col-md-6 pr-0 mb-0 mb-md-5 text-and-button">
+                <div class="footer-text-container text-left text-white ">
+                    <h3>Finding a parking space should be easy, convenient and not stressful.</h3>
+                    <p style="color: #DBD6ED;">Download the carpark app today and find secure spaces to park your
+                        vehicles</p>
                 </div>
-                <div class="col-12 col-md-6 mb-5 mt-5 mt-md-0" data-aos="zoom-in-up">
-                    <div class=" eclipse ml-md-5 mx-auto mx-md-0 d-none d-md-block">
-                        <img class="phone-img img-fluid mx-auto  d-block"
-                            src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
-                            alt="">
-                    </div>
+                <div>
+                    <button class="play-store py-2 px-3 primary-blue mt-3">
+                        <span><img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
+                                alt="Google Playstore"></span> Download App
+                    </button>
                 </div>
             </div>
-    
-    
-            <div class="col-12 footer-links d-flex">
-                <div class="d-flex justify-content-between flex-column flex-md-row" style="width: 80%">
-                    <div class="">
-                        <img src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"
-                            alt="logo">
-                    </div>
-                    <a href="faq.html" class="mt-3 mt-md-0">FAQ</a>
-                    <a href="contact.html" class="mt-3 mt-md-0">Contact Us</a>
-                    <a href="partner.html" class="mt-3 mt-md-0">Become a Partner</a>
-                    <a href="http://car-park.ga/" class="mt-3 mt-md-0">Admin</a>
-                    <a href="support.html" class="mt-3 mt-md-0">Support</a>
-                    <a href="termsOfService.html" class="mt-3 mt-md-0">Privacy Policy</a>
-    
+            <div class="col-12 col-md-6 mb-5 mt-5 mt-md-0" data-aos="zoom-in-up">
+                <div class=" eclipse ml-md-5 mx-auto mx-md-0 d-none d-md-block">
+                    <img class="phone-img img-fluid mx-auto  d-block"
+                        src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
+                        alt="phone-img">
                 </div>
-                <div class="ml-auto align-self-end align-self-md-start">
-                    <span class="text-white text-right">&copy; HNG Internship 2019</span>
-                </div>
-    
             </div>
         </div>
-        <script>
+
+        <div class="col-12 footer-links d-flex">
+            <div class="d-flex justify-content-between flex-column flex-md-row" style="width: 80%">
+                <div class="">
+                    <img src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"
+                        alt="logo">
+                </div>
+                <a href="faq.html" class="mt-3 mt-md-0">FAQ</a>
+                <a href="contact.html" class="mt-3 mt-md-0">Contact Us</a>
+                <a href="partner.html" class="mt-3 mt-md-0">Become a Partner</a>
+                <a href="http://car-park.ga/" class="mt-3 mt-md-0">Admin</a>
+                <a href="support.html" class="mt-3 mt-md-0">Support</a>
+                <a href="termsOfService.html" class="mt-3 mt-md-0">Privacy Policy</a>
+            </div>
+            <div class="ml-auto align-self-end align-self-md-start">
+                <span class="text-white text-right">&copy; HNG Internship 2019</span>
+            </div>
+
+        </div>
+    </div>
+    <!-- <script>
                 const pastBookingDiv = document.getElementById ('pastBooking-section');
                 const currentBookingDiv = document.getElementById ('currentBooking-section');
                 const cancelBookingDiv = document.getElementById ('cancelBooking-section');
@@ -1180,8 +1273,8 @@
                     cancelBookingBtn.classList.add('btn-light');
                     console.log("cancel booking clicked");
                 };
-                </script>
-        <script src="https://kit.fontawesome.com/2534cfc66b.js" crossorigin="anonymous"></script>
+                </script> -->
+    <script src="https://kit.fontawesome.com/2534cfc66b.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -1208,10 +1301,19 @@
                 }
             }
         });
-
-
     </script>
 
+    <script>
+
+        function toggleIcon(e) {
+            $(e.target)
+                .prev('.card-heading')
+                .find(".more-less")
+                .toggleClass('fa-plus fa-minus');
+        }
+        $('.card-group').on('hidden.bs.collapse', toggleIcon);
+        $('.card-group').on('shown.bs.collapse', toggleIcon);
+    </script>
 
 </body>
 
