@@ -30,10 +30,10 @@
       background-color: #3684eb;
       color: white;
       padding-top: 5em;
-      padding-left: 5em;
+      /*padding-left: 5em;*/
       padding-bottom: 0;
       border-bottom: none;
-      padding-right: 5em;
+      /*padding-right: 5em;*/
     }
 
     .nav-pill {
@@ -530,14 +530,14 @@
         margin-top: 1.5em;
       }
 
-      .nav-item {
+      /*.nav-item {
         font-size: 0.5em;
-      }
+      }*/
 
-      .tabs-pills {
+      /*.tabs-pills {
         width: 100%;
         padding-left: 25px;
-      }
+      }*/
 
       .nav-link {
         padding: 1em;
@@ -562,12 +562,12 @@
 
       }
 
-      .ptabs {
+      /*.ptabs {
         font-size: 0.7em;
         line-break: -1.2em;
         right: -14em;
         float: right;
-      }
+      }*/
 
 
       .book-btn {
@@ -580,10 +580,10 @@
         margin-bottom: 2em;
       }
 
-      .contact {
+      /*.contact {
         margin-top: -4.5em !important;
       }
-
+*/
       hr {
         width: 100%;
         margin-left: 0;
