@@ -56,14 +56,14 @@
         .text-and-button {
             padding-top: 8rem;
         }
-   /* FOOTER */
+        /* FOOTER */
 .footer {
   background: #3684eb;
   height: fit-content;
   
   margin-top: 560px;
-  /*margin-left: -15px;
-  margin-right: -15px;*/
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .eclipse2 {
@@ -76,7 +76,7 @@
   z-index: 1000;
 }
 .foot1 {
-  padding-left: 3.5rem;
+  padding-left: 7.5rem;
   padding-top: 5rem;
 }
 .nav-btn {
@@ -104,7 +104,7 @@
   line-height: 160%;
   color: #dbd6ed;
 }
-hr.footer {
+hr {
   width: 1100px;
   margin-left: auto;
   margin-right: auto;
@@ -197,63 +197,13 @@ a:hover {
     transform: translatey(0px);
   }
 }
+
 .blockquote-footer {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #11092c;
-}
-.blockquote-footer::before {
-  content: " ";
-}
-@media (max-width: 990px) {
-  .navbar-toggler {
-    margin-right: 1em;
-  }
-  .navbar-brand {
-    margin-left: 1em;
-  }
-  .eclipse,
-  .eclipse2 {
-    margin: auto;
-    width: 300px;
-    padding-right: 15px;
-    padding-left: 45px;
-  }
-  .hero-img,
-  .hero-dots {
-    height: -webkit-fill-available;
-    margin: auto;
-  }
-  .hero {
-    padding-top: 6em !important;
-  }
-  .hero2 {
-    padding-top: 2em;
-  }
-  .foot1 {
-    
-    padding-top: 4em;
-    margin-bottom: 2em;
-  }
-  hr.footer {
-    width: 350px;
-    margin-left: 0;
-  }
-  .foot-brand {
-    width: 100px;
-  }
-  .footer-links {
-    padding: 0 0 2em;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .footer-links a {
-    margin: 1em;
-  }
-  
 }
 .blockquote-footer::before {
   content: " ";
@@ -315,7 +265,7 @@ a:hover {
   hr {
     width: 350px;
     margin-left: 0;
-    /*margin-top: 100px;*/
+    margin-top: 100px;
   }
   .foot-brand {
     width: 100px;
