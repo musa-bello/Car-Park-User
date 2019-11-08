@@ -119,126 +119,78 @@ div.sign{
     margin-left: 2%
 }
 
- /* FOOTER */
-.footer {
-  background: #3684eb;
-  height: fit-content;
-  
-  margin-top: 560px;
-  /*margin-left: -15px;
-  margin-right: -15px;*/
+#footer{
+    background: url("https://res.cloudinary.com/meritiyke/image/upload/v1572512595/Subtract_6_m74mql.png");
+    background-position: 4% 15%;
+    background-repeat: no-repeat;
+    background-size: 22% 100%;  
+}
+footer{
+    margin-top: 5rem;
+    
 }
 
-.eclipse2 {
-  background: #1a73e8;
-  width: 400px;
-  height: 400px;
-  margin-left: 73px;
-  margin-top: 6em;
-  border-radius: 50%;
-  z-index: 1000;
-}
-.foot1 {
-  padding-left: 3.5rem;
-  padding-top: 5rem;
-}
-.nav-btn {
-  width: 163px;
-  height: 44px;
-  border-radius: 50px;
-  font-size: 0.9rem;
-}
-.foot-btn {
-  background: white;
-  color: #3684eb;
-  border: none;
-}
-.foot-one {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 130%;
-  color: #ffffff;
-}
-.foot-paragraph {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 160%;
-  color: #dbd6ed;
-}
-hr.footer {
-  width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  border: 1px solid #fff;
-}
-.footer-links {
-  padding: 1em 3.5em 2em;
-  display: flex;
-  justify-content: space-evenly;
-}
-.footer-links a {
-  font-style: normal;
-  font-weight: 200;
-  font-size: 12px;
-  line-height: 160%;
-  color: #f5f5f5;
-  text-decoration: none;
-}
-a:hover {
-  color: #f8d373;
-  transition: 0.6s ease-in-out;
-}
-.hero {
-  margin-top: 8em;
-}
-.h-five {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 160%;
-  color: #ffc408;
-}
-.h-one {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 130%;
-  color: #11092c;
-  margin: 20px 0;
-}
-.paragraph {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 26px;
-  color: #514c65;
-}
-.hero-btn {
-  background: #3684eb;
-  border: none;
-  color: #e6effb;
-}
-.eclipse {
-  width: 400px;
-  height: 400px;
-  margin-left: 73px;
-  margin-top: 44px;
-  background: #f7f4ef;
-  border-radius: 50%;
-  z-index: 1000;
-}
-.hero-dots {
-  margin-left: 25em;
-  margin-top: -12em;
-  z-index: -1;
-  position: relative;
-  opacity: 0.5;
+.footer{
+    display: grid;
+    grid-template-columns: (6, 1fr);
+    grid-template-rows: (2, 1fr);
 }
 
+.sub1{
+    grid-column: 1/3;
+}
 
+.sub2{
+    grid-column: 3/4;
+}
+
+.sub3{
+    grid-column: 4/5;
+}
+
+.sub4{
+    grid-column: 5/6;
+}
+
+.sub5{
+    grid-row: 2/2;
+    grid-column: 4/6;
+   
+}
+
+.footer li{
+    list-style: none;
+}
+
+.footer li a{
+    color: azure;
+}
+
+.sub5 li {
+    display: inline;
+    padding: 0.5rem;
+}
+
+.tick img{
+   position: absolute; 
+}
+
+.tick{
+    margin-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+
+.main-tick{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.tick p{
+    padding: 0.5rem;
+}
 
 .main-tick{
     display: grid;
@@ -291,7 +243,6 @@ a:hover {
         text-indent: 10px;
         border-left: none;
         border-right: none;
-        width: 100%;
     }
 
     .main-tick{
@@ -303,7 +254,20 @@ a:hover {
         display: none;
     }
     
-    
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-gap: 10px;
+        grid-template-areas: 
+        "sub1 sub1"
+        "sub2 sub2"
+        "sub3 sub3"
+        "sub5 sub5"
+        "sub4 sub4"
+    ;
+
+    }
 
     .sub1{
        grid-area: sub1;
@@ -349,7 +313,10 @@ a:hover {
         padding-left: 40px;
     }
 
-    
+    #footer{
+        background: none;
+    }
+
     .sub1 span{
         margin-left: -17%;
         
