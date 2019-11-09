@@ -41,6 +41,9 @@ body {
             padding:3% 5%;
 
         }
+        div.contain{
+            margin-top: 7em;
+        }
         .hamburger{
             display: flex;
             justify-content: right;
@@ -100,7 +103,12 @@ body {
         width:70%;
     }
     }
-
+    @media screen and (max-width: 800px){
+        div.contain{
+            width: 80%;
+        }
+    }
+    
     </style>
 </head>
 <body style="margin-top: 1em">
@@ -166,7 +174,7 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
 
 <!--NAVBAR ENDS-->
 
-<div class="container contain mt-5" id="home">
+<div class="container contain" id="home">
     <div>
         <h4 class="text-bold">Finish Registration</h4>
         <p class="p-1">Car Park Details</p>    
@@ -189,7 +197,7 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
 </div>
 
 <!-- Add car park -->
-<div class="container contain mt-5" id="first">
+<div class="container contain" id="first">
     <div class="row">
         <div class="col-6">
             <a class="navbar-brand" href="#">
@@ -260,7 +268,7 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
 </form>
 </div>
 <!-- Add carpark ends here -->
-<div class="container contain mt-5" id="second">
+<div class="container contain" id="second">
     <div class="row">
         <div class="col-6">
             <a class="navbar-brand" href="#">
