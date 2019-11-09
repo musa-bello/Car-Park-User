@@ -1,6 +1,4 @@
-document.getElementById("first").style.display="none";
-document.getElementById("second").style.display="none";
-document.getElementById("third").style.display="none";
+
 
 
 //Chevron icons in HOME//
