@@ -96,6 +96,24 @@ body {
     #first, #second, #third{
         display: none;
     }
+
+    div.photo1{
+        margin: 0 auto;
+        height: 170px;
+        width: 120px;
+        border: 2px dashed #000;
+    }
+
+    div.photo1 input{
+        position: absolute;
+        margin: auto;
+        background: none;
+        border: none;
+        outline: none;
+    }
+    .form-group{
+        width: auto;
+    }
     @media screen and (min-width:0px) and (max-width: 420px) {
         .contain{
             background-color:#fff;
@@ -111,6 +129,14 @@ body {
     @media screen and (max-width: 800px){
         div.contain{
             width: 98%;
+        }
+    }
+    @media screen and (max-width: 768px){
+        label{
+            width: max-content;
+        }
+        input{
+            width: initial;
         }
     }
     
@@ -291,10 +317,10 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
             </h5>
         </div>
         <form action="" method="POST">
-            <div class="mt-4">
+            <div class="mt-3 photo1">
                 <input type="file" accept="image/*">
             </div>   
-            <div class="mt-4">
+            <div class="mt-3">
                 <h5 class="">Photo Requirements</h5>
                 <p class="photo">
                 <ul>
@@ -327,10 +353,10 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
         <div class="row">
             <div class="col-12">
                 <form action="" method="POST">
-                        <div class="mt-4 file">
-                                <input type="file" placeholder="Choose file" class="b-0"required>
+                        <div class="mt-3 photo1">
+                                <input type="file" class="b-0"required>
                              </div>   
-                             <div class="text-center m " style="width:100%;">
+                             <div class="text-center mt-4" style="width:100%;">
                                  <button type="submit" class="btn btn-primary add-button text-center">Upload Photo</button>
                              </div>
                 </form>
