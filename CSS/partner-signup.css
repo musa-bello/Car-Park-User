@@ -84,11 +84,11 @@ button {
     transition: transform 80ms ease-in;
   }
 .get-started{
-    padding-left: 50px;
-    font-family:sans-serif;
+    padding-left: 40px;
+    
 font-style: normal;
 font-weight: bold;
-font-size: 40px;
+font-size: 35px;
 line-height: 40px;
 letter-spacing: 0.05em;
 color: #1A73E8;;
@@ -227,30 +227,63 @@ margin-bottom: 10px;
   .sign-up-link, .sign-up-page{
       width: 50%;
   }
+  div.ghost1{
+    display: none;
+}
+ 
+.ghost{
+    display: none;
+}
   @media screen and (max-width: 768px){
       
+    div.redirect-btns div:nth-of-type(1) button{
+        padding: 10px 20px;
+        color: #1A73E8;
+        border: 2px solid #1A73E8;
+        font-size: 7px;
+      }
+     
+      div.redirect-btns div:nth-of-type(3) button{
+          background-color: #1A73E8;
+          color: #fff;
+      }
+    div.ghost1{
+        display: block;
+    }
+    div.redirect-btns{
+        position: inherit;
+        display: inline-flex;
+    }
+      
     .sign-up-page{
+        text-align: center;
         margin-top: 5px;
         width: 100%;
         border-radius: 7px;
     }
+    
     .sign-up-link{
         display: none;
     }
     body{
-        padding: 20px 10px;
+        padding: 0 10px;
     }
     form.form{
         width: 100%;
     }
+    .get-started{
+       padding: 0;
+    }
+    div.ghost{
+        display: block;
+    }
   }
+
   @media screen and (max-width: 400px){
     .get-started{
         text-align: center;
         font-size: 30px;
     }
-    h3.line{
-        line-height: 0;
-    }
+   
   }
   
