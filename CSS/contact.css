@@ -20,13 +20,18 @@
             top: 0;
         }
 
-        
+        img.logo{
+          width: 14%;
+        }
 
         .wrapper,
         .contact {
             padding-top: 5rem;
         }
-
+        hr.footer-hr {
+        margin: auto 70px;
+          border:1px solid #fff;
+        }
         .wrapper h1,
         .contact h2 {
             font-size: 20px;
@@ -394,9 +399,10 @@ a:hover {
     padding-top: 4em;
     margin-bottom: 2em;
   }
-  hr.footer {
+  hr.footer-hr {
     width: 350px;
     margin-left: 0;
+    border:2px solid #fff;
   }
   .foot-brand {
     width: 100px;
