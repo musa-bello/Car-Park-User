@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Car Park</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link
       rel="stylesheet"
@@ -24,8 +26,9 @@
 
 html,
 body {
+   
   font-family: "Poppins", sans-serif;
-  background: #fafafa;
+  background: #E5E5E5;
   overflow-x: hidden;
   width: 100%;
   margin: 0px;
@@ -100,7 +103,7 @@ body {
 
     </style>
 </head>
-<body>
+<body style="margin-top: 0.5em">
     <!--NAVBAR STARTS-->
 
 <nav
@@ -274,24 +277,25 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
                enough lighting and hight quality as this would be used as the picture of the car park on the CarPark app. 
             </h5>
         </div>
-        <div class="mt-4">
-            <img class="img-fluid car-photo" src="https://res.cloudinary.com/inaaga/image/upload/v1572292475/fff.png" alt=""
-            width="50%"
-            >
-        </div>   
-        <div class="mt-4">
-            <h5 class="">Photo Requirements</h5>
-            <p class="photo">
+        <form action="" method="POST">
+            <div class="mt-4">
+                <input type="file" accept="image/*">
+            </div>   
+            <div class="mt-4">
+                <h5 class="">Photo Requirements</h5>
+                <p class="photo">
                 <ul>
                     <li>Show a section of all the car park</li>
                     <li>No part of the car park in the pictures should be covered</li>
                     <li>Take your photo in a well-lit place</li>
                 </ul>
-            </p>
-        </div>
-        <div class="text-center mt-4 " style="width:100%;">
-            <button class="btn btn-primary add-button text-center">Add Car Park</button>
-        </div>
+                </p>
+            </div>
+            <div class="text-center mt-4 " style="width:100%;">
+                <button type="submit" class="btn btn-primary add-button text-center">Add Car Park</button>
+            </div>
+        </form>
+        
     </div>
 </div>
 <!-- Add carpark photo ends here -->
@@ -309,37 +313,73 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="mt-4">
-                    <img class="img-fluid doc-photo" src="https://res.cloudinary.com/inaaga/image/upload/v1572292475/fff.png" alt=""
-                    width="35%"
-                    >
-                </div>   
-                <div class="text-center m " style="width:100%;">
-                    <button class="btn btn-primary add-button text-center">Upload Photo</button>
-                </div>
+                <form action="" method="POST">
+                        <div class="mt-4">
+                                <input type="file" placeholder="Choose file" class="b-0"required>
+                             </div>   
+                             <div class="text-center m " style="width:100%;">
+                                 <button type="submit" class="btn btn-primary add-button text-center">Upload Photo</button>
+                             </div>
+                </form>
+               
             </div>
         </div>
     </div>
-    <footer class="container-fluid footer mt-5">
-    <div class="footer-links">
-            <a href="#">
-                <img class="foot-brand "
-                  src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"           
-                  alt="Logo"
-                />
-              </a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact Us</a>
-          <a href="partner.html">Become a Partner</a>
-          <a href="http://car-park.ga">Admin</a>
-          <a href="support.html">Support</a>
-          <a href="termsOfService.html">Service Agreement</a>
-          <a href="termsOfService.html">Privacy Policy</a>
-          <a href="">&#9400;HNG Internship, 2019 </a>
-        </div>
-        </footer>
+    <footer class="footer mt-5">
+            <div class="row container-fluid ">
+              <div class="col-sm-12 col-md-6 align-self-center hero1 foot1">
+                <h1 class="foot-one">
+                  Finding a parking space should be easy, convenient and not
+                  stressful.
+                </h1>
+                <p class="foot-paragraph mb-4">
+                  Download the carpark app today and find secure spaces to park your
+                  vehicles .
+                </p>
+                <button class="btn btn-success my-2 my-sm-0 nav-btn foot-btn shadow-none" type="submit">
+                  <div>
+                    <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
+                      alt="Google Playstore" />
+                    Download App
+                  </div>
+                </button>
+              </div>
+              <div class="col-sm-12 col-md-6 hero2 d-none d-md-block d-xl-block">
+                <div>
+                  <div class="eclipse2">
+                    <img class="hero-img img-fluid"
+                      src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
+                      alt="Android Phone" />
+                  </div>
+                  <img class="hero-dots"
+                    src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572276314/Car%20Park/Group_31_dlt1bx.svg"
+                    alt="dots" />
+                </div>
+              </div>
+            </div>
+            <hr class="footer-hr" />
+            <div class="footer-links container pr-3 pl-3">
+                <a href="index.html">
+                    <img class="foot-brand"
+                    src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"           
+                      alt="Logo"
+                    />
+                  </a>
+              <a href="faq.html">FAQ</a>
+              <a href="contact.html">Contact Us</a>
+              <a href="partner.html">Become a Partner</a>
+              <a href="http://car-park.ga">Admin</a>
+              <a href="support.html">Support</a>
+              <a href="termsOfService.html">Service Agreement</a>
+              <a href="termsOfService.html">Privacy Policy</a>
+              <a href="">&#9400;HNG Internship, 2019 </a>
+            </div>
+          </footer>
 
-  
+    <script
+    src="https://kit.fontawesome.com/2534cfc66b.js"
+    crossorigin="anonymous"
+  ></script>
   <script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -355,6 +395,13 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"
   ></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200
+    });
+  </script>
   
   <script src="JS/landing_page.js"></script>
   <script type="text/javascript" src="JS/continue_reg.js"></script>
