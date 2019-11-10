@@ -14,16 +14,23 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="CSS/landing_page.css" />
-  
-
-    
-    
+   
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready( function () {
+		$('form').submit( function () {
+			var formdata = $(this).serialize();
+			$.ajax({
+			    type: "POST",
+			    url: "http://www.example.com/submit.php",
+			    data: formdata
+			 });
+			return false;
+		});
+	});
+</script>
 
     <style>
-        /* body{
-            background-color:rgb(226, 223, 223);
-        } */
         @import url("https://fonts.googleapis.com/css?family=Poppins:200,400,500|Raleway:500i&display=swap");
 
 html,
@@ -35,6 +42,9 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
+}
+.fixed-top{
+    background-color: #fff;
 }
         .contain{
             background-color:#fff;
@@ -139,70 +149,193 @@ body {
             width: initial;
         }
     }
-    
+    /* FOOTER */
+.footer {
+  background: #3684eb;
+  height: fit-content;
+  margin-left: 0px;
+}
+hr.footer-hr{
+    width: 90%;
+    margin: auto;
+}
+.eclipse2 {
+  background: #1a73e8;
+  width: 400px;
+  height: 400px;
+  margin-left: 73px;
+  margin-top: 6em;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.foot1 {
+  padding-left: 7.5rem;
+  padding-top: 5rem;
+}
+.foot-btn {
+  background: white;
+  color: #3684eb;
+  border: none;
+  width: 163px;
+  height: 44px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+.foot-one {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 130%;
+  color: #ffffff;
+}
+.foot-paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #dbd6ed;
+}
+#hr1 {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  border: 1px solid #fff;
+}
+hr.footer-hr{
+  border: 1px solid #fff;
+}
+.hero-dots {
+  margin-left: 25em;
+  margin-top: -12em;
+  z-index: -1;
+  position: relative;
+  opacity: 0.5;
+}
+.hero-img {
+  height: auto;
+  margin-top: -18%;
+  margin-left: 12%;
+  -webkit-animation: float 2s infinite alternate;
+  animation: float 6s ease-in-out infinite;
+}
+.footer-links {
+  padding: 1em 3.5em 2em;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-links a {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 160%;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+a:hover {
+  color: #f8d373;
+  transition: 0.6s ease-in-out;
+}
+.hero-img {
+  height: auto;
+  margin-top: -18%;
+  margin-left: 12%;
+  -webkit-animation: float 2s infinite alternate;
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    /* box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6); */
+    transform: translatey(0px);
+  }
+  50% {
+    /* box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2); */
+    transform: translatey(-20px);
+  }
+  100% {
+    /* box-shadow: 0 5px 15px 0px rgba(207, 207, 207, 0.6); */
+    transform: translatey(0px);
+  }
+}
+/* BUTTONS */
+.btn-success:hover,
+.btn-primary:hover {
+  background: #1350a0;
+  border: none;
+  color: #fff;
+  transition: 0.6s ease-in-out;
+}
+.btn-success:active:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  background: #1350a0 !important;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 990px) {
+  .foot1 {
+    padding-left: 1em;
+    padding-top: 5em;
+    margin-bottom: 2em;
+  }
+  hr{
+    width: 350px;
+    margin-left: 0;
+  }
+  .foot-brand {
+    width: 100px;
+  }
+  .footer-links {
+    padding: 0 0 2em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-links a {
+    margin: 1em;
+  }
+  .mystyle {
+    margin-top: 130px !important;
+  }
+}
+
     </style>
 </head>
 <body style="margin-top: 1em">
     <!--NAVBAR STARTS-->
 
-<nav
-class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
->
-<div class="container my-4">
-  <a class="navbar-brand" href="#">
-    <img
-      src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571942740/Car%20Park/Group_9640_w7taay.svg"
-      width="30"
-      height="30"
-      alt=""
-    />
-  </a>
-  <button onclick="heroClassToggle()"
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-       <ul class="navbar-nav">
-         <li class="nav-item mr-1">
-           <a class="nav-link" href="loginsignup.html">SignOut</a>
-         </li>
-         <li class="nav-item">
-           <!-- <a class="nav-link" href="partner.html">Become a Partner</a> -->
-           <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             Help
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-             <a class="dropdown-item" href="#"><span class="fas fa-user px-2"></span>Check Account Status</a>
-              <a class="dropdown-item" href="support.html"><span class="px-2 fas fa-question"></span>Contact Support</a>
-              
+<nav class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top px-5 py-4">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img
+                        src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571942740/Car%20Park/Group_9640_w7taay.svg"
+                        alt=""></a>
+                <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="bookSpace.html">Sign Out</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Help
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Check Account Status</a>
+                                <a class="dropdown-item" href="contact.html">Contact Support</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-         </li>
-       </ul>
-       <button
-         class="btn btn-outline-success my-2 mr-4 my-sm-0 nav-btn nav-btn1 shadow-none"
-         type="submit"
-       >
-         Book Space
-       </button>
-       <button
-         class="btn btn-success my-2 my-sm-0 nav-btn nav-btn2 shadow-none"
-         type="submit"
-       >
-         Download App
-       </button>
-     </div>
-   </div>
-</nav>
 
+        </nav>
 <!--NAVBAR ENDS-->
 
 <div class="container contain" id="home">
@@ -239,7 +372,7 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
     <div class="mt-3">
         <h4 class="text-bold">Add Carpark</h4>   
     </div>
-    <form method="POST" action="form.php" onsubmit="moveForward()">
+    <form  onsubmit="moveForward()">
     <div class="row">
            
         <div class="col-md-6 col-sm-12">
@@ -316,7 +449,7 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
                enough lighting and hight quality as this would be used as the picture of the car park on the CarPark app. 
             </h5>
         </div>
-        <form action="form.php" method="POST" onsubmit="moveForward2()">
+        <form  onsubmit="moveForward2()">
             <div class="mt-3 photo1">
                 <input type="file" accept="image/*">
             </div>   
@@ -352,7 +485,7 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
         </div>
         <div class="row">
             <div class="col-12">
-                <form action="https://google.com" method="POST" onsubmit="moveForward3()">
+                <form  onsubmit="moveForward3()">
                         <div class="mt-3 photo1">
                                 <input type="file" class="b-0"required>
                              </div>   
