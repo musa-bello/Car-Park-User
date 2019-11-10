@@ -1,84 +1,124 @@
- @import url('https://fonts.googleapis.com/css?family=Poppins');
-        html{
-            width: 100%;
-            overflow-x: hidden;
-        }
-        body {
-            font-family: "Poppins", sans-serif;
-            width: 100%;
+  @import url("https://fonts.googleapis.com/css?family=Poppins:200,400,500|Raleway:500i&display=swap");
+
+html,
+body {
+   
+  font-family: "Poppins", sans-serif;
+  background: #E5E5E5;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  min-height: 100%;
+}
+.fixed-top{
+    background-color: #fff;
+}
+        .contain{
+            background-color:#fff;
+            margin: 7% auto;
+            width:45%;
+            padding:3% 5%;
 
         }
-            .header{
-                margin-top:10px;
-            }
-           
-           #link{
-float:right;
-
+        div.contain{
+            margin-top: 7em;
         }
-        #success-or-failure{
-            background: #35B729;
-            height:300px;
-    width:300px;
-
-border-radius: 50%;
-margin-top:7em ;
-margin-left:7em auto;
-
+        .hamburger{
+            display: flex;
+            justify-content: right;
         }
-        
-        #check{
-            position: absolute;
-            height:141px;
-            margin-left:60px;
-            margin-top:75px;
-            background: #35B729
+        .ham{
+            height:240px;
+            width:250px;
+            background-color:red;
+            z-index:1;
+            margin-top:-20px;
+            display:flex;
+            margin-left:auto;
         }
-       
-      h4{
-          text-align: center;
-          
-font-family: sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 48px;
-line-height: 72px;
-/* identical to box height */
-
-color: rgba(51, 51, 51, 0.8);
-      } 
-      @media only screen and (max-width:600px){
-            #success-or-failure{
-            background: #35B729;
-            height:200px;
-    width:200px;
-
-border-radius: 50%;
-margin-top:7em ;
-margin-left:7em auto;
+        .arrow{
+            margin-top:-35px;
+            cursor:pointer;
         }
-        #check{
-            position: absolute;
-            height:100px;
-            margin-left:30px;
-            margin-top:40px;
-            background: #35B729
-        }
-        h4{
-          text-align: center;
-          
-font-family: sans-serif;
-font-style: normal;
-font-weight: 550;
-font-size: 33px;
-line-height: 52px;
-/* identical to box height */
 
-color: rgba(51, 51, 51, 0.8);
-      } 
-       
+    .form-check{
+        padding-left:2%;
     }
-      /* FOOTER */
+    .form-check-label{
+        margin-top:5px;
+    }
+    .form-check-input{
+        margin-top:10px;
+    }
+    .add-button{
+        width:40%;
+    }
+    .photo{
+        font-weight:400;
+        font-size:15px;
+    }
+    .car-photo{
+        margin:0px auto!important;
+        display:flex;
+        height:150px;
+    }
+    .doc-photo{
+        margin:0px auto!important;
+        display:flex;
+        height:200px;
+    }
+    .m{
+        margin-top:100px;
+    }
+    #first, #second, #third{
+        display: none;
+    }
+
+    div.photo1{
+        margin: 0 auto;
+        height: 170px;
+        width: 120px;
+        border: 2px dashed #000;
+    }
+
+    div.photo1 input{
+        position: absolute;
+        margin: auto;
+        background: none;
+        border: none;
+        outline: none;
+    }
+    .form-group{
+        width: auto;
+    }
+    @media screen and (min-width:0px) and (max-width: 420px) {
+        .contain{
+            background-color:#fff;
+            margin: 7% auto;
+            width:95%;
+            padding:3% 5%;
+
+        }
+        .add-button{
+        width:70%;
+    }
+    }
+    @media screen and (max-width: 800px){
+        div.contain{
+            width: 98%;
+        }
+    }
+    @media screen and (max-width: 768px){
+        label{
+            width: max-content;
+        }
+        input{
+            width: initial;
+        }
+    }
+    /* FOOTER */
 .footer {
   background: #3684eb;
   height: fit-content;
@@ -227,8 +267,4 @@ a:hover {
   .mystyle {
     margin-top: 130px !important;
   }
-}
-hr.footer-hr{
-  width: 90%;
-  margin: auto;
 }
