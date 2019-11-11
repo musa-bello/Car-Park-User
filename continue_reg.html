@@ -14,195 +14,57 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="CSS/landing_page.css" />
-  
-
-    
-    
-
-    <style>
-        /* body{
-            background-color:rgb(226, 223, 223);
-        } */
-        @import url("https://fonts.googleapis.com/css?family=Poppins:200,400,500|Raleway:500i&display=swap");
-
-html,
-body {
+    <link rel="stylesheet" href="CSS/continue_reg.css">
    
-  font-family: "Poppins", sans-serif;
-  background: #E5E5E5;
-  overflow-x: hidden;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-        .contain{
-            background-color:#fff;
-            margin: 7% auto;
-            width:45%;
-            padding:3% 5%;
-
-        }
-        div.contain{
-            margin-top: 7em;
-        }
-        .hamburger{
-            display: flex;
-            justify-content: right;
-        }
-        .ham{
-            height:240px;
-            width:250px;
-            background-color:red;
-            z-index:1;
-            margin-top:-20px;
-            display:flex;
-            margin-left:auto;
-        }
-        .arrow{
-            margin-top:-35px;
-            cursor:pointer;
-        }
-
-    .form-check{
-        padding-left:2%;
-    }
-    .form-check-label{
-        margin-top:5px;
-    }
-    .form-check-input{
-        margin-top:10px;
-    }
-    .add-button{
-        width:40%;
-    }
-    .photo{
-        font-weight:400;
-        font-size:15px;
-    }
-    .car-photo{
-        margin:0px auto!important;
-        display:flex;
-        height:150px;
-    }
-    .doc-photo{
-        margin:0px auto!important;
-        display:flex;
-        height:200px;
-    }
-    .m{
-        margin-top:100px;
-    }
-    #first, #second, #third{
-        display: none;
-    }
-
-    div.photo1{
-        margin: 0 auto;
-        height: 170px;
-        width: 120px;
-        border: 2px dashed #000;
-    }
-
-    div.photo1 input{
-        position: absolute;
-        margin: auto;
-        background: none;
-        border: none;
-        outline: none;
-    }
-    .form-group{
-        width: auto;
-    }
-    @media screen and (min-width:0px) and (max-width: 420px) {
-        .contain{
-            background-color:#fff;
-            margin: 7% auto;
-            width:95%;
-            padding:3% 5%;
-
-        }
-        .add-button{
-        width:70%;
-    }
-    }
-    @media screen and (max-width: 800px){
-        div.contain{
-            width: 98%;
-        }
-    }
-    @media screen and (max-width: 768px){
-        label{
-            width: max-content;
-        }
-        input{
-            width: initial;
-        }
-    }
-    
-    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready( function () {
+		$('form').submit( function () {
+			var formdata = $(this).serialize();
+			$.ajax({
+			    type: "POST",
+			    url: "http://www.example.com/submit.php",
+			    data: formdata
+			 });
+			return false;
+		});
+	});
+</script>    
 </head>
 <body style="margin-top: 1em">
     <!--NAVBAR STARTS-->
 
-<nav
-class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
->
-<div class="container my-4">
-  <a class="navbar-brand" href="#">
-    <img
-      src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571942740/Car%20Park/Group_9640_w7taay.svg"
-      width="30"
-      height="30"
-      alt=""
-    />
-  </a>
-  <button onclick="heroClassToggle()"
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-       <ul class="navbar-nav">
-         <li class="nav-item mr-1">
-           <a class="nav-link" href="loginsignup.html">SignOut</a>
-         </li>
-         <li class="nav-item">
-           <!-- <a class="nav-link" href="partner.html">Become a Partner</a> -->
-           <div class="dropdown">
-            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-             Help
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-             <a class="dropdown-item" href="#"><span class="fas fa-user px-2"></span>Check Account Status</a>
-              <a class="dropdown-item" href="support.html"><span class="px-2 fas fa-question"></span>Contact Support</a>
-              
+<nav class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top px-5 py-4">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img
+                        src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571942740/Car%20Park/Group_9640_w7taay.svg"
+                        alt=""></a>
+                <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="bookSpace.html">Sign Out</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Help
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Check Account Status</a>
+                                <a class="dropdown-item" href="contact.html">Contact Support</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-         </li>
-       </ul>
-       <button
-         class="btn btn-outline-success my-2 mr-4 my-sm-0 nav-btn nav-btn1 shadow-none"
-         type="submit"
-       >
-         Book Space
-       </button>
-       <button
-         class="btn btn-success my-2 my-sm-0 nav-btn nav-btn2 shadow-none"
-         type="submit"
-       >
-         Download App
-       </button>
-     </div>
-   </div>
-</nav>
 
+        </nav>
 <!--NAVBAR ENDS-->
 
 <div class="container contain" id="home">
@@ -239,7 +101,7 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
     <div class="mt-3">
         <h4 class="text-bold">Add Carpark</h4>   
     </div>
-    <form method="POST" action="" onsubmit="moveForward()">
+    <form  onsubmit="moveForward()">
     <div class="row">
            
         <div class="col-md-6 col-sm-12">
@@ -316,7 +178,7 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
                enough lighting and hight quality as this would be used as the picture of the car park on the CarPark app. 
             </h5>
         </div>
-        <form action="" method="POST" onsubmit="moveForward2()">
+        <form  onsubmit="moveForward2()">
             <div class="mt-3 photo1">
                 <input type="file" accept="image/*">
             </div>   
@@ -352,7 +214,7 @@ class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top"
         </div>
         <div class="row">
             <div class="col-12">
-                <form action="" method="POST" onsubmit="moveForward3()">
+                <form  onsubmit="moveForward3()">
                         <div class="mt-3 photo1">
                                 <input type="file" class="b-0"required>
                              </div>   

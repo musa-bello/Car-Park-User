@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/car-park-search.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title> Car Park Bookings</title>
@@ -826,7 +827,7 @@
 </head>
 
 <body>
-    <div class="mt-5">
+    <div class="mt-3">
         <nav class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top px-5 py-4">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img
@@ -1177,103 +1178,58 @@
             </div>
         </div>
         <!--  end of cancel booking section -->
-    </div>
-
-    <div class="row py-5 mt-5 footer-row" style="background: #3684EB">
-        <div class="col-12 p-0 mt-md-3 mb-5 d-md-flex flex-md-row justify-content-start">
-            <div class="col-12 col-md-6 pr-0 mb-0 mb-md-5 text-and-button">
-                <div class="footer-text-container text-left text-white ">
-                    <h3>Finding a parking space should be easy, convenient and not stressful.</h3>
-                    <p style="color: #DBD6ED;">Download the carpark app today and find secure spaces to park your
-                        vehicles</p>
-                </div>
-                <div>
-                    <button class="play-store py-2 px-3 primary-blue mt-3">
-                        <span><img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
-                                alt="Google Playstore"></span> Download App
-                    </button>
-                </div>
+    <!--Footer-->
+ <footer class="footer mt-5">
+        <div class="row container-fluid ">
+          <div class="col-sm-12 col-md-6 align-self-center hero1 foot1">
+            <h1 class="foot-one">
+              Finding a parking space should be easy, convenient and not
+              stressful.
+            </h1>
+            <p class="foot-paragraph mb-4">
+              Download the carpark app today and find secure spaces to park your
+              vehicles .
+            </p>
+            <button class="btn btn-success my-2 my-sm-0 nav-btn foot-btn shadow-none" type="submit">
+              <div>
+                <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
+                  alt="Google Playstore" />
+                Download App
+              </div>
+            </button>
+          </div>
+          <div class="col-sm-12 col-md-6 hero2 d-none d-md-block d-xl-block">
+            <div>
+              <div class="eclipse2">
+                <img class="hero-img img-fluid"
+                  src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
+                  alt="Android Phone" />
+              </div>
+              <img class="hero-dots"
+                src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572276314/Car%20Park/Group_31_dlt1bx.svg"
+                alt="dots" />
             </div>
-            <div class="col-12 col-md-6 mb-5 mt-5 mt-md-0" data-aos="zoom-in-up">
-                <div class=" eclipse ml-md-5 mx-auto mx-md-0 d-none d-md-block">
-                    <img class="phone-img img-fluid mx-auto  d-block"
-                        src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
-                        alt="phone-img">
-                </div>
-            </div>
+          </div>
         </div>
-
-        <div class="col-12 footer-links d-flex">
-            <div class="d-flex justify-content-between flex-column flex-md-row" style="width: 80%">
-                <div class="">
-                    <img src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"
-                        alt="logo">
-                </div>
-                <a href="faq.html" class="mt-3 mt-md-0">FAQ</a>
-                <a href="contact.html" class="mt-3 mt-md-0">Contact Us</a>
-                <a href="partner.html" class="mt-3 mt-md-0">Become a Partner</a>
-                <a href="http://car-park.ga/" class="mt-3 mt-md-0">Admin</a>
-                <a href="support.html" class="mt-3 mt-md-0">Support</a>
-                <a href="termsOfService.html" class="mt-3 mt-md-0">Privacy Policy</a>
-            </div>
-            <div class="ml-auto align-self-end align-self-md-start">
-                <span class="text-white text-right">&copy; HNG Internship 2019</span>
-            </div>
-
+        <hr class="footer" />
+        <div class="footer-links container pr-3 pl-3">
+            <a href="index.html">
+                <img class="foot-brand"
+                src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"           
+                  alt="Logo"
+                />
+              </a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="partner.html">Become a Partner</a>
+          <a href="http://car-park.ga">Admin</a>
+          <a href="support.html">Support</a>
+          <a href="termsOfService.html">Service Agreement</a>
+          <a href="termsOfService.html">Privacy Policy</a>
+          <a href="">&#9400;HNG Internship, 2019 </a>
         </div>
-    </div>
-    <!-- <script>
-                const pastBookingDiv = document.getElementById ('pastBooking-section');
-                const currentBookingDiv = document.getElementById ('currentBooking-section');
-                const cancelBookingDiv = document.getElementById ('cancelBooking-section');
-        
-                const pastBookingBtn = document.getElementById ('past');
-                const currentBookingBtn = document.getElementById ('current');
-                const cancelBookingBtn = document.getElementById ('cancel');
-        
-                pastBookingBtn.onclick = function (){
-                    currentBookingDiv.classList.add('hidden')
-                    cancelBookingDiv.classList.add('hidden');
-                    pastBookingDiv.classList.remove('hidden');
-                    pastBookingDiv.classList.add('visible');
-                    pastBookingBtn.classList.remove('btn-link');
-                    pastBookingBtn.classList.add('btn-light');
-                    currentBookingBtn.classList.remove('btn-light');
-                    currentBookingBtn.classList.add('btn-link');
-                    cancelBookingBtn.classList.remove('btn-light');
-                    cancelBookingBtn.classList.add('btn-link');
-                    console.log("past booking clicked");
-                };
-        
-                currentBookingBtn.onclick = function (){
-                    pastBookingDiv.classList.remove('visible');
-                    pastBookingDiv.classList.add('hidden');
-                    cancelBookingDiv.classList.add('hidden');
-                    currentBookingDiv.classList.remove('hidden');
-                    currentBookingDiv.classList.add('visible');
-                    pastBookingBtn.classList.remove('btn-light');
-                    pastBookingBtn.classList.add('btn-link');
-                    currentBookingBtn.classList.remove('btn-link');
-                    currentBookingBtn.classList.add('btn-light');
-                    console.log("current booking clicked");
-                };
-        
-                cancelBookingBtn.onclick = function (){
-                    pastBookingDiv.classList.remove('visible');
-                    pastBookingDiv.classList.add('hidden');
-                    currentBookingDiv.classList.remove('visible');
-                    currentBookingDiv.classList.add('hidden');
-                    cancelBookingDiv.classList.remove('hidden');
-                    cancelBookingDiv.classList.add('visible');
-                    pastBookingBtn.classList.remove('btn-light');
-                    pastBookingBtn.classList.add('btn-link');
-                    currentBookingBtn.classList.remove('btn-light');
-                    currentBookingBtn.classList.add('btn-link');
-                    cancelBookingBtn.classList.remove('btn-link');
-                    cancelBookingBtn.classList.add('btn-light');
-                    console.log("cancel booking clicked");
-                };
-                </script> -->
+      </footer>
+    
     <script src="https://kit.fontawesome.com/2534cfc66b.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
