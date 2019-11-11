@@ -2,228 +2,64 @@
 <html>
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title></title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/paymentPage.css">
+    <link rel="stylesheet" href="CSS/car-park-search.css" />
+  
 
 </head>
-<style>
-  a:hover {
-    color: darkblue;
-    border-radius: 5px;
-    transition: all 2s ease;
-    text-decoration: none;
-    zoom: 3px;
-  }
-
-
-  .divider-text {
-    position: relative;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    color: #8392a5;
-    font-size: 10px;
-    font-weight: 500;
-    font-family: -apple-system, BlinkMacSystemFont, "Inter UI", Roboto, sans-serif;
-    letter-spacing: .5px;
-    margin: 15px 0;
-  }
-
-  .divider-text::before,
-  .divider-text::after {
-    content: '';
-    display: block;
-    flex: 1;
-    height: 1px;
-    background-color: #e5e9f2;
-  }
-
-  .divider-text::before {
-    margin-right: 10px;
-  }
-
-  .divider-text::after {
-    margin-left: 10px;
-  }
-
-  .mcBtn {
-    background-image: url('https://res.cloudinary.com/chibuogwu/image/upload/v1572363176/car-park/Group9623_hncy4b.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    padding-right: 15px;
-  }
-
-  .bataBtn {
-    background-image: url('https://res.cloudinary.com/chibuogwu/image/upload/v1572363175/car-park/Group_9625_hqjiew.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    padding-right: 15px;
-  }
-
-  .paystackBtn {
-    background-image: url('https://res.cloudinary.com/chibuogwu/image/upload/v1572363176/car-park/Group9623_hncy4b.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    padding-right: 15px;
-  }
-
-  input[type="text"],
-  textarea {
-
-    background-color: #FAFAFA;
-    border: 1px solid #F2F2F2;
-
-  }
-  /* FOOTER */
-  .footer {
-      background: #3684eb;
-      height: fit-content;
-      margin-left: 0px;
-      margin-top: 560px;
-      }
-      .eclipse2 {
-      background: #1a73e8;
-      width: 400px;
-      height: 400px;
-      margin-left: 73px;
-      margin-top: 6em;
-      border-radius: 50%;
-      z-index: 1000;
-      }
-      .foot1 {
-      padding-left: 7.5rem;
-      padding-top: 5rem;
-      }
-      .foot-btn {
-      background: white;
-      color: #3684eb;
-      border: none;
-      }
-      .foot-one {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 28px;
-      line-height: 130%;
-      color: #ffffff;
-      }
-      .foot-paragraph {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 160%;
-      color: #dbd6ed;
-      }
-      .footer-hr{
-      /* width: 1100px; */
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 100px;
-      border: 1px solid #1a73e8;
-      }
-      .footer-links {
-      padding: 1em 3.5em 2em;
-      display: flex;
-      justify-content: space-evenly;
-      }
-      .footer-links a {
-      font-style: normal;
-      font-weight: 200;
-      font-size: 12px;
-      line-height: 160%;
-      color: #f5f5f5;
-      text-decoration: none;
-      }
-      a:hover {
-      color: #f8d373;
-      transition: 0.6s ease-in-out;
-      }
-
-  @media(min-width:650px) {
-    .ben {
-      font-size: 24px;
-    }
-  }
-
-
-
-  @media(min-width: 800px) {
-    .ben {
-      font-size: 24px;
-    }
-  }
-
-  @media(min-width: 950px) {
-    .ben {
-      font-size: 17px;
-    }
-  }
-  @media (max-width: 375px) {
-    /*footer*/
-    .foot-brand {
-            width: 100px;
-         }
-         .foot1{
-            padding-left: 0rem;
-         }
-         .footer-links {
-            padding: 0 0 2em;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-         }
-         .footer-links a {
-            margin: 1em;
-         }
-         .mystyle {
-            margin-top: 130px !important;
-         }
-  }
-</style>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img
-          src="https://res.cloudinary.com/chibuogwu/image/upload/v1572363176/car-park/Group_znqfxm.png"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto " style="font-weight: bolder;">
-
-          <li class="nav-item">
-            <a class="nav-link" href="selectSpot.html">My Parking Space</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="bookSpace.html">Schedule</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Femi
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something</a>
-            </div>
-          </li>
-
+    <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+        <div class="container">
+           <a class="navbar-brand" href="index.html">
+              <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282259/CarPark_Logo.svg"
+                 style="width:120px;" alt="Car-Park logo">
+           </a>
+           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                 <li class="nav-item">
+                    <a class="nav-link text-dark" href="selectSpot.html">My Parking Space</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link text-dark" href="bookSpace.html">Schedule</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Femi
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+              </ul>
+           </div>
+        </div>
+     </nav>
+            
         </ul>
-      </div>
     </div>
-  </nav>
+</div>
+
+</nav>
 
   <div class="container pt-5 mt-5">
-    <div class="row">
-      <div class="col-lg-8">
+    <div class="row pt-5">
+      <div class="col-lg-8 ">
         <h4>Complete your parking reservation</h4>
         <strong>Savannah Suites Zuma Hall Garki Abuja</strong>
         <div>
@@ -425,57 +261,58 @@
     </div>
    
   </div>
-  <footer class="container-fluid footer mt-5">
+   <!--FOOTER-->
+  <footer class=" footer mt-5">
     
-      <div class="row">
-        <div class="col-sm-12 col-md-6 align-self-center hero1 foot1">
-          <h1 class="foot-one">
-            Finding a parking space should be easy, convenient and not
-            stressful.
-          </h1>
-          <p class="foot-paragraph mb-4">
-            Download the carpark app today and find secure spaces to park your
-            vehicles .
-          </p>
-          <button class="btn btn-success my-2 my-sm-0 nav-btn foot-btn shadow-none" type="submit">
-            <div>
-              <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
-                alt="Google Playstore" />
-              Download App
-            </div>
-          </button>
-        </div>
-        <div class="col-sm-12 col-md-6 hero2 d-none d-md-block d-xl-block">
+    <div class="row container-fluid">
+      <div class="col-sm-12 col-md-6 align-self-center hero1 foot1">
+        <h1 class="foot-one">
+          Finding a parking space should be easy, convenient and not
+          stressful.
+        </h1>
+        <p class="foot-paragraph mb-4">
+          Download the carpark app today and find secure spaces to park your
+          vehicles .
+        </p>
+        <button class="btn btn-success my-2 my-sm-0 nav-btn foot-btn shadow-none" type="submit">
           <div>
-            <div class="eclipse2">
-              <img class="hero-img img-fluid"
-                src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
-                alt="Android Phone" />
-            </div>
-            <img class="hero-dots"
-              src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572276314/Car%20Park/Group_31_dlt1bx.svg"
-              alt="dots" />
+            <img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
+              alt="Google Playstore" />
+            Download App
           </div>
+        </button>
+      </div>
+      <div class="col-sm-12 col-md-6 hero2 d-none d-md-block d-xl-block">
+        <div>
+          <div class="eclipse2">
+            <img class="hero-img img-fluid"
+              src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
+              alt="Android Phone" />
+          </div>
+          <img class="hero-dots"
+            src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1572276314/Car%20Park/Group_31_dlt1bx.svg"
+            alt="dots" />
         </div>
       </div>
-      <hr class="footer-hr"/>
-      <div class="footer-links">
-          <a href="index.html">
-              <img class="foot-brand"
-              src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"           
-                alt="Logo"
-              />
-            </a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="partner.html">Become a Partner</a>
-        <a href="http://car-park.ga">Admin</a>
-        <a href="support.html">Support</a>
-        <a href="termsOfService.html">Service Agreement</a>
-        <a href="termsOfService.html">Privacy Policy</a>
-        <a href="">&#9400;HNG Internship, 2019 </a>
-      </div>
-    </footer>
+    </div>
+    <hr />
+    <div class="footer-links">
+        <a href="index.html">
+            <img class="foot-brand"
+            src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"           
+              alt="Logo"
+            />
+          </a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="partner.html">Become a Partner</a>
+      <a href="http://car-park.ga">Admin</a>
+      <a href="support.html">Support</a>
+      <a href="termsOfService.html">Service Agreement</a>
+      <a href="termsOfService.html">Privacy Policy</a>
+      <a href="">&#9400;HNG Internship, 2019 </a>
+    </div>
+  </footer>
 
   <script type="text/javascript">
     console.log(document.getElementById('dropdown-text').className = 'visible');

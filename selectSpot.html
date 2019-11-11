@@ -1,98 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Checkout Page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/selectSpot.css">
+  <link rel="stylesheet" href="CSS/car-park-search.css" />
 </head>
-
-<style>
-  hr{
-     border:  1px solid #E7E7E7;
-  }
-
-  .divider-text {
-  position: relative;
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  color: #8392a5;
-  font-size: 10px;
-  font-weight: 500;
-  font-family: -apple-system, BlinkMacSystemFont, "Inter UI", Roboto, sans-serif;
-  letter-spacing: .5px;
-  margin: 15px 0; 
-}
-  .divider-text::before, .divider-text::after {
-    content: '';
-    display: block;
-    flex: 1;
-    height: 1px;
-    background-color: #e5e9f2; 
-  }
-  .divider-text::before {
-    margin-right: 10px; 
-  }
-  .divider-text::after {
-    margin-left: 10px; 
-  }
-
-  .inner-addon { 
-    position: relative; 
-}
-
-/* style icon */
-.inner-addon .fa-search {
-  position: absolute;
-  padding: 10px;
-  pointer-events: none;
-}
-
-/* align icon */
-.left-addon .fa-search  { right:  0px;}
-.right-addon .fa-search { right: 0px;}
-.left-addon .fa-search {color: blue;}
-
-/* add padding  */
-.left-addon input  { padding-left:  30px; }
-.right-addon input { padding-right: 30px; }
-  
-</style>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white ">
-  <div class="container">
-  <a class="navbar-brand" href="index.html"><img src="https://res.cloudinary.com/chibuogwu/image/upload/v1572363176/car-park/Group_znqfxm.png"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" >
-    <ul class="navbar-nav ml-auto " style="font-weight: bolder;">
-      
-      <li class="nav-item">
-        <a class="nav-link" href="selectSpot.html">My Parking Space</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="bookSpace.html">Schedule</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Femi
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another </a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something</a>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top">
+        <div class="container">
+           <a class="navbar-brand" href="index.html">
+              <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282259/CarPark_Logo.svg"
+                 style="width:120px;" alt="Car-Park logo">
+           </a>
+           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                 <li class="nav-item">
+                    <a class="nav-link text-dark" href="selectSpot.html">My Parking Space</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link text-dark" href="bookSpace.html">Schedule</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Femi
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+              </ul>
+           </div>
         </div>
-      </li>
-      
-    </ul>
+     </nav>
+            
+        </ul>
     </div>
-    
-  </div>
-  
+</div>
+
 </nav>
 
 <hr>
@@ -209,8 +165,8 @@
   </div>
 </div>
  <!--Footer-->
- <footer class="container-fluid footer mt-5">
-    <div class="row">
+ <footer class="footer mt-5">
+    <div class="row m-0 container-fluid">
       <div class="col-sm-12 col-md-6 align-self-center hero1 foot1">
         <h1 class="foot-one">
           Finding a parking space should be easy, convenient and not
@@ -241,8 +197,8 @@
         </div>
       </div>
     </div>
-    <hr />
-    <div class="footer-links">
+    <hr class="footer" />
+    <div class="footer-links container pr-3 pl-3">
         <a href="index.html">
             <img class="foot-brand"
             src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"           
