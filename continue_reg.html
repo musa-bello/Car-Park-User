@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Car Park</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -15,26 +16,24 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="CSS/continue_reg.css">
-   
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script type="text/javascript">
 	$(document).ready( function () {
 		$('form').submit( function () {
 			var formdata = $(this).serialize();
 			$.ajax({
 			    type: "POST",
-			    url: "http://www.example.com/submit.php",
+			    url: "https://www.google.com/submit.php",
 			    data: formdata
-			 });
-			return false;
-		});
-	});
+             });
+             return false;
+            });
+        });
 </script>    
 </head>
 <body style="margin-top: 1em">
     <!--NAVBAR STARTS-->
 
-<nav class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top px-5 py-4">
+<nav class="navbar navbar-expand-lg navbar-light scrolling-navbar fixed-top py-3">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img
                         src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571942740/Car%20Park/Group_9640_w7taay.svg"
@@ -87,6 +86,9 @@
         <h6>Car Park Ownership Registration</h6>
         <span class="float-right d-inline arrow"><a><i class="fas fa-chevron-right" id="parkOwner"></i></a></span> 
     </div>
+    <div class="text-center mt-4" id="finalSubmit" style="width:100%;">
+       <a href="Frame9_regPage.html"><button type="submit" class="btn btn-primary text-center">FINISH REGISTRATION</button></a> 
+    </div> 
 </div>
 
 <!-- Add car park -->
@@ -117,8 +119,7 @@
                 <div class="form-group mt-3 mb-4">
                     <label for="exampleInputEmail1" class="font-weight-bold">Car Park fee</label>
                     <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter amount" required>
-                </div>
-             
+                </div> 
         </div>
 
         <div class="col-md-6 col-sm-12">
@@ -226,6 +227,7 @@
             </div>
         </div>
     </div>
+   
        <!--Footer-->
  <footer class="footer mt-5">
         <div class="row container-fluid ">
@@ -279,11 +281,6 @@
       </footer>
     <script
     src="https://kit.fontawesome.com/2534cfc66b.js"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"
   ></script>
   <script

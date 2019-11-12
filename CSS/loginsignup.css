@@ -313,6 +313,14 @@ input[type="password"]{
   opacity: 0.6;
 
 }
+input[type="tel"]{
+  background-image: url("https://res.cloudinary.com/charlene04/image/upload/v1573563393/telephone-963_gsmfjk.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  opacity: 0.6;
+
+}
 
 input[type="email"]{
   opacity: 0.6;
