@@ -53,12 +53,23 @@ body {
 
 input[type="text"] {
   border: none;
-  width: 350px;
+  width: 350px !important;
   height: 50px;
+  flex-grow: 1;
   border: 1.5px solid #e7e7e7 !important;
   border-radius: 5px;
 }
-
+input:active,
+input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+button:active,
+button:focus,
+select:active,
+select:focus {
+  box-shadow: none !important;
+}
 /* style icon */
 .inner-addon .fa-search {
   position: absolute;
@@ -68,13 +79,8 @@ input[type="text"] {
 
 /* align icon */
 .left-addon .fa-search {
-  right: 1em !important;
+  right: 3em !important;
   top: 0.5em;
-}
-.right-addon .fa-search {
-  right: 0px;
-}
-.left-addon .fa-search {
   color: blue;
 }
 
@@ -306,5 +312,13 @@ a:hover {
   }
   .saveBtn {
     margin-top: 0.4em;
+  }
+  .left-addon .fa-search {
+    right: 1em !important;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1240px;
   }
 }
