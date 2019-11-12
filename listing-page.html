@@ -53,41 +53,43 @@
       <div class="d-inline-block buttons">
          <button type="button" class="btn btn-primary bg-white text-primary d-inline-block mr-3 px-4"> &bull;Open</button>
          <button type="button" class="btn btn-secondary bg-white text-primary d-inline-block px-4">All</button>
-         <button type="button" class="btn btn-primary bg-primary text-white d-inline-block ml-3">Save Searches</button>
+         <button type="button" class="btn btn-primary bg-primary text-white d-inline-block">Save Searches</button>
       </div>
    </div>
    </div>
 </div>
    <hr class="h-line">
 </div>
-   <div class="container-fluid">
+   <div class="container-fluid map-section">
       <div class="row">
-         <div class="col-md-6 pl-2">
+         <div class="col-md-6">
             <iframe class="map"
                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.45932584812!2d3.143870842679279!3d6.548376811897792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1572273126205!5m2!1sen!2sng"
-               frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+               frameborder="0" style="border:0;" allowfullscreen="">
+            </iframe>
          </div>
          <div class="col-md-6 pr-0 mt-5 pt-5 sideSection">
             <div class="container">
-               <h3 class="text-left mt-5 font-weight-bold">CarPark Listings</h3>
+               <h3 class="text-left mt-4 font-weight-bold">CarPark Listings</h3>
                <h5 class="text-left" style="font-size: 14px;">8 results</h5>
             </div>
-            <div class="container  mt-5">
+            <div class="container mb-3">
                <div class="text-right">
                   <p class="font-weight-bold d-inline-block">Sort by:</p>
-                  <div class="dropdown d-inline-block">
-                     <button type="button" class="btn btn-muted dropdown-toggle" data-toggle="dropdown">
-                        Distance
-                     </button>
-                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                     </div>
+                  <div style="display: inline;" class="dropdown">
+                        <button style="color: #000; background-color: #fff; border: none" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Distance
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Cost</a>
+                          <a class="dropdown-item" href="#">Packing Space</a>
+                          <a class="dropdown-item" href="#">Location</a>
+                        </div>
+                      </div>
                   </div>
                </div>
-            </div>
-            <div class="row mr-0 px-2 justify-content-between overflow-auto" >
+            <div class="listings">
+            <div class="row mr-0 px-2 justify-content-between" >
                <div class = "col-md-6 m-0 p-0 pr-2">
                   <div class="card col-12 w-100 mr-0 px-0">
                      <img
@@ -201,6 +203,7 @@
                      <a href="paymentPage.html"><button class="btn btn-primary text-white m-2">Book now</button></a>
                   </div>
             </div>
+         </div>
             </div>
          </div>
       </div>
