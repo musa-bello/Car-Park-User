@@ -271,7 +271,9 @@ a:hover {
     margin: 0.5em 0;
   }
 }
-
+div.listings{
+  padding-left: 20px;
+}
 div.sideSection{
   margin-top: 6em;
 }
