@@ -1,75 +1,76 @@
- @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-    overflow-x: hidden;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-      .has-search .form-control {
-         padding-left: 2.375rem;
-      }
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
 
-      .h-line {
-         margin-top: 0rem !important;
-         margin-bottom: 0rem !important;
-      }
+.h-line {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+input[type="text"] {
+  height: 40px !important;
+}
+.form-section {
+  display: flex;
+}
+.form-section .buttons button {
+  height: 40px;
+}
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+  right: 2;
+}
 
-      .form-section {
-         display: flex;
-         padding-top: 0.8rem;
-      }
+.searchbtn {
+  height: 40px !important;
+}
 
-      .has-search .form-control-feedback {
-         position: absolute;
-         z-index: 2;
-         display: block;
-         width: 2.375rem;
-         height: 2.375rem;
-         line-height: 2.375rem;
-         text-align: center;
-         pointer-events: none;
-         color: #aaa;
-         right: 2;
-      }
+.card {
+  width: 14.8rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 2px -2px #3684eb;
+}
 
-      .searchbtn {
-         height: 40px !important;
-      }
+.map {
+  width: 100%;
+  height: 100%;
+}
 
-      .card {
-         width: 14.8rem;
-         margin-bottom: 1rem;
-         box-shadow: 0 5px 2px -2px #3684EB;
-      }
+.card-img-top {
+  height: 12.06rem;
+}
 
-      .map {
-         width: 100%;
-         height: 100%;
-         ;
-      }
-
-      .card-img-top {
-         height: 12.06rem;
-      }
-
-      .card-badge {
-         position: absolute;
-         color: white;
-         background: rgba(0, 0, 0, 0.5);
-         font-size: 0.7rem;
-         padding: 0.4rem 1rem;
-         text-align: center;
-
-      }
+.card-badge {
+  position: absolute;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 0.7rem;
+  padding: 0.4rem 1rem;
+  text-align: center;
+}
 /* FOOTER */
 .footer {
   background: #3684eb;
   height: fit-content;
-  
+
   margin-top: 560px;
   margin-left: -15px;
   margin-right: -15px;
@@ -184,8 +185,7 @@ a:hover {
   opacity: 0.5;
 }
 
-
-  .hero-img {
+.hero-img {
   height: auto;
   margin-top: -18%;
   margin-left: 12%;
@@ -242,7 +242,6 @@ a:hover {
     padding-top: 2em;
   }
   .foot1 {
-    
     padding-top: 4em;
     margin-bottom: 2em;
   }
@@ -262,49 +261,47 @@ a:hover {
   .footer-links a {
     margin: 1em;
   }
-  
 }
-     
 
-      @media (max-width: 375px) {
-         .form-section {
-            flex-direction: column;
-         }
-         .map{
-            margin-top: 200px;
-         }
-         .sideSection{
-            margin-top: 0 !important;
-            padding-top: 0 !important;
-         }
-         .card {
-            width: 18rem;
-         }
+@media (max-width: 375px) {
+  .form-section {
+    flex-direction: column;
+  }
+  .map {
+    margin-top: 200px;
+  }
+  .sideSection {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  .card {
+    width: 18rem;
+  }
 
-         .buttons {
-            padding-bottom: 1rem;
-         }
+  .buttons {
+    padding-bottom: 1rem;
+  }
 
-         .row {
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-         }
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 
-         .map {
-            height: 350px;
-            margin-bottom: 1rem;
-            padding: 0.5rem;
-         }
+  .map {
+    height: 350px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
 
-         .desc {
-            padding-left: 2rem !important;
-            padding-right: 0.5rem !important;
-            float: right !important;
-         }
-      }
+  .desc {
+    padding-left: 2rem !important;
+    padding-right: 0.5rem !important;
+    float: right !important;
+  }
+}
 
-      @media (max-width: 768px) {
-         .card {
-            width: 20rem;
-         }
-      }
+@media (max-width: 768px) {
+  .card {
+    width: 20rem;
+  }
+}
