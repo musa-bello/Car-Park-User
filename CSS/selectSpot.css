@@ -1,51 +1,62 @@
- @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
-    overflow-x: hidden;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    margin-top: 4em;
-    padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin-top: 4em;
+  padding: 0;
 }
-  .dropdown-menu {
-            left: -5em;
-        }
-  hr{
-     border:  1px solid #E7E7E7;
-     margin: 0 0 0.5em 0;
+.dropdown-menu {
+  left: -5em;
+}
+.search-hr {
+  border: 1px solid #e7e7e7;
+  width: 2000em !important;
+  margin-left: -9em !important;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.select-spot {
+  margin-top: 5em;
+}
 
-  }
-  
-
-  .divider-text {
+.divider-text {
   position: relative;
   display: flex;
   align-items: center;
-  text-transform: uppercase;
   color: #8392a5;
   font-size: 10px;
   font-weight: 500;
   font-family: -apple-system, BlinkMacSystemFont, "Inter UI", Roboto, sans-serif;
-  letter-spacing: .5px;
-  margin: 15px 0; 
+  margin: 15px 0;
 }
-  .divider-text::before, .divider-text::after {
-    content: '';
-    display: block;
-    flex: 1;
-    height: 1px;
-    background-color: #e5e9f2; 
-  }
-  .divider-text::before {
-    margin-right: 10px; 
-  }
-  .divider-text::after {
-    margin-left: 10px; 
-  }
+.divider-text::before,
+.divider-text::after {
+  content: "";
+  display: block;
+  flex: 1;
+  height: 1px;
+  background-color: #e5e9f2;
+}
+.divider-text::before {
+  margin-right: 10px;
+}
+.divider-text::after {
+  margin-left: 10px;
+}
 
-  .inner-addon { 
-    position: relative; 
+.inner-addon {
+  position: relative;
+}
+
+input[type="text"] {
+  border: none;
+  width: 350px;
+  height: 50px;
+  border: 1.5px solid #e7e7e7 !important;
+  border-radius: 5px;
 }
 
 /* style icon */
@@ -56,18 +67,53 @@ body {
 }
 
 /* align icon */
-.left-addon .fa-search  { right:  0px;}
-.right-addon .fa-search { right: 0px;}
-.left-addon .fa-search {color: blue;}
+.left-addon .fa-search {
+  right: 1em !important;
+  top: 0.5em;
+}
+.right-addon .fa-search {
+  right: 0px;
+}
+.left-addon .fa-search {
+  color: blue;
+}
 
 /* add padding  */
-.left-addon input  { padding-left:  30px; }
-.right-addon input { padding-right: 30px; }
+.left-addon input {
+  padding-left: 30px;
+}
+.right-addon input {
+  padding-right: 30px;
+}
+.col-Two {
+  border: 1px solid #e7e7e7;
+  padding: 1.5em 1em 1em !important;
+}
+.col-Two h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.col-Two hr {
+  margin: 0.2em -1em;
+}
+.col-Two p {
+  margin-bottom: 0;
+}
+.col-Two #payment-btn .btn-secondary {
+  color: #fff;
+  background-color: #d0cfcf;
+  border-color: #d0cfcf;
+}
+.col-Two #payment-btn:hover {
+  text-decoration: none !important;
+  background: #7c7979 !important;
+}
+
 /* FOOTER */
 .footer {
   background: #3684eb;
   height: fit-content;
-  
+
   margin-top: 560px;
   margin-left: -15px;
   margin-right: -15px;
@@ -182,8 +228,7 @@ a:hover {
   opacity: 0.5;
 }
 
-
-  .hero-img {
+.hero-img {
   height: auto;
   margin-top: -18%;
   margin-left: 12%;
@@ -240,7 +285,6 @@ a:hover {
     padding-top: 2em;
   }
   .foot1 {
-    
     padding-top: 4em;
     margin-bottom: 2em;
   }
@@ -260,5 +304,7 @@ a:hover {
   .footer-links a {
     margin: 1em;
   }
-  
+  .saveBtn {
+    margin-top: 0.4em;
+  }
 }
