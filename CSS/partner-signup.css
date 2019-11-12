@@ -16,6 +16,7 @@ position: relative;
 
 }
 .sign-up-page{
+  background-color: #fff;
     padding: 0 10px;
 }
 .sign-in{
@@ -50,6 +51,9 @@ font-family:sans-serif;
     text-align: center;
     width: 163px;
     height: 44px;
+}
+.main-con, .wrapper{
+  background-color: #E5E5E5;
 }
 .bookanddownload{
     align-items: center;
@@ -246,6 +250,7 @@ margin-bottom: 10px;
       div.redirect-btns div:nth-of-type(3) button{
           background-color: #1A73E8;
           color: #fff;
+          border: 2px solid #1A73E8;
       }
     div.ghost1{
         display: block;
