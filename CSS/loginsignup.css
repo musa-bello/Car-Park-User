@@ -40,12 +40,15 @@ p {
   margin: 20px 0 30px;
 }
 
+div.align-left{
+  text-align: left;
+}
 span, #forgot-pword {
   font-size: 17px;
   color:  #878787;
 }
 
-#sign-up-link, #sign-in-link{
+#sign-up-link, #sign-in-link, [resend]{
   color: #3684EB;
   margin: 0;
   font-weight: bold;
@@ -94,7 +97,7 @@ button.ghost {
   border-color: #ffffff;
 }
 
-form {
+[create-account-form], [sign-in-form] {
   justify-content: center;
   background-color: #ffffff;
   display: flex;
@@ -102,6 +105,9 @@ form {
   flex-direction: column;
   padding: 0  50px 15px 50px;
   text-align: center;
+}
+form{
+  width: 100%;
 }
 
 input {
@@ -401,8 +407,23 @@ div.redirect-btns div:nth-of-type(3) button{
   height: inherit;
 }
 
-[sign-in-form]{
-  margin-top:15px;
+form#otp input[type="number"]{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: auto 8px;
+  text-align: center;
+  font-size: 30px;
+}
+form#otp input[type="number"]::-webkit-inner-spin-button,
+form#otp input[type="number"]::-webkit-outer-spin-button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+p#next{
+  margin: 0;
 }
 
 @media screen and (max-height: 550px), (max-width:430px) {
@@ -410,11 +431,11 @@ div.redirect-btns div:nth-of-type(3) button{
     overflow: auto;
   }
   [create-account-form]{
-    height: min-content;
+    height: inherit;
   }
 }
 @media screen and (max-width: 1000px) {
-  form {
+  [create-account-form], [sign-in-form] {
   padding: 0 40px;
   }
  
@@ -516,7 +537,7 @@ div.redirect-btns div:nth-of-type(3) button{
 .overlay-container{
   display: none;
 }
-form {
+[create-account-form], [sign-in-form] {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   border-radius: 7px;
   padding-bottom: 10px;
@@ -531,7 +552,14 @@ div.btns{
 }
 
 @media screen and (max-width: 400px) {
-  form {
+  [create-account-form], [sign-in-form] {
   padding: 0 10px 10px 10px;
   }
 }
+
+/*==========================SIGN UP FORM===========================================*/
+form#otp, form#regForm{
+  display: none;
+}
+
+/*=============================================================================*/
