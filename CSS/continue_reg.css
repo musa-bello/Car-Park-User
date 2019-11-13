@@ -9,7 +9,6 @@ body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  height: 100vh;
   min-height: 100%;
 }
 .fixed-top{
@@ -84,7 +83,6 @@ body {
     }
 
     div.photo1 input{
-        position: absolute;
         margin: auto;
         background: none;
         border: none;
@@ -238,6 +236,10 @@ a:hover {
   outline: none !important;
   box-shadow: none !important;
   background: #1350a0 !important;
+}
+
+div#finalSubmit{
+    display: none;
 }
 
 /* RESPONSIVENESS */

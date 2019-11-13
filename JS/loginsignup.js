@@ -7,7 +7,45 @@ var link1 = document.getElementById("sign-up-link");
 var link2 = document.getElementById("sign-in-link");
 var signInContainer=  document.getElementById("sign-in-container1");
 var signUpContainer=  document.getElementById("sign-up-container1");
+var arrow = document.getElementById("arrow");
+var phoneForm = document.getElementById("phoneNumber");
+var otpForm = document.getElementById("otp");
+var regForm = document.getElementById("regForm");
 
+
+
+//=================================================SIGN UP FORM===============================================================
+$(document).ready( function () {
+  $('.form').submit( function () {
+    var formdata = $(this).serialize();
+    $.ajax({
+        type: "POST",
+        data: formdata
+           });
+           return false;
+          });
+
+    $('#first').autotab({target: '#second', format: 'numeric'});
+    $('#second').autotab({target: '#third', format: 'numeric', previous: '#first'});
+    $('#third').autotab({target: '#fourth', previous: '#second', format: 'numeric'});
+    $('#fourth').autotab({previous: '#third', format: 'numeric'});
+      });
+  
+arrow.addEventListener("click", function(){
+  otpForm.style.display = "none";
+  phoneForm.style.display = "block";
+})
+
+
+function moveForward(){
+  otpForm.style.display = "block";
+  phoneForm.style.display = "none";
+}
+function moveForward2(){
+  otpForm.style.display = "none";
+  regForm.style.display = "block";
+}
+//===============================================================================================================
 signUpButton.addEventListener("click", () => {
   container.classList.add("right-panel-active");
   signInContainer.style.display="none";
@@ -46,19 +84,31 @@ link2.addEventListener("click", function(){
 
 
 function checkForm(){
-  var username = document.forms["RegForm"]["username"];
+  var firstName = document.forms["RegForm"]["firstName"];
+  var lastName = document.forms["RegForm"]["lastName"];
   var email = document.forms["RegForm"]["email"];
   var pword = document.forms["RegForm"]["pword"];
 
-  if(username.value== ""){
+  if(firstName.value== ""){
     window.alert("Please enter your name.");
-    username.focus();
+    firstName.focus();
+    return false;
+  }
+  if(lastName.value== ""){
+    window.alert("Please enter your name.");
+    lastName.focus();
     return false;
   }
   re= /^\w+$/;
-  if(!re.test(username.value)){
+  if(!re.test(lastName.value)){
     window.alert("Your name must contain only letters, numbers and underscore.");
-    username.focus;
+    lastName.focus;
+    return false;
+  }
+  re= /^\w+$/;
+  if(!re.test(firstName.value)){
+    window.alert("Your name must contain only letters, numbers and underscore.");
+    firstName.focus;
     return false;
   }
   if(pword.value != ""){
@@ -67,8 +117,8 @@ function checkForm(){
       pword.focus();
       return false; 
     }
-    if(pword.value==username.value){
-      window.alert("Your password and Username must not be the same.")
+    if(pword.value==firstName.value || pword.value==lastName.value ){
+      window.alert("Your password and name must not be the same.")
       pword.focus();
       return false;
     }
@@ -90,7 +140,7 @@ function checkForm(){
       pword.focus();
       return false;
   }
-  window.alert("REGISTRATION COMPLETE!")
+  
   return true
 }
 }

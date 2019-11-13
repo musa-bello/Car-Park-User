@@ -42,16 +42,31 @@ function moveForward(){
     document.getElementById("first").style.display="none";
     document.getElementById("addCar").classList.remove('fa-chevron-right');
     document.getElementById("addCar").classList.add('fa-check');
+    checkRegistration();
 }
 function moveForward2(){
     document.getElementById("home").style.display="block";
     document.getElementById("second").style.display="none";
-    document.getElementById("uplaodCar").classList.remove('fa-chevron-right');
-    document.getElementById("uplaodCar").classList.add('fa-check');
+    document.getElementById("uploadCar").classList.remove('fa-chevron-right');
+    document.getElementById("uploadCar").classList.add('fa-check');
+    checkRegistration();
 }
 function moveForward3(){
     document.getElementById("home").style.display="block";
     document.getElementById("third").style.display="none";
     document.getElementById("parkOwner").classList.remove('fa-chevron-right');
     document.getElementById("parkOwner").classList.add('fa-check');
+    checkRegistration();
 }
+
+checkRegistration();
+
+function checkRegistration() {
+    if (($("#addCar").hasClass('fa-check') &&
+        $("#uploadCar").hasClass('fa-check') &&
+        $("#parkOwner").hasClass('fa-check'))) {
+        document.getElementById("finalSubmit").style.display = "block";
+    }
+    ;
+}
+

@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-autotab/1.9.2/js/jquery.autotab.min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
@@ -21,20 +23,45 @@
               <h1>Hello, Friend!</h1>
               <p>Sign up to find and book parking spaces</p>
           </div>
-        <form action="#" name="RegForm" onsubmit="return checkForm()" create-account-form>
+        <div create-account-form>
           <h1 class="blue">Create Account</h1>
+          <form class="form" action="#" method="POST" name="phoneNumber" id="phoneNumber" onsubmit="moveForward()">
           <div class="social-container">
             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
             <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
-          <span>or use your email for registration</span>
-          <input type="text" placeholder="Name" name="username"/>
-          <input type="email" placeholder="Email" name="email" required/>
-          <input type="password" placeholder="Password" name="pword"/>
-          <button type="submit" class="sign-up-btn">Sign Up</button>
+          <span>or use your Phone number for registration</span>
+              <input type="tel" placeholder="Phone number" name="phone" required/>
+              <button type="submit" class="sign-up-btn">ENTER</button>
+          </form>
+          <form class="form" action="#" method="POST" name="OTP" id="otp" onsubmit="moveForward2()">
+            <div class="align-left">
+                <div class="col-6">
+                    <a class="navbar-brand" href="#">
+                        <i class="fas fa-arrow-left" id="arrow"></i>
+                    </a>
+                </div>
+                <h4>Enter Code</h4>
+                <p>Enter the 4-Digit code sent</p>
+            </div>
+              <input id="first" type="number" name="otp1" maxlength="1" oninput="this.value = this.value.slice(0, this.maxLength);" required/>
+              <input id="second" type="number" name="otp1" maxlength="1" oninput="this.value = this.value.slice(0, this.maxLength);" required/>
+              <input id="third" type="number" name="otp1" maxlength="1" oninput="this.value = this.value.slice(0, this.maxlength);" required/>
+              <input id="fourth" type="number" name="otp1" maxlength="1" oninput="this.value = this.value.slice(0, this.maxlength);" required/>
+              <p id="next"><button type="submit" class="sign-up-btn">NEXT</button></p>
+              <span>Didn't get code? <br> <br> <br> <a resend href="#">Resend OTP</a></span>
+          </form>
+          <form class="form" action="#" method="POST" name="RegForm" onsubmit="return checkForm()" id="regForm">
+              <input type="text" placeholder="First Name" name="firstName" required/>
+              <input type="text" placeholder="Last Name" name="lastName" required/>
+              <input type="email" placeholder="Email" name="email" required/>
+              <input type="password" placeholder="Password" name="pword" required/>
+              <button type="submit" class="sign-up-btn">CONTINUE</button>
+          </form>
+         
           <span sign-in-link>Already have an account? <a id="sign-in-link" href="#">Sign In</a></span>
-        </form>
+        </div>
           <div class="btns">  
               <div class="redirect-btns2">
                 <div>
@@ -43,7 +70,7 @@
                 </div>
               <div class="space"></div>
               <div>
-                  <button>Download App</button>
+                  <a href="https://play.google.com/store/apps/details?id=com.carpark"><button>Download App</button></a> 
               </div>
             </div>
           </div>
@@ -58,7 +85,7 @@
                   Login to your account to book a parking space with ease
               </p>
           </div>
-        <form action="#" sign-in-form>
+        <div sign-in-form>
           <h1 class="blue">Sign in</h1>
           <div class="social-container">
             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -66,12 +93,12 @@
             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <span>or use an email account</span>
-          <input type="email" placeholder="Email" name="email" required/>
+          <input type="tel" placeholder="Phone number" name="phone" required/>
           <input type="password" placeholder="Password" name="pword" required/>
           <a href="#" id="forgot-pword">Forgot your password?</a>
           <button  class="sign-in-btn">Sign In</button>
           <span sign-up-link>Don't have an account yet? <a id="sign-up-link" href="#">Sign Up</a></span>
-        </form>
+        </div>
           <div class="btns"> 
               <div class="redirect-btns2">
               <div>
@@ -79,7 +106,7 @@
               </div>
               <div class="space"></div>
               <div>
-                  <button>Download App</button>
+                  <a href="https://play.google.com/store/apps/details?id=com.carpark"><button>Download App</button></a> 
               </div>
             </div>
           </div>
@@ -103,7 +130,7 @@
               </div>
               <div class="space"></div>
               <div>
-                  <button>Download App</button>
+                  <a href="https://play.google.com/store/apps/details?id=com.carpark"><button>Download App</button></a> 
               </div>
             </div>
 
@@ -120,7 +147,7 @@
                 </div>
                 <div class="space"></div>
                 <div>
-                    <button>Download App</button>
+                    <a href="https://play.google.com/store/apps/details?id=com.carpark"><button>Download App</button></a> 
                 </div>
               </div>
           </div>
