@@ -18,7 +18,6 @@
         body {
             font-family: "Poppins", sans-serif;
             box-sizing: border-box;
-            overflow-x: hidden;
             width: 100%;
 
         }
@@ -30,7 +29,7 @@
 
         a:hover {
             text-decoration: none;
-            color: #ccc;
+            color: goldenrod;
         }
 
         .dropdown-menu {
@@ -138,22 +137,11 @@
         .footer-links a {
             color: #fff;
             transition: transform 0.5s;
-
         }
 
         .footer-links a:hover {
             text-decoration: none;
             transform: scale(1.1);
-
-        }
-
-
-        .header-links a {
-            color: #fff;
-            padding: 0 .2rem;
-            text-decoration: none;
-            font-size: 1rem;
-
         }
 
         .text-and-button {
@@ -233,38 +221,13 @@
             padding: 2rem 3rem 0;
         }
 
-
-        .left {
-            display: inline-block;
-            width: 50%;
-            margin-bottom: 0;
+        .nav-tabs {
+            border-bottom: none;
         }
 
-        .right {
-            display: inline-block;
-            width: 50%;
-            position: absolute;
-            top: 50%;
+        .nav-link.active {
+            border-radius: 4px;
         }
-
-        .hidden {
-            display: none;
-        }
-
-        .visible {
-            display: block;
-        }
-
-        .header-links buttun .bt-link {
-            color: #fff !important;
-            text-decoration: none !important;
-        }
-
-        .header-links .btn-link:hover {
-            color: #fff !important;
-            text-decoration: underline;
-        }
-
 
         .tabs-pills {
             background-color: #3684eb;
@@ -276,11 +239,11 @@
             padding-right: 5em;
         }
 
-        .tabs-pills  p{ 
+        .tabs-pills p {
             padding-bottom: 5rem;
         }
 
-        .tabs-pills  h3{ 
+        .tabs-pills h3 {
             padding-top: 3rem;
         }
 
@@ -390,11 +353,11 @@
                 display: none;
             }
 
-            .contact{
+            .contact {
                 display: none;
             }
 
-            .tabs-pills{
+            .tabs-pills {
                 padding-left: 3rem;
                 padding-right: 1rem;
             }
@@ -493,7 +456,7 @@
                 display: none;
             }
 
-            .tabs-pills{
+            .tabs-pills {
                 padding-left: 3rem;
                 padding-right: 1rem
             }
@@ -580,7 +543,7 @@
                 display: none;
             }
 
-            .tabs-pills{
+            .tabs-pills {
                 padding-left: 2rem;
                 padding-right: .5rem;
             }
@@ -639,7 +602,7 @@
                 display: none;
             }
 
-            .tabs-pills{
+            .tabs-pills {
                 padding-left: .5rem;
                 padding-right: .5rem;
             }
@@ -699,11 +662,11 @@
                 display: none;
             }
 
-            .nav-tabs{
+            .nav-tabs {
                 font-size: .7rem;
             }
 
-            .tabs-pills{
+            .tabs-pills {
                 padding-left: .5rem;
                 padding-right: .5rem;
             }
@@ -847,13 +810,10 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Femi
+                                UserName
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">SignOut</a>
                             </div>
                         </li>
                     </ul>
@@ -892,7 +852,7 @@
         </ul>
     </div>
 
-    <div class="tab-content">
+    <div class="tab-content container-fluid">
 
         <!-- past booking section -->
         <div class="tab-pane active" role="tabpanel" id="past_booking">
@@ -1177,51 +1137,54 @@
             </div>
         </div>
         <!--  end of cancel booking section -->
-    </div>
+    
 
-    <div class="row py-5 mt-5 footer-row" style="background: #3684EB">
-        <div class="col-12 p-0 mt-md-3 mb-5 d-md-flex flex-md-row justify-content-start">
-            <div class="col-12 col-md-6 pr-0 mb-0 mb-md-5 text-and-button">
-                <div class="footer-text-container text-left text-white ">
-                    <h3>Finding a parking space should be easy, convenient and not stressful.</h3>
-                    <p style="color: #DBD6ED;">Download the carpark app today and find secure spaces to park your
-                        vehicles</p>
+    <footer>
+        <div class="row py-5 mt-5 footer-row" style="background: #3684EB">
+            <div class="col-12 p-0 mt-md-3 mb-5 d-md-flex flex-md-row justify-content-start">
+                <div class="col-12 col-md-6 pr-0 mb-0 mb-md-5 text-and-button">
+                    <div class="footer-text-container text-left text-white ">
+                        <h3>Finding a parking space should be easy, convenient and not stressful.</h3>
+                        <p style="color: #DBD6ED;">Download the carpark app today and find secure spaces to park your
+                            vehicles</p>
+                    </div>
+                    <div>
+                        <button class="play-store py-2 px-3 primary-blue mt-3">
+                            <span><img
+                                    src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
+                                    alt="Google Playstore"></span> Download App
+                        </button>
+                    </div>
                 </div>
-                <div>
-                    <button class="play-store py-2 px-3 primary-blue mt-3">
-                        <span><img src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
-                                alt="Google Playstore"></span> Download App
-                    </button>
+                <div class="col-12 col-md-6 mb-5 mt-5 mt-md-0" data-aos="zoom-in-up">
+                    <div class=" eclipse ml-md-5 mx-auto mx-md-0 d-none d-md-block">
+                        <img class="phone-img img-fluid mx-auto  d-block"
+                            src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
+                            alt="phone-img">
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 mb-5 mt-5 mt-md-0" data-aos="zoom-in-up">
-                <div class=" eclipse ml-md-5 mx-auto mx-md-0 d-none d-md-block">
-                    <img class="phone-img img-fluid mx-auto  d-block"
-                        src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
-                        alt="phone-img">
+
+            <div class="col-12 footer-links d-flex">
+                <div class="d-flex justify-content-between flex-column flex-md-row" style="width: 80%">
+                    <div class="">
+                        <img src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"
+                            alt="logo">
+                    </div>
+                    <a href="faq.html" class="mt-3 mt-md-0">FAQ</a>
+                    <a href="contact.html" class="mt-3 mt-md-0">Contact Us</a>
+                    <a href="partner.html" class="mt-3 mt-md-0">Become a Partner</a>
+                    <a href="http://car-park.ga/" class="mt-3 mt-md-0">Admin</a>
+                    <a href="support.html" class="mt-3 mt-md-0">Support</a>
+                    <a href="termsOfService.html" class="mt-3 mt-md-0">Privacy Policy</a>
                 </div>
+                <div class="ml-auto align-self-end align-self-md-start">
+                    <span class="text-white text-right">&copy; HNG Internship 2019</span>
+                </div>
+
             </div>
         </div>
-
-        <div class="col-12 footer-links d-flex">
-            <div class="d-flex justify-content-between flex-column flex-md-row" style="width: 80%">
-                <div class="">
-                    <img src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"
-                        alt="logo">
-                </div>
-                <a href="faq.html" class="mt-3 mt-md-0">FAQ</a>
-                <a href="contact.html" class="mt-3 mt-md-0">Contact Us</a>
-                <a href="partner.html" class="mt-3 mt-md-0">Become a Partner</a>
-                <a href="http://car-park.ga/" class="mt-3 mt-md-0">Admin</a>
-                <a href="support.html" class="mt-3 mt-md-0">Support</a>
-                <a href="termsOfService.html" class="mt-3 mt-md-0">Privacy Policy</a>
-            </div>
-            <div class="ml-auto align-self-end align-self-md-start">
-                <span class="text-white text-right">&copy; HNG Internship 2019</span>
-            </div>
-
-        </div>
-    </div>
+    </footer>
     <!-- <script>
                 const pastBookingDiv = document.getElementById ('pastBooking-section');
                 const currentBookingDiv = document.getElementById ('currentBooking-section');
@@ -1316,4 +1279,5 @@
     </script>
 
 </body>
+
 </html>

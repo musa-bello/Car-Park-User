@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title> Car Park Bookings</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap");
+
+        body {
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+
+
+
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        .dropdown-menu {
+            left: -5em;
+        }
+
+        .title {
+            line-height: 1.5em;
+            font-size: 2.2rem;
+            letter-spacing: 0.02em;
+            font-weight: bold;
+        }
+
+        .top-nav-collapse {
+            background-color: #fff;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+
+        .phone-img {
+            top: -8%;
+            position: relative;
+            animation: float 3s infinite alternate ease-in-out;
+
+        }
+
+        .footer-row {
+            padding: 0 7rem;
+        }
+
+
+        @keyframes float {
+            0% {
+
+                transform: translatey(0px);
+            }
+
+            50% {
+
+                transform: translatey(-20px);
+            }
+
+            100% {
+
+                transform: translatey(0px);
+            }
+        }
+
+        nav {
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+        }
+
+        .nav-item a {
+            transition: transform 0.5s;
+        }
+
+        .contact .nav-item a:hover {
+            font-weight: bold;
+            transform: scale(1.05);
+        }
+
+        .nav-tabs .nav-link:focus,
+        .nav-tabs .nav-link:hover {
+            border-color: transparent;
+        }
+
+        .terms {
+            margin-top: 6em;
+            margin-bottom: -3rem;
+        }
+
+
+
+        .play-store {
+            background: #fff;
+            border-radius: 48px;
+            border: 0;
+            transition: background-color 1s;
+
+        }
+
+        .play-store:hover {
+            background-color: #1A73E8;
+            color: #fff;
+        }
+
+        .primary-blue {
+            color: rgb(0, 73, 168);
+        }
+
+        .eclipse {
+            border-radius: 50%;
+            background-color: #1A73E8;
+            width: 75%;
+            height: 400px;
+        }
+
+        .footer-links {
+            margin-top: 7rem;
+            border-top: 1px solid #fff;
+            padding-top: 3rem;
+        }
+
+        .footer-links a {
+            color: #fff;
+            transition: transform 0.5s;
+
+        }
+
+        .footer-links a:hover {
+            text-decoration: none;
+            transform: scale(1.1);
+
+        }
+
+
+        .header-links a {
+            color: #fff;
+            padding: 0 .2rem;
+            text-decoration: none;
+            font-size: 1rem;
+
+        }
+
+        .text-and-button {
+            padding-top: 8rem;
+        }
+
+        .bt-link {
+
+
+            color: black !important;
+            background: #fff;
+            padding: .6rem !important;
+        }
+
+        .fa-calendar,
+        .fa-clock {
+            padding-right: 1rem;
+            color: #1A73E8;
+        }
+
+        .parking-space {
+            padding: 2rem 3rem 0;
+        }
+
+
+        .header-links buttun .bt-link {
+            color: #fff !important;
+            text-decoration: none !important;
+        }
+
+        .header-links .btn-link:hover {
+            color: #fff !important;
+            text-decoration: underline;
+        }
+
+
+        .tabs-pills {
+            background-color: #3684eb;
+            color: white;
+            padding-top: 5em;
+            padding-left: 5em;
+            padding-bottom: 0;
+            border-bottom: none;
+            padding-right: 5em;
+        }
+
+        .tabs-pills a {
+            color: #fff;
+        }
+
+        .tabs-pills a:hover {
+            color: #ffbd49;
+        }
+
+        .tabs-pills p {
+            padding-bottom: 5rem;
+        }
+
+        .tabs-pills h3 {
+            padding-top: 3rem;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #495057;
+            background-color: #fff;
+            border-color: #dee2e6 #dee2e6 #fff;
+        }
+
+        .nav-tabs {
+            border-bottom: none;
+        }
+
+        .nav-link.active {
+            border-radius: 4px;
+        }
+
+        .fa-headset,
+        .fa-envelope {
+            margin-right: 0.5em;
+            color: #ffbd49;
+        }
+
+        .header-links .btn-link {
+            color: white;
+        }
+
+        /* SECTION 2 */
+        .section2,
+        .section5 {
+            padding: 0 3rem;
+        }
+
+        /* SECTION 5 */
+
+        .card-group .card {
+            box-shadow: none;
+            border: none;
+            margin-right: ;
+            width: 100%;
+        }
+
+        .card-header {
+            height: 40px;
+            padding: 0px;
+        }
+
+        .card-default>.card-heading {
+            padding: 0;
+            border-radius: 0;
+            color: #212121;
+            border-bottom: 1px solid black;
+            color: black;
+        }
+
+        .card-header {
+            border: none;
+            border-bottom: 1px solid grey;
+            background-color: none;
+        }
+
+        .card-title {
+            font-size: 24px;
+            line-height: 10px;
+            background-color: #fff !important;
+            border-bottom: 1px solid grey;
+
+        }
+
+        .card-title>a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .card-body {
+            padding: 0;
+            background-color: inherit;
+        }
+
+        .card-list {
+            border-bottom: 1px solid grey;
+            padding: .5rem;
+        }
+
+        .card-title>a:hover {
+            color: goldenrod;
+        }
+
+        .more-less {
+            float: right;
+            color: #212121;
+        }
+
+        .card-default>.card-heading+.card-collapse>.card-body {
+            border-top-color: black;
+            list-style: none;
+            border-bottom: 2px;
+        }
+
+        .card-body ul {
+            list-style: none;
+            border-bottom: 2px;
+            border: none;
+        }
+
+        .card {
+            border: none !important;
+            border-style: solid;
+            border-width: .5px;
+            margin-top: 10px;
+        }
+
+        .para2 {
+            margin-top: 0.5em;
+            margin-left: 15px;
+            font-size: 1em;
+            text-decoration: none;
+        }
+
+        .hero1 a {
+            text-decoration: none;
+            color: black !important;
+        }
+
+        .h-one a {
+            color: #007bff;
+        }
+
+        .hero1 a:hover {
+            color: #007bff !important;
+            text-decoration: none;
+        }
+
+        .btn-block {
+            width: 70%;
+            text-align: left;
+        }
+
+        .fa-plus {
+            color: #3684eb;
+        }
+
+        .bottom p {
+            padding: 0 6rem;
+        }
+
+        .bottom .icon-color {
+            color: black;
+        }
+
+        .bottom a {
+            color: #3684eb;
+        }
+
+        .bottom a:hover {
+            color: black;
+        }
+
+        .spacing {
+            padding: 2rem 3rem;
+        }
+
+        @media (max-width: 1400px) {
+            .contact {
+                display: none;
+            }
+
+            .nav-link.active {
+                border-radius: 4px;
+            }
+
+            .tabs-pills {
+                padding-left: 2rem;
+            }
+
+            .container h3 {
+                font-size: 1.3rem;
+            }
+
+            .container p {
+                font-size: .9rem;
+                text-align: justify;
+            }
+
+            .section2 {
+                padding: 0;
+            }
+
+            .section2 a {
+                font-size: 1rem;
+            }
+
+            .card-title>a {
+                padding: .9rem;
+                font-size: 18px !important;
+            }
+
+            .hero1 a {
+                font-size: .73rem;
+            }
+
+            .section2 h4 {
+                font-size: .5rem;
+            }
+
+            .btn-block {
+                width: 100%;
+            }
+
+            .card-body ul {
+                padding-left: 20px !important;
+            }
+
+            .card-list,
+            a {
+                padding: 1rem 0;
+                font-size: .8rem;
+            }
+
+            .bottom p {
+                padding: 0 1rem;
+            }
+
+            .bottom .icon-color {
+                color: black;
+            }
+
+            footer h3 {
+                font-size: 25px;
+            }
+
+            .footer-row {
+                padding: 0 3rem;
+            }
+
+            .footer-links {
+                margin-top: 0rem;
+                border-top: 1px solid #fff;
+                padding-top: 2rem;
+            }
+
+            .text-and-button {
+                padding-top: 4rem;
+            }
+
+            .py-5 {
+                padding-top: 0rem !important;
+                padding-bottom: 0rem !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 990px) {
+            .contact {
+                display: none;
+            }
+
+            .nav-link.active {
+                border-radius: 4px;
+            }
+
+            .tabs-pills {
+                padding-left: 2rem;
+            }
+
+            .container h3 {
+                font-size: 1.3rem;
+            }
+
+            .container p {
+                font-size: .9rem;
+                text-align: justify;
+            }
+
+            .section2 {
+                padding: 0;
+            }
+
+            .section2 a {
+                font-size: 1rem;
+            }
+
+            .card-title>a {
+                padding: .9rem;
+                font-size: 18px !important;
+            }
+
+            .hero1 a {
+                font-size: .73rem;
+            }
+
+            .section2 h4 {
+                font-size: .5rem;
+            }
+
+            .btn-block {
+                width: 100%;
+            }
+
+            .card-body ul {
+                padding-left: 20px !important;
+            }
+
+            .card-list,
+            a {
+                padding: 1rem 0;
+                font-size: .8rem;
+            }
+
+            .bottom p {
+                padding: 0 1rem;
+            }
+
+            .bottom .icon-color {
+                color: black;
+            }
+
+            footer h3 {
+                font-size: 25px;
+            }
+
+            .footer-row {
+                padding: 0 3rem;
+            }
+
+            .footer-links {
+                margin-top: 0rem;
+                border-top: 1px solid #fff;
+                padding-top: 2rem;
+            }
+
+            .text-and-button {
+                padding-top: 4rem;
+            }
+
+            .py-5 {
+                padding-top: 0rem !important;
+                padding-bottom: 0rem !important;
+            }
+
+
+        }
+
+        @media (max-width: 880px) {
+            .contact {
+                display: none;
+            }
+
+            .nav-link.active {
+                border-radius: 4px;
+            }
+
+            .tabs-pills {
+                padding-left: 2rem;
+            }
+
+            .container h3 {
+                font-size: 1.3rem;
+            }
+
+            .container p {
+                font-size: .9rem;
+                text-align: justify;
+            }
+
+            .section2 {
+                padding: 0;
+            }
+
+            .section2 a {
+                font-size: 1rem;
+            }
+
+            .card-title>a {
+                padding: .9rem;
+                font-size: 18px !important;
+            }
+
+            .hero1 a {
+                font-size: .73rem;
+            }
+
+            .section2 h4 {
+                font-size: .5rem;
+            }
+
+            .btn-block {
+                width: 100%;
+            }
+
+            .card-body ul {
+                padding-left: 20px !important;
+            }
+
+            .card-list,
+            a {
+                padding: 1rem 0;
+                font-size: .8rem;
+            }
+
+            .bottom p {
+                padding: 0 1rem;
+            }
+
+            .bottom .icon-color {
+                color: black;
+            }
+
+            footer h3 {
+                font-size: 25px;
+            }
+
+            .footer-row {
+                padding: 0 3rem;
+            }
+
+            .footer-links {
+                margin-top: 0rem;
+                border-top: 1px solid #fff;
+                padding-top: 2rem;
+            }
+
+            .text-and-button {
+                padding-top: 4rem;
+            }
+
+            .py-5 {
+                padding-top: 0rem !important;
+                padding-bottom: 0rem !important;
+            }
+
+
+        }
+
+        @media (max-width: 768px) {
+            .contact {
+                display: none;
+            }
+
+            .nav-link.active {
+                border-radius: 4px;
+            }
+
+            .tabs-pills {
+                padding-left: 1.5rem;
+                padding-right: ;
+            }
+
+            .container h3 {
+                font-size: 1.3rem;
+            }
+
+            .container p {
+                font-size: .9rem;
+                text-align: justify;
+            }
+
+            .section2 {
+                padding: 0;
+            }
+
+            .section2 a {
+                font-size: 1rem;
+            }
+
+            .card-title>a {
+                padding: .9rem;
+                font-size: 18px !important;
+            }
+
+            .hero1 {
+                margin-top: 5rem;
+            }
+
+            .hero1 a {
+                font-size: .8rem;
+            }
+
+            .section2 h4 {
+                font-size: .5rem;
+            }
+
+            .btn-block {
+                width: 90%;
+            }
+
+            .card-body ul {
+                padding-left: 20px !important;
+            }
+
+            .card-list,
+            a {
+                padding: 1rem 0;
+                font-size: .8rem;
+            }
+
+            .bottom p {
+                padding: 0 1rem;
+            }
+
+            .bottom .icon-color {
+                color: black;
+            }
+
+            .footer-row {
+                padding: 0 4rem;
+            }
+
+            .footer-links {
+                margin-top: 0rem;
+                border-top: 1px solid #fff;
+                padding-top: 2rem;
+            }
+
+            .text-and-button {
+                padding-top: 4rem;
+            }
+
+            .py-5 {
+                padding-top: 0rem !important;
+                padding-top: 0rem !important;
+            }
+
+        }
+
+        @media (max-width: 680px) {
+            .contact {
+                display: none;
+            }
+
+            .nav-link.active {
+                border-radius: 4px;
+            }
+
+            .tabs-pills {
+                padding-left: 1.5rem;
+            }
+
+            .container h3 {
+                font-size: 1.3rem;
+            }
+
+            .container p {
+                font-size: .9rem;
+                text-align: justify;
+            }
+
+            .section2 {
+                padding: 0;
+            }
+
+            .section2 a {
+                font-size: 1rem;
+            }
+
+            .card-title>a {
+                padding: .9rem;
+                font-size: 18px !important;
+            }
+
+            .hero1 {
+                margin-top: 5rem;
+            }
+
+            .hero1 a {
+                font-size: .8rem;
+            }
+
+            .section2 h4 {
+                font-size: .5rem;
+            }
+
+            .btn-block {
+                width: 90%;
+            }
+
+            .card-body ul {
+                padding-left: 20px !important;
+            }
+
+            .card-list,
+            a {
+                padding: 1rem 0;
+                font-size: .8rem;
+            }
+
+            .bottom p {
+                padding: 0 1rem;
+            }
+
+            .bottom .icon-color {
+                color: black;
+            }
+
+            footer h3 {
+                font-size: 25px;
+            }
+
+        }
+
+        @media (max-width: 580px) {
+            .contact {
+                display: none;
+            }
+
+            .nav-link.active {
+                border-radius: 4px;
+            }
+
+            .tabs-pills {
+                padding-left: 1.5rem;
+                padding-right: ;
+            }
+
+            .container h3 {
+                font-size: 1.3rem;
+            }
+
+            .container p {
+                font-size: .9rem;
+                text-align: justify;
+            }
+
+            .section2 {
+                padding: 0;
+            }
+
+            .section2 a {
+                font-size: 1rem;
+            }
+
+            .card-title>a {
+                padding: .9rem;
+                font-size: 18px !important;
+            }
+
+            .hero1 {
+                margin-top: 5rem;
+            }
+
+            .hero1 a {
+                font-size: .8rem;
+            }
+
+            .section2 h4 {
+                font-size: .5rem;
+            }
+
+            .btn-block {
+                width: 90%;
+            }
+
+            .card-body ul {
+                padding-left: 20px !important;
+            }
+
+            .card-list,
+            a {
+                padding: 1rem 0;
+                font-size: .8rem;
+            }
+
+            .bottom p {
+                padding: 0 1rem;
+            }
+
+            .bottom .icon-color {
+                color: black;
+            }
+
+            footer h3 {
+                font-size: 25px;
+            }
+
+            .footer-row {
+                padding: 0 2rem;
+            }
+
+
+        }
+
+        @media (max-width: 480px) {
+            .contact {
+                display: none;
+            }
+
+            .nav-link.active {
+                border-radius: 4px;
+            }
+
+            .tabs-pills {
+                padding-left: 1.5rem;
+                padding-right: ;
+            }
+
+            .container h3 {
+                font-size: 1.3rem;
+            }
+
+            .container p {
+                font-size: .9rem;
+                text-align: justify;
+            }
+
+            .section2 {
+                padding: 0 .5rem;
+            }
+
+            .section2 a {
+                font-size: 1rem;
+            }
+
+            .card-title>a {
+                padding: .9rem;
+                font-size: 18px !important;
+            }
+
+            .hero1 {
+                margin-top: 5rem;
+            }
+
+            .hero1 a {
+                font-size: .8rem;
+            }
+
+            .section2 h4 {
+                font-size: .5rem;
+                line-height: auto;
+            }
+
+            .btn-block {
+                width: 90%;
+            }
+
+            .card-body ul {
+                padding-left: 20px !important;
+            }
+
+            .card-list,
+            a {
+                padding: 1rem 0;
+                font-size: .8rem;
+            }
+
+            .bottom p {
+                padding: 0 1rem;
+            }
+
+            .bottom .icon-color {
+                color: black;
+            }
+
+            footer h3 {
+                font-size: 25px;
+            }
+
+            .footer-row {
+                padding: 0 2rem;
+            }
+
+
+        }
+
+        @media (max-width: 380px) {
+            .contact {
+                display: none;
+            }
+
+            .tabs-pills {
+                padding-right: .3rem;
+            }
+
+            .tabs-pills h3 {
+                font-size: 1.3rem;
+            }
+
+            .tabs-pills p {
+                font-size: .9rem;
+            }
+
+            .nav-link.active {
+                border-radius: 4px;
+            }
+
+            .container h3 {
+                font-size: 1.3rem;
+            }
+
+            .container p {
+                font-size: .9rem;
+                text-align: justify;
+            }
+
+            .section2 {
+                padding: 0 .5rem;
+            }
+
+            .section2 a {
+                font-size: 1rem;
+            }
+
+            .card-title>a {
+                padding: .9rem;
+                font-size: 18px !important;
+            }
+
+            .hero1 {
+                margin-top: 5rem;
+            }
+
+            .hero1 a {
+                font-size: .8rem;
+            }
+
+            .section2 h4 {
+                font-size: .5rem;
+                line-height: 40px;
+            }
+
+            .card-body ul {
+                padding-left: 20px !important;
+            }
+
+            .card-list,
+            a {
+                padding: 1rem 0;
+                font-size: .8rem;
+            }
+
+            .bottom p {
+                padding: 0 1rem;
+            }
+
+            .bottom .icon-color {
+                color: black;
+            }
+
+            .footer-row {
+                padding: 0 2rem;
+            }
+
+            footer h3 {
+                font-size: 25px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mt-5">
+        <nav class="navbar fixed-top navbar-expand-md scrolling-navbar navbar-light bg-light">
+            <div class=" container" style="padding: 20px 0;">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://res.cloudinary.com/dekillerj/image/upload/v1572282259/CarPark_Logo.svg"
+                        style="width:120px;" alt="Car-Park logo">
+                </a>
+                <button class="navbar-toggler navbar-toggler-right custom-toggler" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="selectSpot.html">My Parking Space</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="bookSpace.html">Schedule</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> UserName
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Sign Out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+
+    <div class="tabs-pills">
+        <h3>Getting Started</h3>
+        <p class="navbar-text">Welcome to CarPark. We're so excited that you are here. Let's get Started.</p>
+
+        <div class="float-right contact">
+            <p class="paragraph ptabs"><a href="#">
+                    <i class="fa fa-headset" aria-hidden="true"></i>
+                    Speak to A Customer Service Representative</a> <br>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a href="#">
+                    Send Us an Email Today</a>
+            </p>
+        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link nav-pill active" id="getting_started-tab" data-toggle="tab" href="#getting_started"
+                    role="tab" aria-controls="getting_started" aria-selected="false">Getting Started</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-pill" id="using_carpark-tab" data-toggle="tab" href="#using_carpark" role="tab"
+                    aria-controls="using_carpark" aria-selected="false">Using CarPark</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-pill" id="carpark_admin-tab" data-toggle="tab" href="#carpark_admin" role="tab"
+                    aria-controls="carpark_admin" aria-selected="false">CarPark Administration</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link nav-pill" id="tips_more-tab" data-toggle="tab" href="#tips_more" role="tab"
+                    aria-controls="tips_more" aria-selected="false">Tips & More</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tab-content container-fluid">
+
+        <!--Getstarted-->
+        <div class="tab-pane active spacing" role="tabpanel" id="getting_started">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="align-self-center ">
+                                <h3 class="h-one">
+                                    What is CarPark ?</h3>
+                                <p class="paragraph">
+                                    CarPark is convenience. It is a service that makes it easier for you to find, book,
+                                    & make payment online for the closest available car parking space while making use
+                                    of
+                                    <a href="#">CarPark Mobile App</a> or <a href="index.html">CarPark Web App. </a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!--SECTION 2-->
+                    <div class="container-fluid section2">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+                                <div class="card-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                                    <div class="card card-default">
+                                        <div class="card-header" role="tab" id="headingOne">
+                                            <h4 class="card-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                                    href="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <i class="more-less fa fa-plus"></i>
+                                                    Key Features
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="card-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="card-list">
+                                                Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
+                                            <li class="card-list">
+                                                View Available Park Space
+                                            </li>
+                                            <li class="card-list">
+                                                Booking & Making Payment for Park Space online
+                                            </li>
+                                            <li class="card-list">
+                                                Retain Favourite Park Space
+                                            </li>
+                                            <li class="card-list">
+                                                Security
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2" data-aos="fade-right">
+
+                        <div class="card card-default">
+                            <div class="card-header" role="tab" id="headingTwo">
+                                <h4 class="card-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="more-less fa fa-plus"></i>
+                                        Downloading the CarPark App
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="card-collapse collapse" role="tabcard"
+                                aria-labelledby="headingTwo">
+                                <div class="card-body">
+                                    <ul>
+                                        <li class="card-list">
+                                            Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
+                                        <li class="card-list">
+                                            View Available Park Space
+                                        </li>
+                                        <li class="card-list">
+                                            Booking & Making Payment for Park Space online
+                                        </li>
+                                        <li class="card-list">
+                                            Retain Favourite Park Space
+                                        </li>
+                                        <li class="card-list">
+                                            Security
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-default">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <h4 class="card-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="more-less fa fa-plus"></i>
+                                        CarPark Pricing Plans
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="card-collapse collapse" role="tabcard"
+                                aria-labelledby="headingThree">
+                                <div class="card-body">
+                                    <ul>
+                                        <li class="card-list">
+                                            Find the Nearest Car Park using <a href="#">Car Park Map</a></li>
+                                        <li class="card-list">
+                                            View Available Park Space
+                                        </li>
+                                        <li class="card-list">
+                                            Booking & Making Payment for Park Space online
+                                        </li>
+                                        <li class="card-list">
+                                            Retain Favourite Park Space
+                                        </li>
+                                        <li class="card-list">
+                                            Security
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-group -->
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="hero1">
+                        <button type="button" class="btn btn-block btn-primary" data-toggle="button"
+                            aria-pressed="false" autocomplete="off">
+                            Key Features
+                        </button>
+                        <a class="para2 color" href="">Downloading the CarPark App</a><br>
+                        <a class="para2 color" href="">CarPark Pricing Plan</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Getstarted ends -->
+
+        <!-- Using Carpark -->
+        <div role="tabpanel" class="tab-pane fade spacing" id="using_carpark">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <!--SECTION 2-->
+                    <div class="container-fluid section2">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+                                <div class="card-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                                    <div class="card card-default">
+                                        <div class="card-header" role="tab" id="headingOne">
+                                            <h4 class="card-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                                    href="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <i class="more-less fa fa-plus"></i>
+                                                    Onboarding
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="card-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="card-list">
+                                                User SignUp/Registration </li>
+                                            <li class="card-list">
+                                                User SignIn
+                                            </li>
+                                            <li class="card-list">
+                                                Password Recovery Options
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2" data-aos="fade-right">
+
+                        <div class="card card-default">
+                            <div class="card-header" role="tab" id="headingTwo">
+                                <h4 class="card-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="more-less fa fa-plus"></i>
+                                        Your Profile
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="card-collapse collapse" role="tabcard"
+                                aria-labelledby="headingTwo">
+                                <div class="card-body">
+                                    <ul>
+                                        <li class="card-list" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo"> <i class="more-less fa fa-plus"></i>
+                                            Find the Nearest Car Park using <a href="#">CarPark Map</a></li>
+                                        <li class="card-list">
+                                            View Available Park Space
+                                        </li>
+                                        <li class="card-list">
+                                            Booking & Making Payment for Park Space online
+                                        </li>
+                                        <li class="card-list">
+                                            Retain Favourite Park Space
+                                        </li>
+                                        <li class="card-list">
+                                            Security
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-group -->
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="hero1">
+                        <button type="button" class="btn btn-block btn-primary" data-toggle="button"
+                            aria-pressed="false" autocomplete="off">
+                            Onboarding
+                        </button>
+                        <a class="para2 color" href="">Your Profile</a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Using Carpark ends -->
+
+        <!-- Carpark Administration -->
+        <div role="tabpanel" class="tab-pane fade spacing" id="carpark_admin">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <!--SECTION 2-->
+                    <div class="container-fluid section2">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+                                <div class="card-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                                    <div class="card card-default">
+                                        <div class="card-header" role="tab" id="headingOne">
+                                            <h4 class="card-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                                    href="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <i class="more-less fa fa-plus"></i>
+                                                    Onboarding
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="card-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="card-list">
+                                                User SignUp/Registration </li>
+                                            <li class="card-list">
+                                                User SignIn
+                                            </li>
+                                            <li class="card-list">
+                                                Password Recovery Options
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2" data-aos="fade-right">
+
+                        <div class="card card-default">
+                            <div class="card-header" role="tab" id="headingTwo">
+                                <h4 class="card-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="more-less fa fa-plus"></i>
+                                        Your Profile
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="card-collapse collapse" role="tabcard"
+                                aria-labelledby="headingTwo">
+                                <div class="card-body">
+                                    <ul>
+                                        <li class="card-list" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo"> <i class="more-less fa fa-plus"></i>
+                                            Find the Nearest Car Park using <a href="#">CarPark Map</a></li>
+                                        <li class="card-list">
+                                            View Available Park Space
+                                        </li>
+                                        <li class="card-list">
+                                            Booking & Making Payment for Park Space online
+                                        </li>
+                                        <li class="card-list">
+                                            Retain Favourite Park Space
+                                        </li>
+                                        <li class="card-list">
+                                            Security
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-group -->
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="hero1">
+                        <button type="button" class="btn btn-block btn-primary" data-toggle="button"
+                            aria-pressed="false" autocomplete="off">
+                            Onboarding
+                        </button>
+                        <a class="para2 color" href="">Your Profile</a><br>
+                    </div>
+                </div>
+            </div>
+            <!-- Carpark Administration ends -->
+        </div>
+
+        <!-- Tips and Moree -->
+        <div role="tabpanel" class="tab-pane fade spacing" id="tips_more">
+            <div class="row">
+                <div class="col-md-8 col-sm-12">
+                    <!--SECTION 2-->
+                    <div class="container-fluid section2">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+                                <div class="card-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                                    <div class="card card-default">
+                                        <div class="card-header" role="tab" id="headingOne">
+                                            <h4 class="card-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                                    href="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    <i class="more-less fa fa-plus"></i>
+                                                    Onboarding
+                                                </a>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="card-collapse collapse" role="tabpanel"
+                                    aria-labelledby="headingOne">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="card-list">
+                                                User SignUp/Registration </li>
+                                            <li class="card-list">
+                                                User SignIn
+                                            </li>
+                                            <li class="card-list">
+                                                Password Recovery Options
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section2" data-aos="fade-right">
+
+                        <div class="card card-default">
+                            <div class="card-header" role="tab" id="headingTwo">
+                                <h4 class="card-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="more-less fa fa-plus"></i>
+                                        Your Profile
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="card-collapse collapse" role="tabcard"
+                                aria-labelledby="headingTwo">
+                                <div class="card-body">
+                                    <ul>
+                                        <li class="card-list" role="button" data-toggle="collapse"
+                                            data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo"> <i class="more-less fa fa-plus"></i>
+                                            Find the Nearest Car Park using <a href="#">CarPark Map</a></li>
+                                        <li class="card-list">
+                                            View Available Park Space
+                                        </li>
+                                        <li class="card-list">
+                                            Booking & Making Payment for Park Space online
+                                        </li>
+                                        <li class="card-list">
+                                            Retain Favourite Park Space
+                                        </li>
+                                        <li class="card-list">
+                                            Security
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card-group -->
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="hero1">
+                        <button type="button" class="btn btn-block btn-primary" data-toggle="button"
+                            aria-pressed="false" autocomplete="off">
+                            Onboarding
+                        </button>
+                        <a class="para2 color" href="">Your Profile</a><br>
+                    </div>
+                </div>
+            </div>
+            <!-- Tips and More ends -->
+
+            <!--  cancel booking section -->
+            <div role="tabpanel" class="tab-pane fade" id="cancel_booking">
+                <div class="row mt-5">
+                    <div class="col-md-12 spacing">
+                        <div class="border">
+                            <div class="text-center" style="margin-top: 1rem; padding:4rem 0">
+                                <h1 style=> <strong>Sorry!</strong></h1>
+                                <p>You do not have any reservations available on this page</p>
+                                <button type="button" class="btn btn-primary " style="width: 10rem">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  end of cancel booking section -->
+        </div>
+        <!-- Using Carpark ends -->
+    
+        <div class="section2 mt-5" style="overflow-x: hidden;">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 bottom" data-aos="fade-right">
+                    <p class="paragraph para2"><a href="#">
+                            <i class="fa fa-headset icon-color" aria-hidden="true"></i>
+                            Speak to A Customer Service Representative</a>
+                    </p>
+
+                </div>
+                <div class="col-sm-12 col-md-6 bottom" data-aos="fade-left">
+                    <a href="#">
+                        <p class="paragraph para2">
+                            <i class="fa fa-envelope icon-color" aria-hidden="true"></i>
+                            Send Us an Email Today
+                    </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="row py-5 mt-5 footer-row" style="background: #3684EB">
+                <div class="col-12 p-0 mt-md-3 mb-5 d-md-flex flex-md-row justify-content-start">
+                    <div class="col-12 col-md-6 pr-0 mb-0 mb-md-5 text-and-button">
+                        <div class="footer-text-container text-left text-white ">
+                            <h3>Finding a parking space should be easy, convenient and not stressful.</h3>
+                            <p style="color: #DBD6ED;">Download the carpark app today and find secure spaces to park
+                                your
+                                vehicles</p>
+                        </div>
+                        <div>
+                            <button class="play-store py-2 px-3 primary-blue mt-3">
+                                <span><img
+                                        src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571932706/Icon_zfkudh.svg"
+                                        alt="Google Playstore"></span> Download App
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-5 mt-5 mt-md-0" data-aos="zoom-in-up">
+                        <div class=" eclipse ml-md-5 mx-auto mx-md-0 d-none d-md-block">
+                            <img class="phone-img img-fluid mx-auto  d-block"
+                                src="https://res.cloudinary.com/dzwnhcpep/image/upload/v1571933234/Car%20Park/three_hd8ge5.svg"
+                                alt="phone-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 footer-links d-flex">
+                    <div class="d-flex justify-content-between flex-column flex-md-row" style="width: 80%">
+                        <div class="">
+                            <img src="https://res.cloudinary.com/ladydondammy/image/upload/v1572611066/logo-white_xhzgfr.svg"
+                                alt="logo">
+                        </div>
+                        <a href="faq.html" class="mt-3 mt-md-0">FAQ</a>
+                        <a href="contact.html" class="mt-3 mt-md-0">Contact Us</a>
+                        <a href="partner.html" class="mt-3 mt-md-0">Become a Partner</a>
+                        <a href="http://car-park.ga/" class="mt-3 mt-md-0">Admin</a>
+                        <a href="support.html" class="mt-3 mt-md-0">Support</a>
+                        <a href="termsOfService.html" class="mt-3 mt-md-0">Privacy Policy</a>
+                    </div>
+                    <div class="ml-auto align-self-end align-self-md-start">
+                        <span class="text-white text-right">&copy; HNG Internship 2019</span>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/2534cfc66b.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1200
+            });
+            var SCROLLING_NAVBAR_OFFSET_TOP = 50;
+            $(window).on("scroll", function () {
+                var $navbar = $(".navbar");
+
+                if ($navbar.length) {
+                    if ($navbar.offset().top > SCROLLING_NAVBAR_OFFSET_TOP) {
+                        $(".scrolling-navbar").addClass("top-nav-collapse");
+                    } else {
+                        $(".scrolling-navbar").removeClass("top-nav-collapse");
+                    }
+                }
+            });
+        </script>
+
+        <script>
+
+            function toggleIcon(e) {
+                $(e.target)
+                    .prev('.card-heading')
+                    .find(".more-less")
+                    .toggleClass('fa-plus fa-minus');
+            }
+            $('.card-group').on('hidden.bs.collapse', toggleIcon);
+            $('.card-group').on('shown.bs.collapse', toggleIcon);
+        </script>
+
+</body>
+
+</html>
