@@ -407,10 +407,6 @@ div.redirect-btns div:nth-of-type(3) button{
   height: inherit;
 }
 
-[sign-in-form]{
-  margin-top:15px;
-}
-
 form#otp input[type="number"]{
   display: inline-block;
   width: 40px;
